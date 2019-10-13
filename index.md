@@ -17,4 +17,4 @@ using systemd to update calendar events and temperature, as kscrenlocker does no
   still a WIP, use at ur own risk!
   
 ![Image of Lockscreen]
-(https://txhammer68.github.io/docs/images/ai_64.png)
+(docs/images/lockscreen.png)
