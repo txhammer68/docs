@@ -15,4 +15,6 @@ NOTES:
 using systemd to update calendar events and temperature, as kscrenlocker does not allow internet access for security.
   maybe someone with better qml skills could show me a better way in pure qml...
   still a WIP, use at ur own risk!
-![Image of Lockscreen] (https://github.com/txhammer68/docs/blob/master/images/lockscreen.png)
+  
+![Image of Lockscreen]
+(https://github.com/txhammer68/docs/blob/master/images/lockscreen.png)
