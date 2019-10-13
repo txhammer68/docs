@@ -2,5 +2,6 @@ theme: jekyll-theme-minimal
 logo: images/ai_64.png
 name: TxHammer - DigiTech
 title: Projects
-description: Developing web,js,qml skills
+description: Developing Web,JS,QML Skills
 url: https://github.com/txhammer68
+markdown: kramdown
