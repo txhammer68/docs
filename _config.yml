@@ -12,7 +12,7 @@ markdown: kramdown
 input: GFM
 github: https://github.com/txhammer68
 github_username: txhammer68
-plugins: jekyll-remote-theme, jekyll-include-cache
+# plugins: jekyll-remote-theme, jekyll-include-cache
 # remote_theme: txhammer68/chalk
-
+# logo:
 theme: jekyll-theme-slate
