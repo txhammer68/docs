@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 # theme: txhammer68/chalk
 # theme: txhammer68/myweb
-logo: images/ai_64.png
+logo: images/yosimte-sam3.png
 name: TxHammer - DigiTech
 author: TxHammer
 title: KDE Plasma Customizations
@@ -17,7 +17,6 @@ plugins:
 - jekyll-remote-theme
 - jekyll-include-cache
 # remote_theme: txhammer68/chalk
-logo: images/bk2-small.png
 footer:
   links:
     - label: "Twitter"
