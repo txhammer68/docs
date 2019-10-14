@@ -5,7 +5,7 @@ author: TxHammer
 title: Projects
 description: Developing Web,JS,QML Skills
 url: https://github.com/txhammer68
-baseurl: "/"
+baseurl: "../"
 markdown: kramdown
 input: GFM
 github: https://github.com/txhammer68
