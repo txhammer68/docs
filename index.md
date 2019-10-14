@@ -1,5 +1,3 @@
-# KDE Plasma Customizations
-
 ## Custom Lockscreen for KDE plasma
 
 ### Changes made
