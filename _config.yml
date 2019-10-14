@@ -1,11 +1,11 @@
 # theme: jekyll-theme-minimal
 # theme: txhammer68/chalk
-remote_theme: txhammer68/myweb
+theme: txhammer68/myweb
 logo: images/ai_64.png
 name: TxHammer - DigiTech
 author: TxHammer
-title: Projects
-description: Developing Web,JS,QML Skills
+title: KDE Plasma Customizations
+description: Hacking Web,JS,QML
 url: https://github.com/txhammer68
 # baseurl: "../"
 markdown: kramdown
