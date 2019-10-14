@@ -9,3 +9,4 @@ baseurl: "/"
 markdown: kramdown
 input: GFM
 github: https://github.com/txhammer68
+github_username: txhammer68
