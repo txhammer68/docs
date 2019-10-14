@@ -1,6 +1,6 @@
 # theme: jekyll-theme-minimal
 # theme: txhammer68/chalk
-theme: txhammer68/myweb
+# theme: txhammer68/myweb
 logo: images/ai_64.png
 name: TxHammer - DigiTech
 author: TxHammer
@@ -18,7 +18,7 @@ plugins:
 - jekyll-include-cache
 # remote_theme: txhammer68/chalk
 logo: images/bk2-small.png
-# theme: jekyll-theme-slate
+theme: jekyll-theme-slate
 footer:
   links:
     - label: "Twitter"
