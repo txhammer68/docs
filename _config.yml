@@ -1,4 +1,4 @@
-# theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal
 # theme: txhammer68/chalk
 # theme: txhammer68/myweb
 logo: images/ai_64.png
@@ -18,7 +18,6 @@ plugins:
 - jekyll-include-cache
 # remote_theme: txhammer68/chalk
 logo: images/bk2-small.png
-remote_theme: jpasholk/jekyll-uikit
 footer:
   links:
     - label: "Twitter"
