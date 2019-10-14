@@ -18,7 +18,7 @@ plugins:
 - jekyll-include-cache
 # remote_theme: txhammer68/chalk
 logo: images/bk2-small.png
-theme: jekyll-uikit
+remote_theme: jpasholk/jekyll-uikit
 footer:
   links:
     - label: "Twitter"
