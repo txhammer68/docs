@@ -1,5 +1,6 @@
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
 # theme: txhammer68/chalk
+remote_theme: "mmistakes/minimal-mistakes@4.17.0"
 logo: images/ai_64.png
 name: TxHammer - DigiTech
 author: TxHammer
