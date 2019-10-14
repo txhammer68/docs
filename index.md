@@ -1,4 +1,4 @@
-## Custom Lockscreen for KDE plasma
+## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/Lockscreen)
 
 ### Changes made
 * Clock remove am/pm
