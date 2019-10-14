@@ -1,10 +1,8 @@
 # KDE Plasma Customizations
 
+## Custom Lockscreen for KDE plasma
 
-
-# Custom Lockscreen for KDE plasma
-
-## Changes made
+### Changes made
 * Clock remove am/pm
 * Added calendar event to Clock
 * Added current temperature
