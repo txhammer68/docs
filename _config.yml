@@ -4,4 +4,5 @@ name: TxHammer - DigiTech
 title: Projects
 description: Developing Web,JS,QML Skills
 url: https://github.com/txhammer68
+baseurl: ""
 markdown: kramdown
