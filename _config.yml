@@ -11,4 +11,4 @@ input: GFM
 github: https://github.com/txhammer68
 github_username: txhammer68
 plugins: jekyll-remote-theme
-remote_theme: rohanchandra/type-theme
+remote_theme: txhammer68/chalk
