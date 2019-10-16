@@ -19,9 +19,11 @@ using systemd to update calendar events and temperature, as kscrenlocker does no
   The 'Plasma Look and Feel Explorer' is part of the 'plasma-sdk', install it from your distro repo.
   the advatage of creating your own LnF theme is that you can change things like the lockscreen,logout, 
   and other compenents that are part of the default Breeze LnF theme...Most Lnf themes rely on the Breeze Lnf compenents 
-  for their theme. Creating your own will allow you to custimize every compenent of the Plasma desktop to your liking.
-  
-  ![Image of Plasma Look And Feel Explorer]](https://i.imgur.com/yPkUl3M.png)
+  for their theme. Creating your own theme will allow you to custimize every compenent of the Plasma desktop to your liking.
+  Once you create your own theme copy the folders from /usr/share/plasma/look-and-feel/org.kde.breeze.desktop/contents/ 
+  to your theme in /home/.local/share/plasma/look-and-feel/"your theme name"/
+ 
+  ![Image of Plasma Look And Feel Explorer](https://i.imgur.com/yPkUl3M.png)
 
 
 ## [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) is widget customizer for KDE, widgets are the controls and drop down menus within Plasma
