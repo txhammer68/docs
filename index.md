@@ -17,5 +17,5 @@ using systemd to update calendar events and temperature, as kscrenlocker does no
 
 ## [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) is widget customizer for KDE, widgets are the controls and drop down menus within Plasma
 
-![Image of kvantum](https://txhammer68.github.io/docs/images/screenlocker.gif)
+![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
