@@ -30,3 +30,8 @@ using systemd to update calendar events and temperature, as kscrenlocker does no
 
 ![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
+## Ideas for Plasma
+* Incorporate Google type notifications into Plasma notifications, sports,news,stocks
+  * Using Node JS to get info and notify timer events
+* Wallpaper slideshow to use picture metadata exif info to show location/description of photo on wallpaper
+
