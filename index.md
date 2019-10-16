@@ -8,7 +8,7 @@
 * Mail and messages are static for now, need work on using O-auth to get gmail inbox count
 
 NOTES:
-using systemd to update calendar events and temperature, as kscrenlocker does not allow internet access for security.
+Using systemd to update calendar events and temperature, as kscrenlocker does not allow internet access for security.
   maybe someone with better qml skills could show me a better way in pure qml...
   still a WIP, use at ur own risk!
   
@@ -26,7 +26,8 @@ using systemd to update calendar events and temperature, as kscrenlocker does no
   ![Image of Plasma Look And Feel Explorer](https://i.imgur.com/yPkUl3M.png)
 
 
-## [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) is widget customizer for KDE, widgets are the controls and drop down menus within Plasma
+## [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) 
+Kvantum is widget customizer for KDE, widgets are the controls and drop down menus within Plasma
 
 ![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
