@@ -12,4 +12,10 @@ using systemd to update calendar events and temperature, as kscrenlocker does no
   maybe someone with better qml skills could show me a better way in pure qml...
   still a WIP, use at ur own risk!
   
-![Image of Lockscreen](https://txhammer68.github.io/docs/images/lockscreen.png)
+![Image of Lockscreen](https://txhammer68.github.io/docs/images/screenlocker.gif)
+
+
+## [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) is widget customizer for KDE, widgets are the controls and drop down menus within Plasma
+
+![Image of kvantum](https://txhammer68.github.io/docs/images/screenlocker.gif)
+
