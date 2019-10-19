@@ -1,8 +1,8 @@
+ 
 <kbd><main>
     <div class="header-img"></div>
-</main></kbd>
-
-<kbd>.header-img {
+</main>
+.header-img {
   width: 100%;
   height: 400px;
   background: url('https://txhammer68.github.io/docs/images/bk1.png');
