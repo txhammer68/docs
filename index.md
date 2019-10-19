@@ -1,3 +1,4 @@
+
 <h1 style="color: white; background-color: #af9cd9; padding: 2em 0; text-align: center">![](https://raw.githubusercontent.com/belltown/violetbug/master/doc/icon.png) VioletBug — Roku Debugger Graphical Interface</h1>
 
 
