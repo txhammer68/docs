@@ -1,4 +1,4 @@
-<kbd><h1 style="color: white; background-color: #af9cd9; padding: 2em 0; text-align: center">![](https://raw.githubusercontent.com/belltown/violetbug/master/doc/icon.png) VioletBug — Roku Debugger Graphical Interface</h1></kbd>
+<kbd><h1 style="color: white; background-color: #af9cd9; padding: 2em 0; text-align: center">![](https://txhammer68.github.io/docs/images/bk1.png) Plasma Customizations!</h1></kbd>
 
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/Lockscreen)
