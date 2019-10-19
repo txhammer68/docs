@@ -1,9 +1,3 @@
- 
-<kbd> <head> </kbd>
-<kbd> <title>Plasma Customizations!</title> </kbd>
-<kbd> <img src="https://txhammer68.github.io/docs/images/bk1.png" alt="" style="width:1600px;height:300px;"> </kbd>
-<kbd> </head> </kbd>
-
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/Lockscreen)
 
 ### Changes made
