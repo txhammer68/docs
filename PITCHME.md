@@ -1,6 +1,8 @@
----?image=kde/kde.png
+---
 
-My plasma setup
+@title[Deployment Architecture]
 
-Custom Grub Boot menu
----?image=Screenshot_grub2.png
+
+#### SAMBA Deployment Architecture
+
+![SAMBA Deployment](https://onetapbeyond.github.io/resource/img/samba/new-samba-deploy.jpg)
