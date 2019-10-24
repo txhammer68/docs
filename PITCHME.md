@@ -1,8 +1,8 @@
----
+![IMAGE](kde/kde.png)
+@snap[west span-50]
+## Customize the Layout
+@snapend
 
-@title[Deployment Architecture]
-
-
-#### SAMBA Deployment Architecture
-
-![SAMBA Deployment](https://onetapbeyond.github.io/resource/img/samba/new-samba-deploy.jpg)
+@snap[east span-50]
+![IMAGE](kde/Screenshot_grub2.png)
+@snapend
