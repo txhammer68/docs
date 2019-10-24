@@ -2,17 +2,16 @@
 
 ### Changes made
 * Clock remove am/pm
-* Added calendar event to Clock
+* Added calendar event to clock
 * Added current temperature
+* Unread gmail message count
 * Modified UI to hide status bar/show user login when KB/mouse movement detected
-* Mail and messages are static for now, need work on using O-auth to get gmail inbox count
-
 NOTES:
 Using systemd to update calendar events and temperature, as kscrenlocker does not allow internet access for security.
   maybe someone with better qml skills could show me a better way in pure qml...
   still a WIP, use at ur own risk!
   
-![Image of Lockscreen](https://txhammer68.github.io/docs/images/screenlocker.gif)
+![Image of Lockscreen](https://txhammer68.github.io/docs/images/lockscreen.gif)
 
 ## [Plasma Look And Feel Explorer](https://userbase.kde.org/Plasma/Create_a_Look_and_Feel_Package)
   Plasma Look And Feel Explorer is a KDE application that allows you to create your own desktop theme.
