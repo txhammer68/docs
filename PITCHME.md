@@ -1,3 +1,6 @@
-# My plasma setup
+---?image=kde/kde.png
 
-![KDE Plasma](kde/Screenshot_grub2.png)
+My plasma setup
+
+Custom Grub Boot menu
+---?image=Screenshot_grub2.png
