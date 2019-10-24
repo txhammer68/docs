@@ -30,9 +30,8 @@ Kvantum is widget customizer for KDE, widgets are the controls and drop down men
 
 ![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
-## My plasma setup
-
-[My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
+## [My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
+![Image of desktop](images/preview2.png)
 
 ## Ideas for Plasma
 * Incorporate Google type notifications into Plasma notifications, sports,news,stocks
