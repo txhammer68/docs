@@ -32,7 +32,7 @@ Kvantum is widget customizer for KDE, widgets are the controls and drop down men
 
 ## My plasma setup
 
-![Image of kvantum](https://txhammer68.github.io/docs/kde/slideshow.html)
+[My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
 
 ## Ideas for Plasma
 * Incorporate Google type notifications into Plasma notifications, sports,news,stocks
