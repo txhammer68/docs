@@ -1,6 +1,3 @@
-@title[Deployment Architecture]
+# My plasma setup
 
-
-#### SAMBA Deployment Architecture
-
-![SAMBA Deployment](https://onetapbeyond.github.io/resource/img/samba/new-samba-deploy.jpg)
+![KDE Plasma](kde/Screenshot_grub2.png)
