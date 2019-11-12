@@ -13,17 +13,8 @@ Using systemd to update calendar events and temperature, as kscrenlocker does no
   
 ![Image of Lockscreen](https://txhammer68.github.io/docs/images/lockscreen.gif)
 
-<
-<div class="embed-container">
-  <iframe
-      src="https://www.youtube.com/embed/bqqbzRAz9kQ"
-      width="700"
-      height="480"
-      frameborder="0"
-      allowfullscreen="">
-  </iframe>
-</div>
->
+[![Plasma Lockscreen](https://i9.ytimg.com/vi/bqqbzRAz9kQ/mq1.jpg?sqp=CKS3qO4F&rs=AOn4CLAMWKHi4q5vUzx7RnIKJu92ospa1Q)](https://www.youtube.com/embed/bqqbzRAz9kQ "Plasma Lockscreen")
+
 
 
 
