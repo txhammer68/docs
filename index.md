@@ -2,14 +2,10 @@
 
 ### Changes made
 * Clock remove am/pm
-* Added calendar event to clock
-* Added current temperature
-* Unread gmail message count
-* Modified UI to hide status bar/show user login when KB/mouse movement detected
-NOTES:
-Using systemd to update calendar events and temperature, as kscrenlocker does not allow internet access for security.
-  maybe someone with better qml skills could show me a better way in pure qml...
-  still a WIP, use at ur own risk!
+* Calendar event info
+* Current weather info
+* Unread gmail messages count
+* Modified UI to hide/show cursor,info text,user login when KB/mouse movement detected
 
 [![Plasma Lockscreen](lockscreen.png)](https://gofile.io/?c=bmYlVp "Plasma Lockscreen")
 
