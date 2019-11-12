@@ -13,7 +13,7 @@ Using systemd to update calendar events and temperature, as kscrenlocker does no
   
 ![Image of Lockscreen](https://txhammer68.github.io/docs/images/lockscreen.gif)
 
-{% include youtubePlayer.html id=bqqbzRAz9kQ %}
+{% include youtubePlayer.html id="bqqbzRAz9kQ" %}
 
 ## [Plasma Look And Feel Explorer](https://userbase.kde.org/Plasma/Create_a_Look_and_Feel_Package)
   Plasma Look And Feel Explorer is a KDE application that allows you to create your own desktop theme.
