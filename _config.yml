@@ -5,12 +5,12 @@ theme: jekyll-theme-minimal
 name: TxHammer - DigiTech
 author: TxHammer
 title: KDE Plasma Customizations
-description: Hacking Web,JS,QML
-url: https://github.com/txhammer68
+description: Hacking the Web,JS,QML
+url: https://github.com/txhammer68/
 # baseurl: "../"
 markdown: kramdown
 input: GFM
-github: https://github.com/txhammer68
+github: https://github.com/txhammer68/
 github_username: txhammer68
 repository: txhammer68
 plugins: 
