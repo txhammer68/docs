@@ -1,4 +1,5 @@
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/chalk
 # theme: txhammer68/myweb
 # logo: images/yosimte-sam3.png
