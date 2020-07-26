@@ -18,9 +18,9 @@
 ### System monitor dashboard
 ![System dashboard](images/dashboard.png)
 ### Web Search
-[![Web Search](images/search.png)]
+![Web Search](images/search.png)
 ### System menu
-[![System Menu](images/system-menu.png)]
+![System Menu](images/system-menu.png)
 
 
 ## [Plasma Look And Feel Explorer](https://userbase.kde.org/Plasma/Create_a_Look_and_Feel_Package)
