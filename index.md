@@ -21,7 +21,7 @@
 ## Web Apps
 * Using chrome or firefox and xprop to determine window class info
 * create a desktop entry in $HOME/.local/share/applications/
-'''
+```
 [Desktop Entry]
 Comment=G-Mail Web App
 Exec=/opt/google/chrome/google-chrome --disk-cache-dir=/tmp/cache --profile-directory=Default --app=https://mail.google.com/mail/u/0/#inbox
@@ -35,7 +35,7 @@ StartupWMClass=mail.google.com__mail_u_0
 Terminal=false
 Type=Application
 Version=1.0
-'''
+```
 
 ## [Plasma Look And Feel Explorer](https://userbase.kde.org/Plasma/Create_a_Look_and_Feel_Package)
   Plasma Look And Feel Explorer is a KDE application that allows you to create your own desktop theme.
