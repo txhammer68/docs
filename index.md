@@ -12,7 +12,7 @@
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml)
 ### System monitor dashboard
-![System dashboard](images/dashboard.png)
+![System dashboard](images/dashboard.png)(images/dashboard.png?raw=true "System monitor dashboard")
 ### Web Search
 ![Web Search](images/search.png)
 ### System menu
