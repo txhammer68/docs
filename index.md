@@ -71,8 +71,7 @@ Variant=kubuntu edition
 
 ![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
-## [KDE Store] 
-[Plasma themes](https://store.kde.org/browse/cat/) 
+## [KDE Store](https://store.kde.org/browse/cat/) 
 * Central place to get custom themes for KDE Plasma 
 
 ## Ideas for Plasma
