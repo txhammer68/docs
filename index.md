@@ -5,12 +5,8 @@
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/Lockscreen#custom-plasma-lockscreen)
 
-### Changes made
 * Clock remove am/pm
-* Calendar event info
-* Current weather info
-* Unread gmail messages count
-* Modified UI to hide/show cursor,info text,user login when KB/mouse movement detected
+* Calendar,weather,email info
 
 [![Plasma Lockscreen](lockscreen.png)](https://gofile.io/?c=bmYlVp "Plasma Lockscreen")
 
