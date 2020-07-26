@@ -1,4 +1,4 @@
-# [Customizing KDE Plasma Desktop]
+# Customizing KDE Plasma Desktop
 
 ## [My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
 ![Image of desktop](images/preview2.png)
@@ -16,7 +16,7 @@
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml)
 ### System monitor dashboard
-[![System dashboard](images/dashboard.png)]
+[!System dashboard(images/dashboard.png)]
 ### Web Search
 [![Web Search](images/search.png)]
 ### System menu
