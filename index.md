@@ -1,3 +1,5 @@
+# [Customizing KDE Plasma Desktop]
+
 ## [My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
 ![Image of desktop](images/preview2.png)
 
