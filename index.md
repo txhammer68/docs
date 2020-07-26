@@ -19,14 +19,19 @@
 ![System Menu](images/system-menu.png)
 
 ## Web Apps
+* Create web app shortcuts for your favorite web apps, spotify,gmail,google maps,etc...
 * Using chrome or firefox and xprop to determine window class info
 * create a desktop entry in $HOME/.local/share/applications/
+* to have it use its own icon instead of the web browser icon use xprop to determine window class
+* run the desktop entry created and then in in terminal run xprop and click the window title
+* Notice the entry for StartupWMClass
+* Paste this into the desktop entry
 ```
 [Desktop Entry]
 Comment=G-Mail Web App
 Exec=/opt/google/chrome/google-chrome --disk-cache-dir=/tmp/cache --profile-directory=Default --app=https://mail.google.com/mail/u/0/#inbox
 GenericName=G-Mail Web App
-Icon=/home/matt/Pictures/Misc/icons/email.png
+Icon=$HOME/Pictures/Misc/icons/email.png
 MimeType=
 Name=G-Mail
 NoDisplay=false
