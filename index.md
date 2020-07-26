@@ -1,3 +1,6 @@
+## [My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
+![Image of desktop](images/preview2.png)
+
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/Lockscreen#custom-plasma-lockscreen)
 
 ### Changes made
@@ -8,6 +11,15 @@
 * Modified UI to hide/show cursor,info text,user login when KB/mouse movement detected
 
 [![Plasma Lockscreen](lockscreen.png)](https://gofile.io/?c=bmYlVp "Plasma Lockscreen")
+
+## [Plasma Widgets](https://github.com/txhammer68/qml)
+
+[![System dashboard](images/dashboard.png)]
+
+[![Web Search](images/search.png)]
+
+[![System Menu](images/system-menu.png)]
+
 
 ## [Plasma Look And Feel Explorer](https://userbase.kde.org/Plasma/Create_a_Look_and_Feel_Package)
   Plasma Look And Feel Explorer is a KDE application that allows you to create your own desktop theme.
@@ -26,8 +38,7 @@ Kvantum is widget customizer for KDE, widgets are the controls and drop down men
 
 ![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
-## [My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
-![Image of desktop](images/preview2.png)
+
 
 ## Ideas for Plasma
 * Incorporate Google type notifications into Plasma notifications, sports,news,stocks
