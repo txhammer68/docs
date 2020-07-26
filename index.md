@@ -66,11 +66,14 @@ Variant=kubuntu edition
 
 
 ## [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) 
-Kvantum is widget customizer for KDE, widgets are the controls and drop down menus within Plasma
+* Kvantum is widget customizer for KDE, widgets are the controls and drop down menus within Plasma
+* [Kvantum on KDE Store] (https://store.kde.org/browse/cat/123/order/latest/) 
+
 
 ![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
-
+## [KDE Store] (https://store.kde.org/browse/cat/) 
+* Central place to get custom themes for KDE Plasma 
 
 ## Ideas for Plasma
 * Incorporate Google type notifications into Plasma notifications, sports,news,stocks
