@@ -13,11 +13,11 @@
 [![Plasma Lockscreen](lockscreen.png)](https://gofile.io/?c=bmYlVp "Plasma Lockscreen")
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml)
-
-[![System dashboard](images/dashboard.png)]
-
+### System monitor dashboard
+![System dashboard](images/dashboard.png)
+### Web Search
 [![Web Search](images/search.png)]
-
+### System menu
 [![System Menu](images/system-menu.png)]
 
 
