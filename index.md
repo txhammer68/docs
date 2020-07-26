@@ -8,7 +8,7 @@
 * Clock remove am/pm
 * Calendar,weather,email info
 
-[![Plasma Lockscreen](lockscreen.png)](https://gofile.io/?c=bmYlVp "Plasma Lockscreen")
+[![Plasma Lockscreen](https://github.com/txhammer68/plasma-Lockscreen-nest-hub/blob/master/lockscreen.png)](https://streamable.com/d5yiyq "Plasma Lockscreen")
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml)
 ### System monitor dashboard
