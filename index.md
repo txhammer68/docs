@@ -1,7 +1,7 @@
 # Customizing KDE Plasma Desktop
 
 ## [My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
-![desktop](images/preview2.png)(https://github.com/txhammer68/docs/blob/master/images/preview2.png "My Plasma Desktop")
+[![Plasma desktop](images/preview2.png)](https://github.com/txhammer68/docs/blob/master/images/preview2.png "My Plasma Desktop")
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/Lockscreen#custom-plasma-lockscreen)
 
