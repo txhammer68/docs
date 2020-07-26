@@ -41,6 +41,17 @@ Terminal=false
 Type=Application
 Version=1.0
 ```
+## Customize Kinfo
+![System Info](images/kinfo.png)
+* Create a new file kcm-about-distrorc within $HOME/.config/
+```
+[General]
+Name=Plasma OS
+LogoPath=$HOME/Pictures/Misc/icons/ai_48.png
+Website=https://github.com/txhammer68
+Version=5.18
+Variant=kubuntu edition
+```
 
 ## [Plasma Look And Feel Explorer](https://userbase.kde.org/Plasma/Create_a_Look_and_Feel_Package)
   Plasma Look And Feel Explorer is a KDE application that allows you to create your own desktop theme.
