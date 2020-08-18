@@ -10,7 +10,7 @@
 
 [![Plasma Lockscreen](images/lockscreen.png)](https://streamable.com/d5yiyq "Plasma Lockscreen")
 
-## [Plasma Widgets](https://github.com/txhammer68/qml)
+## [Plasma Widgets](https://github.com/txhammer68/qml#misc-plasma-qml-widgetscode)
 ### System monitor dashboard
 ![System dashboard](images/dashboard.png)
 ### Web Search
