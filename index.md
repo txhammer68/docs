@@ -5,10 +5,10 @@
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10)
 
-* Clock remove am/pm
-* Weather,calendar/email info
+* Change location of clock/date to lower right corner
+* Display current weather conditions,current calendar events
 
-[![Plasma Lockscreen](images/Screenshot_20211017_154639.png)](https://streamable.com/d5yiyq "Plasma Lockscreen")
+[![Plasma Lockscreen](images/Screenshot_20211017_154639.png)](https://github.com/txhammer68/docs/blob/master/images/Screenshot_20211017_154639.png?raw=true "Custom Plasma Lockscreen")
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml#misc-plasma-qml-widgetscode)
 ### System monitor dashboard
