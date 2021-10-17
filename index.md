@@ -1,14 +1,14 @@
 # Customizing KDE Plasma Desktop
 
-## [My Plasma setup](https://txhammer68.github.io/docs/kde/slideshow.html)
+## [My Plasma setup](https://txhammer68.github.io/docs/slideshow.html)
 [![Plasma desktop](desktop.png)](https://github.com/txhammer68/docs/blob/master/desktop.png?raw=true "My Plasma Desktop")
 
-## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/Lockscreen#custom-plasma-lockscreen)
+## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10)
 
 * Clock remove am/pm
-* Calendar,weather,email info
+* Weather,calendar/email info
 
-[![Plasma Lockscreen](images/lockscreen.png)](https://streamable.com/d5yiyq "Plasma Lockscreen")
+[![Plasma Lockscreen](images/Screenshot_20211017_154639.png)](https://streamable.com/d5yiyq "Plasma Lockscreen")
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml#misc-plasma-qml-widgetscode)
 ### System monitor dashboard
