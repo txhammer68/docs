@@ -29,10 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.slide div:hover{
-    min-height: 100%;
-}
+
 .slide div p{
     margin-bottom: 0;
     color: #fff;
