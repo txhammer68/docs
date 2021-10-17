@@ -3,7 +3,7 @@
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
 [![Plasma desktop](desktop.png)](https://github.com/txhammer68/docs/blob/master/desktop.png?raw=true "My Plasma Desktop")
 
-## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10)
+## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10#custom-plasma-lockscreen-win-10-style)
 
 * Change location of clock/date to lower right corner
 * Display current weather conditions,current calendar events
