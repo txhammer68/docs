@@ -9,6 +9,11 @@
     position: relative;
     animation: fade 0.5s;
 }
+}
+.slide div:hover{
+    min-height: 100%;
+}
+
 @keyframes fade {
     0%   { opacity: 0; }
     100% { opacity: 1; }
@@ -22,7 +27,7 @@
 .slide div{
     position: absolute;
     bottom: 0;
-    background-color: #ff000087;
+    background-color: #fff;
     width: 100%;
     min-height: 44px;
     transition: min-height 0.5s;
@@ -36,9 +41,7 @@
     padding: 10px;
     transition: font-size 0.5s;
 }
-.slide div:hover p{
-    font-size: 3rem;
-}
+
 .prev , .next{
     position: absolute;
     background-color: #0009;
