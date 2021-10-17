@@ -30,18 +30,14 @@
     justify-content: center;
     align-items: center;
 }
-.slide div:hover{
-    min-height: 100%;
-}
+
 .slide div p{
     margin-bottom: 0;
     color: #fff;
     padding: 10px;
     transition: font-size 0.5s;
 }
-.slide div:hover p{
-    font-size: 3rem;
-}
+
 .prev , .next{
     position: absolute;
     background-color: #0009;
