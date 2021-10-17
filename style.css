@@ -9,10 +9,6 @@
     position: relative;
     animation: fade 0.5s;
 }
-}
-.slide div:hover{
-    min-height: 100%;
-}
 
 @keyframes fade {
     0%   { opacity: 0; }
@@ -35,6 +31,11 @@
     justify-content: center;
     align-items: center;
 
+  }
+.slide div:hover{
+    min-height: 100%;
+}
+    
 .slide div p{
     margin-bottom: 0;
     color: #fff;
