@@ -20,7 +20,7 @@ let goPrev = () =>{
 let active = 0;
 
 // timer is time slides
-let timer = 3000;
+let timer = 5000;
 
 let slideshow = document.querySelector(".slideshow");
 let slides = document.querySelectorAll(".slide");
