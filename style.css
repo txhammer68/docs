@@ -53,6 +53,15 @@
     left: 0;
     border-radius: 0 5px 5px 0;
 }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
 .next{
     right: 0;
     border-radius: 5px 0 0 5px;
