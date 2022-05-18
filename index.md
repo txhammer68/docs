@@ -12,6 +12,8 @@
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml#misc-plasma-qml-widgetscode)
 ### System monitor dashboard
+![G-mail](gmail.png)
+![Weather](weather1.png)
 ![System dashboard](images/dashboard.png)
 ### Web Search
 ![Web Search](images/search.png)
