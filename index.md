@@ -11,9 +11,11 @@
 [![Plasma Lockscreen](images/Screenshot_20211017_154639.png)](https://github.com/txhammer68/docs/blob/master/images/Screenshot_20211017_154639.png?raw=true "Custom Plasma Lockscreen")
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml#misc-plasma-qml-widgetscode)
-### System monitor dashboard
+### G-mail/Stocks/Sports stacked widget
 ![G-mail](gmail.png)
+### Weather Widget
 ![Weather](weather1.png)
+### System monitor dashboard
 ![System dashboard](images/dashboard.png)
 ### Web Search
 ![Web Search](images/search.png)
