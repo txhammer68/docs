@@ -1,0 +1,233 @@
+
+body {
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	color: white;
+	line-height: 100%;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	margin: 20px;
+	padding: 20px;
+	text-align: right;
+	font-family: "Arial";
+	color: white;
+	font-size: 24pt;
+}
+
+a, a:link, a:visited {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: orange;
+	text-decoration: none;
+	font-weight: bold;
+}
+.bg_img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+    
+}
+#front_div {
+	z-index: 0;
+}
+#back_div {
+	z-index: -1;
+}
+
+#image_container {
+	  height: 100%;
+	  width: 100%;
+	  top: 0px;
+	  left: 0px;
+	  position: fixed;
+	
+}
+.container-fluid {
+	height: 100%;
+	width: 100%;
+}
+
+#slide-title{
+	bottom: 30px;
+	right: 30px;
+	padding: 5px 50px 5px 50px;
+	width: 100%;
+	text-align: right;
+	font-family: "Calligraffitti";
+	color: white;
+	font-size: 64pt;
+}
+
+#countdown_box {
+	background-color: rgba(0,0,0,0);
+	position: fixed; 
+	bottom: 30px;
+	right: 30px;
+	padding: 5px 50px 5px 50px;
+	border: 0px solid black;
+	border-radius: 10px;
+	color: white;
+	font-family: "Asul";
+	font-size: 56pt;
+	text-shadow: 2px 2px black;
+}
+#countdown_text {
+	color: white;
+	font-family: "Asul";
+	font-size: 56pt;
+	text-shadow: 2px 2px black;
+}
+#CRLogo {
+	background-color: rgba(0,0,0,0);
+	border-top: 2px solid orange;			
+	padding: 10px;
+	border-radius: 0px;
+	position: fixed; 
+	top: 30px;
+	left: 30px;
+	width: 500px;
+}
+#quotebox {
+	background-color: rgba(0,0,0,0);
+	bottom: 30px;
+	right: 30px;
+	padding: 5px 50px 5px 50px;
+	width: 100%;
+	text-align: right;
+	font-family: "Calligraffitti";
+	color: white;
+	font-size: 64pt;
+}
+
+#CR {
+	font-family: "Asul";
+	color: orange;
+	font-size: 80pt;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	
+}
+div#imagelink {
+	background-color: rgba(0,0,0,0.3);
+	border: 0px solid black;
+	padding: 4px;
+	border-radius: 0px;
+	position: fixed; 
+	bottom: 0px;
+	right: 0px;
+	max-width: 300px;
+	
+}
+
+div#imagelink p {
+	text-align: center;
+	font-size: 12pt;
+	margin: 0px;
+	color: white;
+}
+
+#datestext {
+	text-align: right;
+	font-family: 'Calligraffitti';
+	font-size: 32pt;
+	font-style: italic;
+	font-weight: normal;
+	color: white;
+	text-shadow: 0px 0px 5px black;
+	display: none;
+}
+
+nav {
+    width:200px;
+    padding:0 0px 0 0px;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top:0;
+    right: 0;
+    height:100%;
+    margin:0 -160px 0 0px;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    transition: .5s ease-in;
+
+    
+}
+
+nav.menushow .menu-btn {
+    -webkit-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    transform: rotate(180deg) !important;
+
+}
+
+.menushow {
+    margin: 0;
+    box-shadow:0 0 50px 0 rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+nav ul {
+    margin:50px 0 0 0;
+    list-style: none;
+}
+
+nav a, .menu-btn a {
+    color:#FFF;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px 0px;
+    display: block;
+    -webkit-transition: .25s ease-in;
+    -moz-transition: .25s ease-in;
+    -o-transition: .25s ease-in;
+    -ms-transition: .25s ease-in;
+    transition: .25s ease-in;
+
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0);
+
+}
+
+.menu-btn {
+    position: absolute;
+    left:8px;
+    top:16px;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    transition: .5s ease-in;
+
+}
+
+.menu-btn a {
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+	text-shadow: 0px 0px 5px black;
+    width:30px;
+    height:30px;
+    padding:3px;
+}
+
+.menu-btn a:hover {
+	color: orange;
+    background: none;
+}
