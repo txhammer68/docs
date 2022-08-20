@@ -2,7 +2,7 @@
 
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
 [![Plasma desktop](/images/plasma-desktop1.png)](https://github.com/txhammer68/docs/blob/master/plasma-desktop1.png?raw=true "My Plasma Desktop")
-[![Plasma Lockscreen](/images/plasma-desktop1.png)](desktop.mp4)
+[![Plasma Lockscreen](/images/plasma-desktop1.png)](/images/desktop.mp4)
 
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10#custom-plasma-lockscreen-win-10-style)
