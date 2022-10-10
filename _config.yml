@@ -15,10 +15,4 @@ github: https://github.com/txhammer68
 github_username: txhammer68
 repository: txhammer68
 navbar-links:
-About Me: "https://github.com/txhammer68"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://txhammer68.github.io/docs/"
-  Help me out: "https://www.paypal.com/paypalme/taylorcm68"
-
+paypal:"https://www.paypal.com/paypalme/taylorcm68"
