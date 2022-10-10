@@ -1,16 +1,15 @@
 # Customizing KDE Plasma Desktop
 
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
-[![Plasma desktop](/images/plasma-desktop1.png)](https://github.com/txhammer68/docs/blob/master/plasma-desktop1.png?raw=true "My Plasma Desktop")
+[![Plasma desktop](/images/plasma-desktop1.png)]
 [![Plasma Lockscreen](/images/plasma-desktop1.png)](/images/desktop.mp4)
 
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10#custom-plasma-lockscreen-win-10-style)
 
-* Change location of clock/date to lower right corner
-* Display current weather conditions,current calendar events
+* Display current weather conditions,calendar events
 
-[![Plasma Lockscreen](images/lockscreen1.png)](https://github.com/txhammer68/docs/blob/master/images/lockscreen1.png?raw=true "Custom Plasma Lockscreen")
+[![Plasma Lockscreen](images/lockscreen1.png)]
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml#misc-plasma-qml-widgetscode)
 ### G-mail/Stocks/Sports stacked widget
@@ -25,8 +24,9 @@
 ![System Menu](images/system-menu.png)
 
 ## Web Apps
-* Create web app shortcuts for your favorite web apps, spotify,gmail,google maps,etc...
+* Create web app shortcuts for your favorite web apps, spotify,netflix,gmail,etc...
 * Using chrome or firefox and xprop to determine window class info
+* Cleaner look  - no toolbars or url location
 * create a desktop entry in $HOME/.local/share/applications/
 * to have it use its own icon instead of the web browser icon use xprop to determine window class
 * run the desktop entry created and then in in terminal run xprop and click the window title
@@ -84,6 +84,7 @@ Variant=kubuntu edition
 * Incorporate Google type notifications into Plasma notifications, sports,news,stocks
   * Using Node JS to get info and notify timer events
 * Wallpaper slideshow to use picture metadata exif info to show location/description of photo on wallpaper <br>
-Like my work ? Just hit the lotto? help me out dontate to my account.<br>
+<br>
+Like my work ? Just won the lotto? help me out, dontate to my account.<br>
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/taylorcm68)
 
