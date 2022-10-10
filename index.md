@@ -14,9 +14,9 @@
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml#misc-plasma-qml-widgetscode)
 ### G-mail/Stocks/Sports stacked widget
-![G-mail](gmail.png)
+![G-mail](images/gmail.png)
 ### Weather Widget
-![Weather](weather1.png)
+![Weather](images/weather.png)
 ### System monitor dashboard
 ![System dashboard](images/dashboard.png)
 ### Web Search
