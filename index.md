@@ -83,7 +83,7 @@ Variant=kubuntu edition
 ## Ideas for Plasma
 * Incorporate Google type notifications into Plasma notifications, sports,news,stocks
   * Using Node JS to get info and notify timer events
-* Wallpaper slideshow to use picture metadata exif info to show location/description of photo on wallpaper
-Like my work ? Just hit the lotto? help me out dontate to my account.
+* Wallpaper slideshow to use picture metadata exif info to show location/description of photo on wallpaper <br>
+Like my work ? Just hit the lotto? help me out dontate to my account.<br>
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/taylorcm68)
 
