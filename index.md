@@ -1,11 +1,11 @@
 # Customizing KDE Plasma Desktop
 
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
-[![Plasma desktop](/images/plasma-desktop1.png)]
+![Plasma desktop](/images/plasma-desktop1.png)
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10#custom-plasma-lockscreen-win-10-style)
 * Display current weather conditions,calendar events
-[![Plasma lockscreen](/images/lockscreen.png)]
+![Plasma lockscreen](/images/lockscreen.png)
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml#misc-plasma-qml-widgetscode)
 ### G-mail/Stocks/Sports stacked widget
