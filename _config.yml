@@ -6,7 +6,7 @@ logo: images/yosimte-sam3.png
 name: TxHammer - DigiTech
 author: TxHammer
 title: TxHammer
-description: Hacking the Web,JS,QML
+description: Hacking the Web
 url: https://github.com/txhammer68
 # baseurl: ./
 markdown: kramdown
