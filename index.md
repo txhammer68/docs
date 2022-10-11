@@ -80,7 +80,7 @@ Variant=kubuntu edition
   * Using Node JS to get info and notify timer events
 * Wallpaper slideshow to use picture metadata exif info to show location/description of photo on wallpaper <br>
 <br>
-Like my work ? Just won the lotto? help me out,[dontate to my PayPal account.](https://paypal.me/taylorcm68)<br>
+Like my work ? Just won the lotto? help me out,[dontate to my PayPal account](https://paypal.me/taylorcm68)
 <a href="https://paypal.me/taylorcm68">
 <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg" width="24" height="24"/>
 </a>
