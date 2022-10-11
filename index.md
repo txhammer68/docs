@@ -81,7 +81,7 @@ Variant=kubuntu edition
 * Wallpaper slideshow to use picture metadata exif info to show location/description of photo on wallpaper <br>
 <br>
 Like my work ? Just won the lotto?<br>
-[Dontate to my PayPal account](https://paypal.me/taylorcm68)
+[Donate to my PayPal Account](https://paypal.me/taylorcm68) 
 <a href="https://paypal.me/taylorcm68">
 <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg" width="24" height="24"/>
 </a>
