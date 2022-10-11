@@ -73,12 +73,21 @@ Variant=kubuntu edition
 ![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
 ## [KDE Store](https://store.kde.org/browse/cat/) 
-* Central place to get custom themes for KDE Plasma 
-
-## Ideas for Plasma
-* Incorporate Google type notifications into Plasma notifications, sports,news,stocks
-  * Using Node JS to get info and notify timer events
-* Wallpaper slideshow to use picture metadata exif info to show location/description of photo on wallpaper <br>
+* Central place to get custom themes for KDE Plasma
+* 
+## Notes for Desktop Setup
+* Icons - Papirus
+* Copy LnF Breeze Theme to MyBreeze
+  * For changing Lockscreen/Logout
+  * Copy Lockscreen/Logout to new theme folder
+  * Change Global theme to MyBreeze
+* Application Style - kvantum / Arc
+* Plasma Style - Fluent Round Dark
+* Colors - Arc
+* Fonts - SF Pro Display
+* Window Decorations  - Breeze
+* Cursors - Breeze Light
+* SDDM - MyBreeze
 <br>
 Like my work? Just won the lotto?
 
