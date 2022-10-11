@@ -82,7 +82,5 @@ Variant=kubuntu edition
 <br>
 Like my work ? Just won the lotto? help me out, dontate to my PayPal account.<br>
 <a href="https://paypal.me/taylorcm68">
-<img src="https://www.qries.com/images/banner_logo.png](https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg" 
-     width="64" 
-     height="64">
+<img src="https://www.qries.com/images/banner_logo.png](https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg">
 </a>
