@@ -1,7 +1,7 @@
 # Customizing KDE Plasma Desktop
 
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
-![Plasma desktop](/images/plasma-desktop1.png)
+![](images/plasma-desktop1.png)
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10#custom-plasma-lockscreen-win-10-style)
 * Display current weather conditions,calendar events
@@ -11,14 +11,13 @@
 ### G-mail/Stocks/Sports stacked widget
 [![G-mail](images/gmail.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/G-Mail.zip)
 ### Weather Widget
-![Weather](images/weather.png)
+[![Weather](images/weather.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/DarkSky.zip)
 ### System monitor dashboard
-![System dashboard](images/dashboard.png)
+[![Dashboard](images/dashboard.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/SystemDashboard.zip)
 ### Web Search
-![Web Search](images/search.png)
+[![Search](images/search.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/org.kde.search.zip)
 ### System menu
-![System Menu](images/system-menu.png)
-
+[![System Menu](images/system-menu.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/system-menu.zip)
 ## Web Apps
 * Create web app shortcuts for your favorite web apps, spotify,netflix,gmail,etc...
 * Using chrome or firefox and xprop to determine window class info
