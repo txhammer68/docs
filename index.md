@@ -81,4 +81,6 @@ Variant=kubuntu edition
 * Wallpaper slideshow to use picture metadata exif info to show location/description of photo on wallpaper <br>
 <br>
 Like my work? Just won the lotto?
+
+
 [Donate to my PayPal Account](https://paypal.me/taylorcm68)
