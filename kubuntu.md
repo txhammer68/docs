@@ -57,7 +57,7 @@ run `sudo update-grub` after to apply changes<br>
  
 Next options for the audio and video driver, my sound pops everytime a notification sound or music starts playing.
 I discovered this is due to linux power management features of the audio driver.
-This can be resolved by creating a config file within `/etc/modprobe.d/audio.conf`<br>
+This can be resolved by creating a config file within<br> `/etc/modprobe.d/audio.conf`<br>
 `options snd_hda_intel power_save=0 power_save_controller=N`<br>
  
 Next is the Intel GPU, again create a file in<br>
