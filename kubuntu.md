@@ -15,7 +15,7 @@ and is now a viable alternative to Windows.
 This is a collection of info i have learned over the years of running Linux on my home PC.
 References to Arch wiki are useful, even though we are running Ubuntu based distro, many of the principles apply to kubuntu setup.
 
-Some useful links for optimizing system performance
+Some useful links for optimizing system performance<br>
 [Arch](https://wiki.archlinux.org/title/improving_performance)<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 
@@ -33,7 +33,7 @@ Install as usual after creating partitions.
 
 Once you reboot after install, edit the file in /etc/fstab
 
-The fstab file configures the mounted drives/partitions
+The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 You will need the UUID for each drive/partiton on your system, as you will be mounting with custom parameters.
 Launch konsole and run lsblk -f  to get the UUID of your drives, and replace the ones here with yours.<br>
 `UUID= /               ext4    auto,noatime,errors=remount-ro 0       1`<br>
