@@ -53,6 +53,7 @@ speeds up reads/writes and helps preserve SSD lifespan.
  `GRUB_CMDLINE_LINUX_DEFAULT=`
  We are going to add the option mitigations=off, this will disable the spectre vulnerability protection, which slows down the cpu.
  As I am not running a web server, not too worried about this.
+ run `sudo update-grub` after to apply changes<br>
  
  Next options for the audio and video driver, my sound pops everytime a notification sound or music starts playing.
  I discovered this is due to linux power management features of the audio driver.
