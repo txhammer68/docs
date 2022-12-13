@@ -29,7 +29,8 @@ Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part
 * Root system partition remaining space type ext4 /dev/sda2
 * Swap space partiton 16GB type swap /dev/sdb1
 * Home partition/drive remaining space ssd /dev/sdb2
-* Data drive 4TB hdd ext4 dev/sdc1
+* Data drive 4TB hdd ext4 /dev/sdc1
+
 Install as usual after creating partitions.
 
 Once you reboot after install, edit the file in /etc/fstab<br>
@@ -65,7 +66,7 @@ Next is the Intel GPU, again create a file in<br>
 modeset tells the system to load the GPU driver at bootup
  
 After creating these files run `sudo update-initramfs -u`<br>
-This wil update boot process to include the changes.
+This wil update boot image to include the changes.
  
 [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 Remove snapd, ubuntu wants us to use snap, i do not care for it, [here are the steps](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)
