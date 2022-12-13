@@ -15,15 +15,19 @@ and is now a viable alternative to Windows.
 This is a collection of info i have learned over the years of running Linux on my home PC.
 References to Arch wiki are useful, even though we are running Ubuntu based distro, many of the principles apply to kubuntu setup.
 
-When installing kubuntu its best to partition drives manually to put /home on a seperate drive/partition.
-This is usefull to isolate desktop user settings from system drive, also when reinstalling, to retain user settings on next install, 
-and performance advntages for reading config settings, as they are all stored in the user's home directory.
+Some useful links for optimizing system performance
+[Arch](https://wiki.archlinux.org/title/improving_performance)<br>
+[Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 
-Create [partitons](https://wiki.archlinux.org/title/partitioning) for each part of the install process
+When installing kubuntu its best to partition drives manually to put /home on a separate drive/partition.
+This is usefull to isolate desktop user settings from system drive, also when reinstalling, to retain user settings on next install, 
+and performance advantages for reading config settings, as they are all stored in the user's home directory.
+
+Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part of the install process
 * EFI partition for UEFI Boot drive 512MB type fat32 /dev/sda1
 * Root system partition remaining space type ext4 /dev/sda2
 * Swap space partiton 16GB type swap /dev/sdb1
-* Home partiton/drive reamining space ssd /dev/sdb2
+* Home partition/drive remaining space ssd /dev/sdb2
 * Data drive 4TB hdd ext4 dev/sdc1
 Install as usual after creating partitions.
 
@@ -52,7 +56,7 @@ speeds up reads/writes and helps preserve SSD lifespan.
  
  Next options for the audio and video driver, my sound pops everytime a notification sound or music starts playing.
  I discovered this is due to linux power management features of the audio driver.
- This can ro reolved by creating a config file within `/etc/modprobe.d/audio.conf`<br>
+ This can be resolved by creating a config file within `/etc/modprobe.d/audio.conf`<br>
  `options snd_hda_intel power_save=0 power_save_controller=N`<br>
  
  Next is the Intel GPU, again create a file in<br>
@@ -63,14 +67,9 @@ speeds up reads/writes and helps preserve SSD lifespan.
  After creating these files run `sudo update-initramfs -c -k $(uname -r)`<br>
  This wil update boot process to include the changes.
  
+ [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
  Remove snapd, ubuntu wants us to use snap, i do not care for it, [here are the steps](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)
  to remove snapd and install firefox as a ppa.<br>
  [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
  Install [xanmod kernel](https://xanmod.org/)<br>
  Install [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time by 5 secs.<br>
- 
- 
- 
- 
- 
- 
