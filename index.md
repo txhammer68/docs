@@ -1,5 +1,5 @@
 # Customizing KDE Plasma Desktop
-
+## [Optimizing Kubuntu](kubuntu.md)<br>
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
 ![](images/plasma-desktop1.png)
 
@@ -89,4 +89,3 @@ Variant=kubuntu edition
 * Cursors - Breeze Light
 * SDDM - MyBreeze
 <br>
-[Optimizing Kubuntu](./kubuntu.md)<br>
