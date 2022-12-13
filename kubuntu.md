@@ -17,7 +17,7 @@ References to Arch wiki are useful, even though we are running Ubuntu based dist
 
 Some useful links for optimizing system performance<br>
 [Arch](https://wiki.archlinux.org/title/improving_performance)<br>
-[KDE](https://wiki.archlinux.org/title/KDE)
+[KDE](https://wiki.archlinux.org/title/KDE)<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 
 When installing kubuntu its best to partition drives manually to put /home on a separate drive/partition.
