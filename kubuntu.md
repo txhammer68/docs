@@ -10,7 +10,7 @@
 * Intel Audio
 * 1gb Intel Ethernet
 
-I started using Linux about 5 years ago, coming from Windows it was quite a learning curve, but Linux as come a long ways,
+I started using Linux about 5 years ago, coming from Windows it was quite a learning curve, but Linux has come a long ways,
 and is now a viable alternative to Windows.
 This is a collection of info i have learned over the years of running Linux on my home PC.
 References to Arch wiki are useful, even though we are running Ubuntu based distro, many of the principles apply to kubuntu setup.
@@ -32,13 +32,13 @@ Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part
 * Data drive 4TB hdd ext4 dev/sdc1
 Install as usual after creating partitions.
 
-Once you reboot after install, edit the file in /etc/fstab
-
+Once you reboot after install, edit the file in /etc/fstab<br>
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 You will need the UUID for each drive/partiton on your system, as you will be mounting with custom parameters.
 Launch konsole and run lsblk -f  to get the UUID of your drives, and replace the ones here with yours.<br>
-Root / `UUID= /               ext4    auto,noatime,errors=remount-ro 0       1`<br>
-/home  `UUID= /home           ext4    auto,noatime,nouser       0       2`<br>
+Root / `UUID="" /               ext4    auto,noatime,errors=remount-ro 0       1`<br>
+home   `UUID="" /home           ext4    auto,noatime,nouser       0       1`<br>
+Data   `UUID="" /home/Data      ext4    auto,noatime,nouser       0       1`<br>
 Add `noatime` to each partition mount point.
 `noatime` prevents system from marking every file access date, this<br>
 speeds up reads/writes and helps preserve SSD lifespan.
@@ -64,7 +64,7 @@ Next is the Intel GPU, again create a file in<br>
 `options i915 modeset=1  mitigations=off fastboot=1 enable_fbc=1`<br>
 modeset tells the system to load the GPU driver at bootup
  
-After creating these files run `sudo update-initramfs -c -k $(uname -r)`<br>
+After creating these files run `sudo update-initramfs -u`<br>
 This wil update boot process to include the changes.
  
 [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
