@@ -1,6 +1,6 @@
 ## Optimizing kubuntu desktop
 ## Based on Kubuntu 22.04.1
-## My system specs
+## My system specs, desktop tower PC, circa 2012
 * Intel Haswell 3.4Ghz
 * 16GB RAM
 * /dev/sda 120GB SSD - Root partition
