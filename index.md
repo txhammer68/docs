@@ -89,4 +89,4 @@ Variant=kubuntu edition
 * Cursors - Breeze Light
 * SDDM - MyBreeze
 <br>
-[Optimizing Kubuntu](kubuntu.md)<br>
+[Optimizing Kubuntu](./kubuntu.md)<br>
