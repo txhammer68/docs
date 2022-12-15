@@ -39,13 +39,13 @@ GPU `/etc/modprobe.d/intel.conf`<br>
 After creating these files run `sudo update-initramfs -u`<br>
 This wil update boot image to include the changes.<br>
 
-##### Disable some uneeded system services<br>
+### Disable some uneeded system services<br>
 Disable ModemManager If you do not have a mobile broadband interface, you do not need this.<br>
 ```
 sudo systemctl disable ModemManager.service
 sudo systemctl mask ModemManager.service
 ```
-<br>fwupd is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines. <br>
+<br>fwupd is a daemon allowing you to update some devices' firmware, including UEFI for several machines. <br>
 Remove fwupd from boot<br>
 ```
 sudo systemctl disable fwupd.service
@@ -115,7 +115,10 @@ Pin-Priority: -1
 sudo apt update
 sudo apt install firefox
 ```
-
+### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time by 5 secs.<br>
+```
+ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=a37d3f86-6da8-416b-b831-6e2e50378228"
+ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=a37d3f86-6da8-416b-b831-6e2e50378228 3"
+```
 #### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
 #### [xanmod kernel](https://xanmod.org/)<br>
-#### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time by 5 secs.<br>
