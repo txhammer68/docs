@@ -71,7 +71,7 @@ Disable LVM<br>
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ````
-#### <br>[Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
+#### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
 `ping -s 1472 -c1 espn.com`
 <br>Retest changing packet size until 0% packet loss<br>
