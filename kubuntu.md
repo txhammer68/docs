@@ -116,6 +116,7 @@ sudo apt update
 sudo apt install firefox
 ```
 ### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time by 5 secs.<br>
+`sudo bootctl install --path=/boot/efi`<br>
 ```
 ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=a37d3f86-6da8-416b-b831-6e2e50378228"
 ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=a37d3f86-6da8-416b-b831-6e2e50378228 3"
