@@ -1,28 +1,10 @@
 ## Optimizing kubuntu desktop
-## Based on Kubuntu 22.04.1
-## My system specs, desktop tower PC, circa 2012
-* Intel Haswell CPU 4 cores - 3.4Ghz
-* 16GB RAM
-* /dev/sda 120GB SSD - Root partition
-* /dev/sdb 120GB SSD - Home partition
-* /dev/sdc 4TB HDD   - Data Drive, music,movies,pics
-* GPU Intel built-in
-* Intel Audio
-* 1gb Intel Ethernet
 
-I started using Linux about 5 years ago, coming from Windows it was quite a learning curve, but Linux has come a long ways,
-and is now a viable alternative to Windows.
-This is a collection of info i have learned over the years of running Linux on my home PC.
-References to Arch wiki are useful, even though we are running Ubuntu based distro, many of the principles apply to kubuntu setup.
 
 Some useful links for optimizing system performance<br>
 [Arch](https://wiki.archlinux.org/title/improving_performance)<br>
 [KDE](https://wiki.archlinux.org/title/KDE)<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
-
-When installing kubuntu its best to partition drives manually to put /home on a separate drive/partition.
-This is usefull to isolate desktop user settings from system drive, also when reinstalling, to retain user settings on next install, 
-and performance advantages for reading config settings, as they are all stored in the user's home directory.
 
 Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part of the install process
 * EFI partition for UEFI Boot drive 512MB type fat32 /dev/sda1
@@ -33,40 +15,63 @@ Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part
 
 Install as usual after creating partitions.
 
-Once you reboot after install, edit the file in /etc/fstab<br>
+Edit the file in /etc/fstab<br>
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 You will need the UUID for each drive/partiton on your system, as you will be mounting with custom parameters.
 Launch konsole and run lsblk -f  to get the UUID of your drives, and replace the ones here with yours.<br>
 Root / `UUID="" /               ext4    auto,noatime,errors=remount-ro 0       1`<br>
 home   `UUID="" /home           ext4    auto,noatime,nouser       0       1`<br>
 Data   `UUID="" /home/Data      ext4    auto,noatime,nouser       0       1`<br>
-Add `noatime` to each partition mount point.
-`noatime` prevents system from marking every file access date, this<br>
-speeds up reads/writes and helps preserve SSD lifespan.
- 
-If you have enough RAM > 8GB, then use tmpfs, this will buffer system files in RAM to help speed up system.
-Here is the entry for tmpfs in fstab, be default it will use 50% of your available RAM.<br>
 `tmpfs                                     /tmp           tmpfs   auto,noatime,mode=1777 0 0`<br>
 
 Grub options
-Within the file /etc/default/grub, find the line
-`GRUB_CMDLINE_LINUX_DEFAULT=`
-We are going to add the option mitigations=off, this will disable the spectre vulnerability protection, which slows down the cpu.
-As I am not running a web server, not too worried about this.
-run `sudo update-grub` after to apply changes<br>
- 
-Next options for the audio and video driver, my sound pops everytime a notification sound or music starts playing.
-I discovered this is due to linux power management features of the audio driver.
-This can be resolved by creating a config file within<br> `/etc/modprobe.d/audio.conf`<br>
+/etc/default/grub
+mitigations=off loglevel=3
+
+Modprobe
+/etc/modprobe.d
+Audio `/etc/modprobe.d/audio.conf`<br>
 `options snd_hda_intel power_save=0 power_save_controller=N`<br>
- 
-Next is the Intel GPU, again create a file in<br>
-`/etc/modprobe.d/intel.conf`<br>
+
+GPU `/etc/modprobe.d/intel.conf`<br>
 `options i915 modeset=1  mitigations=off fastboot=1 enable_fbc=1`<br>
-modeset tells the system to load the GPU driver at bootup
  
 After creating these files run `sudo update-initramfs -u`<br>
 This wil update boot image to include the changes.
+
+Disable ModemManager If you do not have a mobile broadband interface, you do not need this.
+`
+sudo systemctl disable ModemManager.service
+sudo systemctl mask ModemManager.service
+`
+
+fwupd is a simple daemon allowing you to update some devices' firmware, including UEFI for several machines. 
+Remove fwupd from boot<br>
+`
+sudo systemctl disable fwupd.service
+sudo systemctl mask fwupd.service
+`
+GPU-Manager is software that creates a xorg.conf for you. So running this in every boot is just overkill. You only need to run this if you change your GPU.
+`
+sudo systemctl disable gpu-manager.service
+sudo systemctl mask gpu-manager.service
+`
+Apt-daily-upgrade solves long boot up time with apt-daily-upgrade.
+`
+sudo systemctl disable apt-daily.service
+sudo systemctl disable apt-daily.timer
+sudo systemctl mask apt-daily.timer
+sudo systemctl disable apt-daily-upgrade.timer
+sudo systemctl disable apt-daily-upgrade.service
+sudo systemctl mask apt-daily-upgrade.service
+`
+
+Logical Volume Manager (LVM) is a device mapper framework that provides logical volume management.
+Remove LVM
+`
+sudo systemctl disable lvm2-monitor.service
+sudo systemctl mask lvm2-monitor.service
+`
  
 [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 Remove snapd, ubuntu wants us to use snap, i do not care for it, [here are the steps](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)
