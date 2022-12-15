@@ -116,10 +116,11 @@ sudo apt update
 sudo apt install firefox
 ```
 ### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time by 5 secs.<br>
+[post=kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
 `sudo bootctl install --path=/boot/efi`<br>
 ```
-ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=a37d3f86-6da8-416b-b831-6e2e50378228"
-ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=a37d3f86-6da8-416b-b831-6e2e50378228 3"
+ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123"
+ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123 3"
 ```
 #### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
 #### [xanmod kernel](https://xanmod.org/)<br>
