@@ -5,6 +5,7 @@ Some useful links for optimizing system performance<br>
 [Arch](https://wiki.archlinux.org/title/improving_performance)<br>
 [KDE](https://wiki.archlinux.org/title/KDE)<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
+[Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
 
 Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part of the install process
 * EFI partition for UEFI Boot drive 512MB type fat32 /dev/sda1
