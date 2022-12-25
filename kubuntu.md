@@ -128,7 +128,7 @@ Pin-Priority: -1
 sudo apt update
 sudo apt install firefox
 ```
-### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time by 5 secs.<br>
+### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
 #### [post=kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
 `sudo bootctl install --path=/boot/efi`<br>
 ```
