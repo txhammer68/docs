@@ -82,7 +82,7 @@ Disable LVM<br>
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ````
-#### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
+##### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
 `ping -s 1472 -c1 espn.com`
 <br>Retest changing packet size until 0% packet loss<br>
@@ -110,7 +110,7 @@ nmcli networking on
 resolvectl
 systemctl status systemd-resolved
 ```
-#### [Remove snapd](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)<br>
+##### [Remove snapd](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)<br>
 ```
 snap list
 sudo systemctl disable snapd.service
@@ -126,7 +126,7 @@ sudo rm -rf /var/cache/snapd/
 sudo apt autoremove --purge snapd
 rm -rf ~/snap
 ```
-#### Install Firefox PPA
+##### Install Firefox PPA
 ```
 nano /etc/apt/preferences.d/firefox-no-snap
 Package: firefox*
@@ -138,13 +138,13 @@ Pin-Priority: -1
 sudo apt update
 sudo apt install firefox
 ```
-### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
-#### [post=kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
+##### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
+##### [post=kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
 `sudo bootctl install --path=/boot/efi`<br>
 Root flags are same as grub options in /etc/default/grub <br>
 ```
 ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123"
 ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123 3"
 ```
-#### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
-#### [xanmod kernel](https://xanmod.org/)<br>
+##### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
+##### [xanmod kernel](https://xanmod.org/)<br>
