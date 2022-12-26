@@ -18,7 +18,7 @@ Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part
 Install as usual after creating partitions.
 
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
-Obtain UUID for each drive/partiton on system.
+Obtain UUID for each drive/partiton on system.<br>
 `lsblk -f`<br>
 ##### /etc/fstab <br>
 ``` 
