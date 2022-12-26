@@ -43,10 +43,10 @@ sudo tune2fs -O fast_commit /dev/sdc2
 
 ### Modprobe<br>
 /etc/modprobe.d<br>
-Audio `/etc/modprobe.d/audio.conf`<br>
-`options snd_hda_intel power_save=0 power_save_controller=N`<br>
+Audio /etc/modprobe.d/audio.conf
+`options snd_hda_intel power_save=0 power_save_controller=N`
 
-GPU `/etc/modprobe.d/intel.conf`<br>
+GPU /etc/modprobe.d/intel.conf
 `options i915 modeset=1  mitigations=off fastboot=1 enable_fbc=1`<br>
  
 After creating these files run <br>
