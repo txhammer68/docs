@@ -7,6 +7,8 @@ Some useful links for optimizing system performance<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 [Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
 
+Optimized for Intel Haswell CPU,  Intel GPU, 16GB RAM. 2 SSD's - 120GB, 4TB HDD, 10Mbs Internet
+
 Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part of the install process
 * EFI partition for UEFI Boot drive 512MB type fat32 /dev/sda1
 * Root system partition remaining space type ext4 /dev/sda2
