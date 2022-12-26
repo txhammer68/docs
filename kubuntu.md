@@ -153,6 +153,10 @@ sudo apt install firefox
 Update systemd-boot after kernel updates
 `sudo bootctl install --path=/boot/efi`<br>
 Root flags are same as grub options in /etc/default/grub <br>
+After install and setup of systemd-boot
+`sudo update-initramfs -u`<br>
+This wil update systemd-boot config files.<br>
+Reboot.<br>
 ```
 ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123"
 ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123 3"
