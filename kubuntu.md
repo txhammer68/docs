@@ -41,6 +41,7 @@ Enable fast_commit journal option speed up FS writes <br>
 sudo tune2fs -O fast_commit /dev/sda2
 sudo tune2fs -O fast_commit /dev/sdc2
 ```
+Verify `sudo tune2fs -l /dev/sda2 | grep features`<br>
 ### Grub options<br>
 /etc/default/grub<br>
 `mitigations=off loglevel=3`
