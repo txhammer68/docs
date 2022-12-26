@@ -38,7 +38,7 @@ sudo tune2fs -O fast_commit /dev/sda2
 sudo tune2fs -O fast_commit /dev/sdc2
 ```
 ### Grub options<br>
-/etc/default/grub
+/etc/default/grub<br>
 `mitigations=off loglevel=3`
 
 ### Modprobe<br>
