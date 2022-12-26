@@ -28,7 +28,6 @@ Data   UUID="" /home/Data      ext4    auto,noatime,nouser            0  1
 SWAP   UUID="" swap            swap    sw                             0  0
 tmpfs          /tmp            tmpfs   auto,noatime,mode=1777         0  0
 ```
-<br>
 ##### EXT4 options<br>
 Enable fast_commit journal option speed up FS writes <br>
 ```
@@ -47,7 +46,8 @@ Audio `/etc/modprobe.d/audio.conf`<br>
 GPU `/etc/modprobe.d/intel.conf`<br>
 `options i915 modeset=1  mitigations=off fastboot=1 enable_fbc=1`<br>
  
-After creating these files run `sudo update-initramfs -u`<br>
+After creating these files run <br>
+`sudo update-initramfs -u`<br>
 This wil update boot image to include the changes.<br>
 
 ### Disable some uneeded system services<br>
@@ -141,6 +141,7 @@ sudo apt install firefox
 ### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
 #### [post=kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
 `sudo bootctl install --path=/boot/efi`<br>
+Root flags are same as grub options in /etc/default/grub <br>
 ```
 ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123"
 ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123 3"
