@@ -21,11 +21,12 @@ Install as usual after creating partitions.
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 You will need the UUID for each drive/partiton on your system, as you will be mounting with custom parameters.
 Launch konsole and run lsblk -f  to get the UUID of your drives, and replace the ones here with yours.<br>
-``` Root / `UUID="" /          ext4    auto,noatime,errors=remount-ro 0       1
-home   UUID="" /home           ext4    auto,noatime,nouser            0       1
-Data   UUID="" /home/Data      ext4    auto,noatime,nouser            0       1
-SWAP   UUID="" swap            swap    sw                             0       0
-tmpfs                                     /tmp           tmpfs   auto,noatime,mode=1777 0 0
+``` 
+Root / `UUID="" /              ext4    auto,noatime,errors=remount-ro 0  1
+home   UUID="" /home           ext4    auto,noatime,nouser            0  1
+Data   UUID="" /home/Data      ext4    auto,noatime,nouser            0  1
+SWAP   UUID="" swap            swap    sw                             0  0
+tmpfs          /tmp            tmpfs   auto,noatime,mode=1777         0  0
 ```
 <br>
 ##### EXT4 options
