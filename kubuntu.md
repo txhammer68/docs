@@ -30,7 +30,7 @@ tmpfs          /tmp            tmpfs   auto,noatime,mode=1777         0  0
 ```
 <br>
 ##### EXT4 options <br>
-* Enable fast_commit journal option speed up FS writes<br>
+* Enable fast_commit journal option speed up FS writes <br>
 `sudo tune2fs -O fast_commit /dev/sda2`
 `sudo tune2fs -O fast_commit /dev/sdc2`
 
