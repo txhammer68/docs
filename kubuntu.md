@@ -1,13 +1,12 @@
 ## Optimizing kubuntu desktop
 
-
 Some useful links for optimizing system performance<br>
 [Arch](https://wiki.archlinux.org/title/improving_performance)<br>
 [KDE](https://wiki.archlinux.org/title/KDE)<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 [Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
 
-Optimized for Intel Haswell CPU,  Intel GPU, 16GB RAM. 2 SSD's - 120GB, 4TB HDD, 10Mbs Internet
+My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, 2 SSD's - 120GB, 4TB HDD, 10Mbs Internet
 
 Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part of the install process
 * EFI partition for UEFI Boot drive 512MB type fat32 /dev/sda1
@@ -22,10 +21,17 @@ Install as usual after creating partitions.
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 You will need the UUID for each drive/partiton on your system, as you will be mounting with custom parameters.
 Launch konsole and run lsblk -f  to get the UUID of your drives, and replace the ones here with yours.<br>
-Root / `UUID="" /               ext4    auto,noatime,errors=remount-ro 0       1`<br>
-home   `UUID="" /home           ext4    auto,noatime,nouser       0       1`<br>
-Data   `UUID="" /home/Data      ext4    auto,noatime,nouser       0       1`<br>
-`tmpfs                                     /tmp           tmpfs   auto,noatime,mode=1777 0 0`<br>
+``` Root / `UUID="" /          ext4    auto,noatime,errors=remount-ro 0       1
+home   UUID="" /home           ext4    auto,noatime,nouser            0       1
+Data   UUID="" /home/Data      ext4    auto,noatime,nouser            0       1
+SWAP   UUID="" swap            swap    sw                             0       0
+tmpfs                                     /tmp           tmpfs   auto,noatime,mode=1777 0 0
+```
+<br>
+##### EXT4 options
+* Enable fast_commit journal option speed up FS writes
+`sudo tune2fs -O fast_commit /dev/sda2`
+`sudo tune2fs -O fast_commit /dev/sdc2`
 
 ##### Grub options<br>
 /etc/default/grub
