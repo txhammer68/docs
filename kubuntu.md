@@ -29,13 +29,12 @@ SWAP   UUID="" swap            swap    sw                             0  0
 tmpfs          /tmp            tmpfs   auto,noatime,mode=1777         0  0
 ```
 <br>
-##### EXT4 options <br>
-* Enable fast_commit journal option speed up FS writes <br>
+##### EXT4 options<br>
+Enable fast_commit journal option speed up FS writes <br>
 ```
 sudo tune2fs -O fast_commit /dev/sda2
 sudo tune2fs -O fast_commit /dev/sdc2
 ```
-
 ##### Grub options<br>
 /etc/default/grub
 `mitigations=off loglevel=3`
