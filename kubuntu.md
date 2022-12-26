@@ -8,6 +8,10 @@ Some useful links for optimizing system performance<br>
 
 My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, 2 SSD's - 120GB, 4TB HDD, 10Mbs Internet
 
+<picture>
+  <img alt="system" src="system.png" width="60%">
+</picture> <br>
+
 ### Pre Install Setup
 
 Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part of the install process
