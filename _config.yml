@@ -1,7 +1,9 @@
+remote_theme: pages-themes/midnight@v0.2.0
 # theme: jekyll-theme-minimal
-remote_theme: chrisrhymes/bulma-clean-theme
+# remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/chalk
 # theme: txhammer68/myweb
+#  https://drjekyllthemes.github.io/
 logo: images/yosimte-sam3.png
 name: TxHammer - DigiTech
 author: TxHammer
