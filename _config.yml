@@ -1,5 +1,5 @@
-# remote_theme: pages-themes/midnight@v0.2.0
-remote_theme: streetturtle/jekyll-clean-dark
+remote_theme: pages-themes/midnight@v0.2.0
+# remote_theme: streetturtle/jekyll-clean-dark
 # blog_theme: dark # Or use dark
 # theme: jekyll-theme-minimal
 # remote_theme: chrisrhymes/bulma-clean-theme
