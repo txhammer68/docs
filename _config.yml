@@ -1,7 +1,8 @@
-remote_theme: pages-themes/midnight@v0.2.0
+# remote_theme: pages-themes/midnight@v0.2.0
+remote_theme: pages-themes/forty
 # theme: jekyll-theme-minimal
 # remote_theme: chrisrhymes/bulma-clean-theme
-# theme: txhammer68/chalk
+# theme: txhammer68/forty
 # theme: txhammer68/myweb
 # https://pages.github.com/themes/
 #  https://drjekyllthemes.github.io/
