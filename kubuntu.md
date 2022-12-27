@@ -26,10 +26,12 @@ Reboot.
 ### fstab
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 Obtain UUID for each drive/partiton on system.<br>
-`lsblk -f`<br>
+```
+lsblk -f
+```
 ##### /etc/fstab <br>
 ``` 
-Root / `UUID="" /              ext4    auto,noatime,errors=remount-ro 0  1
+Root   UUID="" /               ext4    auto,noatime,errors=remount-ro 0  1
 home   UUID="" /home           ext4    auto,noatime,nouser            0  1
 Data   UUID="" /home/Data      ext4    auto,noatime,nouser            0  1
 SWAP   UUID="" swap            swap    sw                             0  0
@@ -41,26 +43,34 @@ Enable fast_commit journal option speed up FS writes <br>
 sudo tune2fs -O fast_commit /dev/sda2
 sudo tune2fs -O fast_commit /dev/sdc2
 ```
-Verify `sudo tune2fs -l /dev/sda2 | grep features`<br>
+Verify
+```
+sudo tune2fs -l /dev/sda2 | grep features
+```
 ### Grub options<br>
 /etc/default/grub<br>
-`mitigations=off loglevel=3`
+```
+mitigations=off loglevel=3
+```
 
 ### Modprobe<br>
 /etc/modprobe.d<br>
 Audio /etc/modprobe.d/audio.conf
-`options snd_hda_intel power_save=0 power_save_controller=N`
-
+```
+options snd_hda_intel power_save=0 power_save_controller=N
+```
 GPU /etc/modprobe.d/intel.conf
-`options i915 modeset=1  mitigations=off fastboot=1 enable_fbc=1`<br>
- 
+```
+options i915 modeset=1  mitigations=off fastboot=1 enable_fbc=1
+```
 After creating these files run <br>
-`sudo update-initramfs -u`<br>
+```
+sudo update-initramfs -u
+```
 This wil update boot image to include the changes.<br>
 Reboot.<br>
 
 ### Disable some uneeded system services<br>
-
 Disable ModemManager If you do not have a mobile broadband interface.
 ```
 sudo systemctl disable ModemManager.service
@@ -94,9 +104,10 @@ sudo systemctl mask lvm2-monitor.service
 ````
 ### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
-`ping -s 1472 -c1 espn.com`
-<br>Retest changing packet size until 0% packet loss<br>
-
+```
+ping -s 1472 -c1 espn.com
+```
+Retest changing packet size until 0% packet loss<br>
 ### Systemd-Resolve DNS security and caching, provides DNSSEC and DNS caching
 ```
 /etc/systemd/resolved.conf
@@ -152,10 +163,14 @@ sudo apt install firefox
 ### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
 ### [post-kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
 Update systemd-boot after kernel updates
-`sudo bootctl install --path=/boot/efi`<br>
+```
+sudo bootctl install --path=/boot/efi
+```
 Root flags are same as grub options in /etc/default/grub <br>
 After install and setup of systemd-boot<br>
-`sudo update-initramfs -u`<br>
+```
+sudo update-initramfs -u
+```
 This wil update systemd-boot config files.<br>
 Reboot.<br>
 ```
