@@ -3,9 +3,6 @@
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
 ![](desktop.png)
 
-[Click to watch short video](https://user-images.githubusercontent.com/9554887/209614887-3950bdec-5304-46f0-b184-fa969db417dc.mp4)
-
-
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10#custom-plasma-lockscreen-win-10-style)
 * Display current weather conditions,calendar events
 ![](images/lockscreen.png)
