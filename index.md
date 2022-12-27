@@ -1,4 +1,4 @@
-# Customizing KDE Plasma Desktop
+## Customizing KDE Plasma Desktop
 ## [Optimizing Kubuntu](kubuntu.md)<br>
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
 ![](desktop.png)
