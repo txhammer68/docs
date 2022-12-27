@@ -1,6 +1,6 @@
 # remote_theme: pages-themes/midnight@v0.2.0
-remote_theme: mmistakes/minimal-mistakes
-blog_theme: dark # Or use dark
+remote_theme: rokhimin/jekyll-darkness
+# blog_theme: dark # Or use dark
 # theme: jekyll-theme-minimal
 # remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/forty
