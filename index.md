@@ -43,14 +43,14 @@ Type=Application
 Version=1.0
 ```
 ## Customize Kinfo
-![System Info](images/kinfo.png)
+![System Info](images/system.png)
 * Create a new file kcm-about-distrorc within $HOME/.config/
 ```
 [General]
 Name=Plasma OS
 LogoPath=$HOME/Pictures/Misc/icons/ai_48.png
 Website=https://github.com/txhammer68
-Version=5.18
+Version=5.24
 Variant=kubuntu edition
 ```
 
