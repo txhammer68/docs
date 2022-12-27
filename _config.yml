@@ -1,9 +1,11 @@
 # remote_theme: pages-themes/midnight@v0.2.0
-remote_theme: andrewbanchich/forty-jekyll-theme
+remote_theme: nielsenramon/chalk
+blog_theme: dark # Or use dark
 # theme: jekyll-theme-minimal
 # remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/forty
 # theme: txhammer68/myweb
+# https://github.com/topics/jekyll-theme
 # https://pages.github.com/themes/
 #  https://drjekyllthemes.github.io/
 logo: images/yosimte-sam3.png
