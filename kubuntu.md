@@ -181,6 +181,7 @@ This wil update systemd-boot config files.<br>
 Reboot.<br>
 ### Firefox
 [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)
+[Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)
 Performance - about:config
 ```
 gfx.webrender.enabled=true
@@ -197,6 +198,7 @@ dom.webgpu.enabled=true
 browser.cache.disk.enable=false
 browser.cache.memory.enable=true
 browser.cache.memory.capacity=-1 //auto
+media.memory_cache_max_size=65536
 ```
 ### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
 ### [xanmod kernel](https://xanmod.org/)<br>
