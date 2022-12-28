@@ -167,9 +167,9 @@ sudo apt install firefox
 [Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
 [Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
 [FetchV:Videos](https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/)<br>
+Performance - about:config <br>
 [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
 [Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)<br>
-Performance - about:config
 ```
 gfx.webrender.enabled=true
 gfx.webrender.force-disabled=false
