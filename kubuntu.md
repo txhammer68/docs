@@ -14,7 +14,7 @@ My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, 2 SSD's - 120GB
 
 ### Pre Install Setup
 
-Create [partitions](https://wiki.archlinux.org/title/partitioning) for each part of the install process
+Create [partitions](https://wiki.archlinux.org/title/partitioning) for each drive before the install process
 * EFI partition for UEFI Boot drive 512MB type fat32 /dev/sda1
 * Root system partition remaining space type ext4 /dev/sda2
 * Swap space partiton 16GB type swap /dev/sdb1
