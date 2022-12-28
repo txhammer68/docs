@@ -161,8 +161,8 @@ sudo apt update
 sudo apt install firefox
 ```
 ### Firefox
-[Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)
-[Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)
+[Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
+[Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)<br>
 Performance - about:config
 ```
 gfx.webrender.enabled=true
