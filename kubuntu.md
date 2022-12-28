@@ -161,6 +161,12 @@ sudo apt update
 sudo apt install firefox
 ```
 ### Firefox
+##### Extensions
+[Youtube enhancer extension](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
+[Origin Ad-Blocker](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)>br>
+[Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
+[Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
+[FetchV:Videos](https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/)<br>
 [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
 [Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)<br>
 Performance - about:config
@@ -180,6 +186,15 @@ browser.cache.disk.enable=false
 browser.cache.memory.enable=true
 browser.cache.memory.capacity=-1 //auto
 media.memory_cache_max_size=65536
+media.webrtc.hw.h264.enabled
+media.navigator.mediadatadecoder_h264_enabled
+media.gmp.decoder.h264=true
+media.navigator.video.preferred_codec=126
+media.navigator.video.max_fs= 2560
+media.navigator.video.h264.level=22
+media.navigator.video.h264.max_br=700
+media.navigator.video.h264.max_mbps=6000
+media.ffmpeg.low-latency.enabled=true
 ```
 ### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
 ### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
