@@ -108,7 +108,7 @@ The ping command will let you know if the packet was sent as more than one fragm
 ping -s 1472 -c1 espn.com
 ```
 Retest changing packet size until 0% packet loss<br>
-### Systemd-Resolve DNS security and caching, provides DNSSEC and DNS caching
+### Systemd-Resolve provides DNSSEC and DNS caching
 ```
 /etc/systemd/resolved.conf
 DNS=1.1.1.2
@@ -167,7 +167,7 @@ sudo apt install firefox
 [Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
 [Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
 [FetchV:Videos](https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/)<br>
-Performance - about:config <br>
+##### Performance - about:config <br>
 [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
 [Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)<br>
 ```
