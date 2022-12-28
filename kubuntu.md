@@ -179,6 +179,20 @@ sudo update-initramfs -u
 ```
 This wil update systemd-boot config files.<br>
 Reboot.<br>
-
+### Firefox
+Performance - about:config
+```
+gfx.webrender.enabled=true
+gfx.webrender.force-disabled=false
+gfx.webrender.all=true
+dom.ipc.processCount=10
+layers.mlgpu.enabled=true
+layers.mlgpu.sanity-test-failed=false
+layers.gpu-process.enabled=true
+media.gpu-process-decoder=true
+media.ffmpeg.vaapi.enabled=true
+media.ffmpeg.dmabuf-textures.enabled=true
+dom.webgpu.enabled=true
+```
 ### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
 ### [xanmod kernel](https://xanmod.org/)<br>
