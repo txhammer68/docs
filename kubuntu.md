@@ -160,25 +160,6 @@ Pin-Priority: -1
 sudo apt update
 sudo apt install firefox
 ```
-### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
-systemd-boot loader -  grub replacement
-### [post-kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
-Custom scipt to update systemd-boot config files after kernel updates<br>
-Install systemd-boot loader
-```
-sudo bootctl install --path=/boot/efi
-```
-Root flags are same as grub options in /etc/default/grub <br>
-```
-ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123"
-ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123 3"
-```
-After install and setup of systemd-boot run <br>
-```
-sudo update-initramfs -u
-```
-This wil update systemd-boot config files.<br>
-Reboot.<br>
 ### Firefox
 [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)
 [Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)
@@ -201,4 +182,23 @@ browser.cache.memory.capacity=-1 //auto
 media.memory_cache_max_size=65536
 ```
 ### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
+### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
+systemd-boot loader -  grub replacement
+### [post-kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
+Custom scipt to update systemd-boot config files after kernel updates<br>
+Install systemd-boot loader
+```
+sudo bootctl install --path=/boot/efi
+```
+Root flags are same as grub options in /etc/default/grub <br>
+```
+ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123"
+ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123 3"
+```
+After install and setup of systemd-boot run <br>
+```
+sudo update-initramfs -u
+```
+This wil update systemd-boot config files.<br>
+Reboot.<br>
 ### [xanmod kernel](https://xanmod.org/)<br>
