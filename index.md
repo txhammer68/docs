@@ -82,7 +82,13 @@ Variant=kubuntu edition
 
 ## [KDE Store](https://store.kde.org/browse/cat/) 
 * Central place to get custom themes for KDE Plasma
-* 
+
+<picture>
+  <img alt="OWM" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="64">
+</picture>
+
+[TxHammer68](https://github.com/txhammer68)
+
 ## Notes for Desktop Setup
 * Icons - Papirus
 * Copy LnF Breeze Theme to MyBreeze
