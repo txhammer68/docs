@@ -7,7 +7,7 @@
 </picture>
 <br>
 
-[My Desktop](https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4)
+https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4
 
 ### [Custom Lockscreen](lockscreen.md) <br>
 * Display current weather conditions,calendar events <br>
