@@ -1,4 +1,8 @@
 remote_theme: mmistakes/jekyll-theme-basically-basic
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
 # remote_theme: streetturtle/jekyll-clean-dark
 # blog_theme: dark # Or use dark
 # theme: jekyll-theme-minimal
