@@ -1,13 +1,17 @@
 ## Customizing KDE Plasma Desktop
 ## [Optimizing Kubuntu](kubuntu.md)<br>
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
-![](desktop.png)
+
+<picture>
+  <img alt="OWM" src="desktop.png" width="640">
+</picture>
+<br>
 
 ## [Custom Lockscreen for KDE plasma](lockscreen.md) <br>
 * Display current weather conditions,calendar events <br>
 
 <picture>
-  <img alt="OWM" src="lockscreen-win10.png" width="512">
+  <img alt="OWM" src="lockscreen-win10.png" width="640">
 </picture>
 <br>
 
