@@ -1,13 +1,15 @@
 ## Customizing KDE Plasma Desktop
-## [Optimizing Kubuntu](kubuntu.md)<br>
-## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
+### [Optimizing Kubuntu](kubuntu.md)<br>
+### My Plasma setup
 
 <picture>
   <img alt="OWM" src="desktop.png" width="640">
 </picture>
 <br>
 
-## [Custom Lockscreen](lockscreen.md) <br>
+[![My Desktop](desktop.png)](https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4)
+
+### [Custom Lockscreen](lockscreen.md) <br>
 * Display current weather conditions,calendar events <br>
 
 <picture>
@@ -15,7 +17,7 @@
 </picture>
 <br>
 
-## [Plasma Widgets](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)
+##@ [Plasma Widgets](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)
 ### G-mail/Stocks/Sports stacked widget
 [![G-mail](images/gmail.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/G-Mail.zip)
 ### Weather Widget
@@ -26,7 +28,7 @@
 [![Search](images/search.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/org.kde.search.zip)
 ### System menu
 [![System Menu](images/system-menu.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/system-menu.zip)
-## Web Apps
+### Web Apps
 * Create web app shortcuts for your favorite web apps, spotify,netflix,gmail,etc...
 * Using chrome or firefox and xprop to determine window class info
 * Cleaner look  - no toolbars or url location
@@ -50,7 +52,7 @@ Terminal=false
 Type=Application
 Version=1.0
 ```
-## Customize Kinfo
+### Customize Kinfo
 ![System Info](images/system.png)
 * Create a new file kcm-about-distrorc within $HOME/.config/
 ```
@@ -62,7 +64,7 @@ Version=5.24
 Variant=kubuntu edition
 ```
 
-## [Plasma Look And Feel Explorer](https://userbase.kde.org/Plasma/Create_a_Look_and_Feel_Package)
+### [Plasma Look And Feel Explorer](https://userbase.kde.org/Plasma/Create_a_Look_and_Feel_Package)
   Plasma Look And Feel Explorer is a KDE application that allows you to create your own desktop theme.
   The 'Plasma Look and Feel Explorer' is part of the 'plasma-sdk', install it from your distro repo.
   the advatage of creating your own LnF theme is that you can change things like the lockscreen,logout, 
@@ -74,22 +76,22 @@ Variant=kubuntu edition
   ![Image of Plasma Look And Feel Explorer](https://i.imgur.com/yPkUl3M.png)
 
 
-## [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) 
+### [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum) 
 * Kvantum is widget customizer for KDE, widgets are the controls and drop down menus within Plasma
 * [Kvantum themes](https://store.kde.org/browse/cat/123/order/latest/) 
 
 ![Image of kvantum](https://github.com/tsujan/Kvantum/raw/master/Kvantum/screenshots/Default.png?raw=true)
 
-## [KDE Store](https://store.kde.org/browse/cat/) 
+### [KDE Store](https://store.kde.org/browse/cat/) 
 * Central place to get custom themes for KDE Plasma
 
 <picture>
-  <img alt="OWM" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="64">
+  <img alt="desktop" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="48">
 </picture>
 
 [TxHammer68](https://github.com/txhammer68)
 
-## Notes for Desktop Setup
+### Notes for Desktop Setup
 * Icons - Papirus
 * Copy LnF Breeze Theme to MyBreeze
   * For changing Lockscreen/Logout
