@@ -7,7 +7,7 @@
 </picture>
 <br>
 
-https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4
+[](https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4)
 
 ### [Custom Lockscreen](lockscreen.md) <br>
 * Display current weather conditions,calendar events <br>
@@ -17,17 +17,23 @@ https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-b
 </picture>
 <br>
 
-##@ [Plasma Widgets](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)
+### [Plasma Widgets](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)
+
 ### G-mail/Stocks/Sports stacked widget
 [![G-mail](images/gmail.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/G-Mail.zip)
+
 ### Weather Widget
 [![Weather](images/weather.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/DarkSky.zip)
+
 ### System monitor dashboard
 [![Dashboard](images/dashboard.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/SystemDashboard.zip)
+
 ### Web Search
 [![Search](images/search.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/org.kde.search.zip)
+
 ### System menu
 [![System Menu](images/system-menu.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/system-menu.zip)
+
 ### Web Apps
 * Create web app shortcuts for your favorite web apps, spotify,netflix,gmail,etc...
 * Using chrome or firefox and xprop to determine window class info
