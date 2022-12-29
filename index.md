@@ -62,7 +62,11 @@ Type=Application
 Version=1.0
 ```
 ##### Customize System Info
-![System Info](images/system.png)
+<picture>
+  <img alt="OWM" src="images/system.png" width="640">
+</picture>
+<br>
+
 * Create a new file kcm-about-distrorc within $HOME/.config/
 ```
 [General]
