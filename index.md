@@ -3,9 +3,13 @@
 ## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
 ![](desktop.png)
 
-## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10#custom-plasma-lockscreen-win-10-style)
-* Display current weather conditions,calendar events
-![](images/lockscreen.png)
+## [Custom Lockscreen for KDE plasma](lockscreen.md) <br>
+* Display current weather conditions,calendar events <br>
+
+<picture>
+  <img alt="OWM" src="lockscreen-win10.png" width="512">
+</picture>
+<br>
 
 ## [Plasma Widgets](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)
 ### G-mail/Stocks/Sports stacked widget
