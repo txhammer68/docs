@@ -1,9 +1,7 @@
 ## Customizing KDE Plasma Desktop
 ## [Optimizing Kubuntu](kubuntu.md)<br>
-## [My Plasma setup](https://txhammer68.github.io/docs/slides.html)
+## [![My Plasma setup](https://txhammer68.github.io/docs/slides.html)](https://youtu.be/vt5fpE0bzSY)
 ![](desktop.png)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MUQfKFzIOeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [Custom Lockscreen for KDE plasma](https://github.com/txhammer68/plasma-lockscreen-win10#custom-plasma-lockscreen-win-10-style)
 * Display current weather conditions,calendar events
