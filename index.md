@@ -7,7 +7,7 @@
 </picture>
 <br>
 
-## [Custom Lockscreen for KDE plasma](lockscreen.md) <br>
+## [Custom Lockscreen](lockscreen.md) <br>
 * Display current weather conditions,calendar events <br>
 
 <picture>
