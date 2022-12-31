@@ -3,13 +3,13 @@ titles_from_headings:
   enabled:     true
   strip_title: true
   collections: true
-# remote_theme: streetturtle/jekyll-clean-dark
+remote_theme: streetturtle/jekyll-clean-dark
 # blog_theme: dark # Or use dark
 # theme: minima
-remote_theme: jekyll/minima
-minima:
-  skin: dark
-  avatar: images/yosimte-sam.png
+# remote_theme: jekyll/minima
+#minima:
+ # skin: dark
+  # avatar: images/yosimte-sam.png
 # remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/forty
 # theme: txhammer68/myweb
