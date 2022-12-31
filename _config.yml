@@ -5,7 +5,8 @@ titles_from_headings:
   collections: true
 # remote_theme: streetturtle/jekyll-clean-dark
 # blog_theme: dark # Or use dark
-theme: minima
+# theme: minima
+remote_theme: jekyll/minima
 minima:
   skin: dark
 header_pages:
