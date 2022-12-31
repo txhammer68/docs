@@ -8,6 +8,9 @@ titles_from_headings:
 theme: minima
 minima:
   skin: dark
+header_pages:
+  - index.md
+  - kubuntu.md
 # remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/forty
 # theme: txhammer68/myweb
