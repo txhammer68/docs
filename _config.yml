@@ -1,11 +1,13 @@
-remote_theme: mmistakes/jekyll-theme-basically-basic
+# remote_theme: mmistakes/jekyll-theme-basically-basic
 titles_from_headings:
   enabled:     true
   strip_title: true
   collections: true
 # remote_theme: streetturtle/jekyll-clean-dark
 # blog_theme: dark # Or use dark
-# theme: jekyll-theme-minimal
+theme: minima
+minima:
+  skin: dark
 # remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/forty
 # theme: txhammer68/myweb
