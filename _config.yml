@@ -1,15 +1,8 @@
-# remote_theme: mmistakes/jekyll-theme-basically-basic
-titles_from_headings:
-  enabled:     true
-  strip_title: true
-  collections: true
-# remote_theme:   cotes2020/jekyll-theme-chirpy
 theme_mode: dark
-avatar: 'images/yosimte-sam.png'
+avatar: "images/yosimte-sam.png"
 title: "Hacking the web"
 description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
-# blog_theme: dark # Or use dark
 theme: chirpy
 # remote_theme: jekyll/minima
 #minima:
