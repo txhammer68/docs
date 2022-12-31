@@ -3,7 +3,10 @@ titles_from_headings:
   enabled:     true
   strip_title: true
   collections: true
-remote_theme: streetturtle/jekyll-clean-dark
+remote_theme:  jacobtomlinson/carte-noire
+title: "Hacking the web"
+description: "Personal notes for linux,coding,web."
+title_image: "images/yosimte-sam.png"
 # blog_theme: dark # Or use dark
 # theme: minima
 # remote_theme: jekyll/minima
