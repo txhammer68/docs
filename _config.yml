@@ -3,14 +3,11 @@ avatar: "images/yosimte-sam.png"
 title: "Hacking the web"
 description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
-# theme: chirpy
-remote_theme:  cotes2020/jekyll-theme-chirpy
-plugins:
-- jekyll-remote-theme
+theme: tactile
 # remote_theme: jekyll/minima
-#minima:
- # skin: dark
-  # avatar: images/yosimte-sam.png
+tactile:
+  skin: dark
+  avatar: images/yosimte-sam.png
 # remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/forty
 # theme: txhammer68/myweb
