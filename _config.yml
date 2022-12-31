@@ -9,10 +9,7 @@ titles_from_headings:
 remote_theme: jekyll/minima
 minima:
   skin: dark
-  logo: images/yosimte-sam.png
-header_pages:
-  - index.md
-  - kubuntu.md
+  avatar: images/yosimte-sam.png
 # remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/forty
 # theme: txhammer68/myweb
