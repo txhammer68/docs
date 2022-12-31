@@ -5,6 +5,8 @@ description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
 # theme: chirpy
 remote_theme:  cotes2020/jekyll-theme-chirpy
+plugins:
+- jekyll-remote-theme
 # remote_theme: jekyll/minima
 #minima:
  # skin: dark
