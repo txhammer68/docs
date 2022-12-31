@@ -9,6 +9,7 @@ titles_from_headings:
 remote_theme: jekyll/minima
 minima:
   skin: dark
+  logo: images/yosimte-sam3.png
 header_pages:
   - index.md
   - kubuntu.md
