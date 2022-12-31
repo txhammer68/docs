@@ -4,6 +4,7 @@ titles_from_headings:
   strip_title: true
   collections: true
 remote_theme:   cotes2020/jekyll-theme-chirpy
+theme_mode: dark
 title: "Hacking the web"
 description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
