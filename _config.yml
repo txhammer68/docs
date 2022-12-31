@@ -1,6 +1,6 @@
 theme_mode: dark
 avatar: "images/yosimte-sam.png"
-title: "Hacking the web"
+# title: "Hacking the web"
 description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
 remote_theme: pages-themes/tactile@v0.2.0
