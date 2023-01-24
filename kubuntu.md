@@ -197,6 +197,17 @@ media.navigator.video.h264.max_br=700
 media.navigator.video.h264.max_mbps=6000
 media.ffmpeg.low-latency.enabled=true
 ```
+
+### Spotify Client
+```
+sudo apt install software-properties-common apt-transport-https wget ca-certificates gnupg2
+wget https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg
+cat pubkey_5E3C45D7B312C643.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/spotify.gpg >/dev/null
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt update
+sudo apt install spotify-client
+```
+
 ### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
 systemd-boot loader -  grub replacement
 ### [post-kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
