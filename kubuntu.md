@@ -102,6 +102,26 @@ Disable LVM
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ````
+### [Better Pulse Audio Settings](https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f)
+/etc/pulse/daemon.conf
+```
+default-sample-format = float32le
+default-sample-rate = 48000
+alternate-sample-rate = 44100
+default-sample-channels = 2
+default-channel-map = front-left,front-right
+default-fragments = 2
+default-fragment-size-msec = 125
+resample-method = soxr-vhq
+avoid-resampling = yes
+
+high-priority = yes
+nice-level = -11
+realtime-scheduling = yes
+realtime-priority = 9
+rlimit-rtprio = 9
+daemonize = no
+```
 ### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
 ```
