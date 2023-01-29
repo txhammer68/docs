@@ -1,4 +1,6 @@
-## Optimizing kubuntu 22.04 LTS desktop
+### [Customizing KDE Plasma Desktop](index.md)<br>
+
+### Optimizing Kubuntu 22.04 LTS desktop
 
 Some useful links for optimizing system performance<br>
 [Arch](https://wiki.archlinux.org/title/improving_performance)<br>
