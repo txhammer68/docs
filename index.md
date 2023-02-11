@@ -29,16 +29,16 @@
 [![G-mail](images/gmail.png)](https://raw.githubusercontent.com/txhammer68/qml/master/G-Mail.zip)
 
 ### Weather Widget
-[![Weather](images/weather.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/DarkSky.zip)
+[![Weather](images/weather.png)](https://raw.githubusercontent.com/txhammer68/qml/master/DarkSky.zip)
 
 ### System monitor dashboard
-[![Dashboard](images/dashboard.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/SystemDashboard.zip)
+[![Dashboard](images/dashboard.png)](https://raw.githubusercontent.com/txhammer68/qml/master/SystemDashboard.zip)
 
 ### Web Search
-[![Search](images/search.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/org.kde.search.zip)
+[![Search](images/search.png)](https://raw.githubusercontent.com/txhammer68/qml/master/org.kde.search.zip)
 
 ### System menu
-[![System Menu](images/system-menu.png)](https://downgit.github.io/#/home?url=https://github.com/txhammer68/qml/blob/master/system-menu.zip)
+[![System Menu](images/system-menu.png)](https://raw.githubusercontent.com/txhammer68/qml/master/system-menu.zip)
 
 ### Web Apps
 * Create web app shortcuts for your favorite web apps, spotify,netflix,gmail,etc...
