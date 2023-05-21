@@ -10,7 +10,7 @@
 ### My Plasma setup
 <br>
 
-<video src="https://sendvid.com/i242ichw" controls="controls" style="max-width: 730px;">
+<video src="https://sendvid.com/i242ichw?secret=82998e84-4d63-4bb8-b1d1-3701b9117925" controls="controls" style="max-width: 730px;">
 </video>
 
 <br>
