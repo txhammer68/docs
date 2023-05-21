@@ -10,13 +10,7 @@
 ### My Plasma setup
 <br>
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=nTQUwghvy5Q" target="_blank">
- <img src="http://img.youtube.com/vi/nTQUwghvy5Q/hqdefault.jpg" alt="Watch the video" width="740" height="560" border="10" />
-</a>
-
-<iframe src="https://drive.google.com/file/d/1a4Uj2vjnFvA0DLU8SnNhjEWTQOfJIRUa/preview" width="740" height="560" allow="autoplay"></iframe>
-
-<video src="https://drive.google.com/uc?export=download&id=1a4Uj2vjnFvA0DLU8SnNhjEWTQOfJIRUa" controls="controls" style="max-width: 730px;">
+<video src="https://sendvid.com/i242ichw" controls="controls" style="max-width: 730px;">
 </video>
 
 <br>
