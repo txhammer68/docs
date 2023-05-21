@@ -10,7 +10,7 @@
 ### My Plasma setup
 <br>
 
-[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtu.be/nTQUwghvy5Q)
+[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/hqdefault.jpg width="740")](https://youtu.be/nTQUwghvy5Q)
 
 <iframe src="https://drive.google.com/file/d/1a4Uj2vjnFvA0DLU8SnNhjEWTQOfJIRUa/preview" width="740" height="560" allow="autoplay"></iframe>
 
