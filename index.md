@@ -10,7 +10,7 @@
 ### My Plasma setup
 <br>
 
-<video src="https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://drive.google.com/uc?export=download&id=1a4Uj2vjnFvA0DLU8SnNhjEWTQOfJIRUa" controls="controls" style="max-width: 730px;">
 </video>
 
 <br>
