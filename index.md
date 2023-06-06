@@ -13,9 +13,6 @@
 <video src="https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
-<video src="./hls/1080p.m3u8" controls="controls" style="max-width: 730px;">
-</video>
-
 <br>
 
 <picture>
