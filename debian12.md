@@ -67,7 +67,7 @@ Reboot.<br>
 * install some useful apps
 ```
 apt install
-ark kde-spectacle libreoffice libreoffice-kde5 okular okular-extra-backends python3-pyside2-qtgui python3-pyqt5.qtquick inkscape gimp kcalc kcolorchooser,muon,cpufrequtils minidlna xournalpp plasma-sdk qmlscene qml bleachbit handbrake handbrake-cli mpv mpv-mpris qt5-style-kvantum mame
+ark kde-spectacle libreoffice libreoffice-kde5 okular okular-extra-backends python3-pyside2-qtgui python3-pyqt5.qtquick inkscape gimp kcalc kcolorchooser,muon,linux-cpupower minidlna xournalpp plasma-sdk qmlscene qml bleachbit handbrake handbrake-cli mpv mpv-mpris qt5-style-kvantum mame
 ```
 
 ### Disable some uneeded system services<br>
