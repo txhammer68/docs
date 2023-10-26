@@ -6,8 +6,8 @@
 
 * EFI partition for UEFI Boot drive 512MB type fat32 /dev/sda1
 * Root system partition remaining space type ext4 /dev/sda2
-* Swap space partiton 16GB type swap /dev/sdb3
-* Home partition/drive remaining space ssd /dev/sdb2
+* Home partition/drive space ssd /dev/sdb1
+* Swap space partiton 16GB type swap /dev/sdb2
 * Data drive 4TB hdd ext4 /dev/sdc1
 
 ### Install as usual after creating partitions. Reboot.
@@ -30,7 +30,7 @@ tmpfs          /tmp            tmpfs   auto,noatime,mode=1777         0  0
 Enable fast_commit journal option speed up FS writes <br>
 ```
 sudo tune2fs -O fast_commit /dev/sda2
-sudo tune2fs -O fast_commit /dev/sdc2
+sudo tune2fs -O fast_commit /dev/sdb1
 ```
 Verify
 ```
