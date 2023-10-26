@@ -1,6 +1,7 @@
 ## Debain 12 Plasma 5 LTS Setup
-*  Install with minimal iso do not install any DE bare minimal setup
-*  Pre Install Setup
+* Install with minimal iso do not install any DE bare minimal setup
+* Do not set root password, this will allow user as sudo
+* Pre Install Setup
 
 ### Create partitions for each drive before the install process
 
