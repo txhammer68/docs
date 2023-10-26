@@ -62,6 +62,7 @@ Reboot.<br>
 * sudo apt install kde-plasma-desktop
 * after boot to desktop
 * edit the /etc/network/interfaces file as administrator: sudo nano /etc/network/interfaces remove any networks interfaces , interferes with network manager
+* Reboot
 * install some useful apps
 ```
 apt install
