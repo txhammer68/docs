@@ -48,17 +48,15 @@ sudo apt update && upgrade
 sudo reboot
 ```
 
-### Reboot
-
 ### Modprobe<br>
 /etc/modprobe.d<br>
-Audio /etc/modprobe.d/audio.conf
+sudo nano /etc/modprobe.d/audio.conf
 ```
 options snd_hda_intel power_save=0 power_save_controller=N
 ```
 GPU /etc/modprobe.d/intel.conf
 ```
-options i915 modeset=1  mitigations=off fastboot=1 enable_fbc=1
+options i915 modeset=1 mitigations=off fastboot=1 enable_fbc=0 enable_psr=0 enable_guc=-1
 ```
 After creating these files run <br>
 ```
@@ -68,8 +66,6 @@ This wil update boot image to include the changes.<br>
 Reboot.<br>
 
 ## Install DE and apps
-* change /etc/apt/sources.list
-* apt update
 * sudo apt install kde-plasma-desktop
 * after boot to desktop
 * edit the /etc/network/interfaces file as administrator: sudo nano /etc/network/interfaces remove any networks interfaces , interferes with network manager
