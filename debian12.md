@@ -37,6 +37,16 @@ Verify
 ```
 sudo tune2fs -l /dev/sda2 | grep features
 ```
+### Update apt sources.list
+```
+  sudo nano /etc/apt/sources.list
+  deb http://deb.debian.org/debian bookworm main non-free-firmware contrib non-free
+  deb http://deb.debian.org/debian bookworm-updates main non-free-firmware contrib non-free
+  deb http://security.debian.org/debian-security/ bookworm-security main non-free-firmware contrib non-free
+  deb http://deb.debian.org/debian bookworm-backports main non-free-firmware contrib non-free
+sudo apt update && upgrade
+sudo reboot
+```
 
 ### Reboot
 
