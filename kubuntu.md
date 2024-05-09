@@ -197,7 +197,7 @@ media.navigator.video.h264.max_br=700
 media.navigator.video.h264.max_mbps=6000
 media.ffmpeg.low-latency.enabled=true
 ```
-[FastFox](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)
+[FastFox](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db) <br>
 [BetterFox](https://github.com/yokoffing/Betterfox)
 
 ### Spotify Client
