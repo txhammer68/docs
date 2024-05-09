@@ -130,29 +130,7 @@ The ping command will let you know if the packet was sent as more than one fragm
 ping -s 1472 -c1 espn.com
 ```
 Retest changing packet size until 0% packet loss<br>
-### Systemd-Resolve provides DNSSEC and DNS caching
-```
-/etc/systemd/resolved.conf
-DNS=1.1.1.2
-FallbackDNS=1.1.1.1
-DNSOverTLS=opportunistic
-DNSSEC=true
-```
-Tell Network Manager to use systemd-resolved
-```
-/etc/NetworkManager/conf.d/dns.conf
-dns=systemd-resolved
-```
-Restart network to apply settings
-```
-systemctl start systemd-resolved
-systemctl enable systemd-resolved
-sudo systemctl restart NetworkManager.service
-nmcli networking off
-nmcli networking on
-resolvectl
-systemctl status systemd-resolved
-```
+
 ### [Remove snapd](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)<br>
 ```
 snap list
