@@ -1,5 +1,3 @@
-### [Customizing KDE Plasma Desktop](index.md)<br>
-
 ### Optimizing Kubuntu 24.04 LTS desktop
 
 Some useful links for optimizing system performance<br>
@@ -243,3 +241,5 @@ Verify
 This wil update systemd-boot config files.<br>
 Reboot.<br>
 ### [xanmod kernel](https://xanmod.org/)<br>
+
+### [Customizing KDE Plasma Desktop](index.md)<br>
