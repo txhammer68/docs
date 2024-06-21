@@ -1,6 +1,6 @@
 ### [Customizing KDE Plasma Desktop](index.md)<br>
 
-### Optimizing Kubuntu 22.04 LTS desktop
+### Optimizing Kubuntu 24.04 LTS desktop
 
 Some useful links for optimizing system performance<br>
 [Arch](https://wiki.archlinux.org/title/improving_performance)<br>
@@ -8,7 +8,7 @@ Some useful links for optimizing system performance<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 [Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
 
-My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, 2 SSD's - 120GB, 4TB HDD, 10Mbs Internet
+My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, nvme SSD - 500GB, 4TB HDD, 10Mbs Internet
 
 <picture>
   <img alt="system" src="system.png" width="60%">
@@ -63,7 +63,7 @@ options snd_hda_intel power_save=0 power_save_controller=N
 ```
 GPU /etc/modprobe.d/intel.conf
 ```
-options i915 modeset=1  mitigations=off fastboot=1 enable_fbc=1
+options i915 modeset=1  mitigations=off enable_fbc=1
 ```
 After creating these files run <br>
 ```
@@ -104,6 +104,52 @@ Disable LVM
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ````
+### Disable evbug logging
+* modprobe blacklist <br>
+```
+/etc/modprobe.d/blacklist.conf
+blacklist evbug
+```
+### journald logging
+* Change log retention and logging settings, check logs first for errors <br>
+```/etc/systemd/journald.conf
+MaxRetentionSec=3month
+MaxFileSec=1month
+MaxLevelStore=err
+MaxLevelSyslog=err
+MaxLevelKMsg=err
+MaxLevelConsole=err
+MaxLevelWall=emerg
+```
+### Remove clean disk message at startup
+* grub option <br>
+```
+/etc/default/grub
+fsck.mode=skip
+```
+* systemd-boot <br>
+```
+/etc/kernel/cmdline
+fsck.mode=skip
+```
+
+### Set fsck check interval
+* 50 boot-ups or 1 month, change devices for your system <br>
+```
+sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
+sudo tune2fs -c 50 -i 1m /dev/sdb1
+```
+### To automatically switch audio device to newly connected devices, create this file:
+* Used for HTPC connected to HDTV, when switching monitor outputs
+```
+/etc/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf (or ~/.config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf)
+```
+# override for pipewire-pulse.conf file
+``` pulse.cmd = [
+    { cmd = "load-module" args = "module-always-sink" flags = [ ] }
+    { cmd = "load-module" args = "module-switch-on-connect" }
+]
+```
 ### [Better Pulse Audio Settings](https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f)
 /etc/pulse/daemon.conf
 ```
@@ -147,86 +193,56 @@ sudo rm -rf /var/cache/snapd/
 sudo apt autoremove --purge snapd
 rm -rf ~/snap
 ```
+### KDE Plasma Fixes
+* WSL messes up Qt.openUrlExternally() <br>
+```sudo mv /usr/share/applications/wslview.desktop /usr/share/applications/wslview.desktop.disabled```
+* MSFT is starting to mess with my linux desktop :( <br>
+* Disable Qt Logging, add to /etc/environment or .bashrc
+```
+QT_LOGGING_RULES="*.debug=false;qt*.debug=false;qt5.debug=false;*.warning=false;*.critical=false;qt.qpa.xcb.xcberror.warning=false;qt.qpa.xcb.xcberror.error=false;qt.qpa.xcb.warning=false;qt.qpa.xcb.error=false;qt.qpa.xcb=false"
+```
+* Allow xmlrequest for loading json file
+  * Add to /etc/environment or .bashrc <br>
+``` QML_XHR_ALLOW_FILE_READ="1" ```
 
 ### Install Firefox PPA
-```
-nano /etc/apt/preferences.d/firefox-no-snap
-Package: firefox*
-Pin: release o=Ubuntu*
-Pin-Priority: -1
-```
-`sudo add-apt-repository ppa:mozillateam/ppa`
-```
-sudo apt update
-sudo apt install firefox
-```
-### Firefox
-##### Extensions
-[Youtube enhancer extension](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
-[Origin Ad-Blocker](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
-[Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
-[Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
-[FetchV:Videos](https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/)<br>
-##### [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
-##### Performance - about:config <br>
-[Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
-[Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)<br>
-```
-gfx.webrender.enabled=true
-gfx.webrender.force-disabled=false
-gfx.webrender.all=true
-dom.ipc.processCount=10
-layers.mlgpu.enabled=true
-layers.mlgpu.sanity-test-failed=false
-layers.gpu-process.enabled=true
-media.gpu-process-decoder=true
-media.ffmpeg.vaapi.enabled=true
-media.ffmpeg.dmabuf-textures.enabled=true
-dom.webgpu.enabled=true
-browser.cache.disk.enable=false
-browser.cache.memory.enable=true
-browser.cache.memory.capacity=-1 //auto
-media.memory_cache_max_size=65536
-media.webrtc.hw.h264.enabled
-media.navigator.mediadatadecoder_h264_enabled
-media.gmp.decoder.h264=true
-media.navigator.video.preferred_codec=126
-media.navigator.video.max_fs= 2560
-media.navigator.video.h264.level=22
-media.navigator.video.h264.max_br=700
-media.navigator.video.h264.max_mbps=6000
-media.ffmpeg.low-latency.enabled=true
-```
-[FastFox](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db) <br>
-[BetterFox](https://github.com/yokoffing/Betterfox)
+* https://support.mozilla.org/en-US/kb/install-firefox-linux <br>
+#### Firefox Extensions
+* [Youtube enhancer extension](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
+* [Origin Ad-Blocker](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
+* [Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
+* [Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
+* [HLS D/L]([https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/](https://addons.mozilla.org/en-US/firefox/addon/hls-downloader/))<br>
+#### Firefox Config options
+* [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
+* [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
+* [Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)<br>
+* [FastFox](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db) <br>
+* [BetterFox](https://github.com/yokoffing/Betterfox) <br>
 
-### Spotify Client
+### systemd-boot
+* Replace grub, speeds up boot time.<br>
+* [systemd-boot loader -  grub replacement](https://wiki.archlinux.org/title/systemd-boot) <br>
+* [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/) <br>
+* Custom scipt to update systemd-boot config files after kernel updates <br>
+* [post-kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1) <br>
+* [different script using kernel cmdline options](https://gist.github.com/gdamjan/ccdcda2c91119406a0f8d22f8b8f2c4a) <br>
+#### Install systemd-boot loader <br>
 ```
-sudo apt install software-properties-common apt-transport-https wget ca-certificates gnupg2
-wget https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg
-cat pubkey_5E3C45D7B312C643.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/spotify.gpg >/dev/null
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt update
-sudo apt install spotify-client
-```
-
-### [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/), replace grub, speeds up boot time.<br>
-systemd-boot loader -  grub replacement
-### [post-kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1)
-Custom scipt to update systemd-boot config files after kernel updates<br>
-Install systemd-boot loader
-```
+sudo apt install systemd-boot
 sudo bootctl install --path=/boot/efi
 ```
 Root flags are same as grub options in /etc/default/grub <br>
 ```
-ROOTFLAGS="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123"
-ROOTFLAGS1="quiet apparmor=1 security=apparmor loglevel=3  mitigations=off udev.log_priority=3 resume=UUID=123 3"
+ROOTFLAGS="ro quiet fsck.mode=skip loglevel=3  mitigations=off resume=UUID=123"
+ROOTFLAGS1="ro quiet mitigations=off resume=UUID=123 3"
 ```
 After install and setup of systemd-boot run <br>
 ```
 sudo update-initramfs -u
 ```
+Verify
+``` sudo bootctl ```
 This wil update systemd-boot config files.<br>
 Reboot.<br>
 ### [xanmod kernel](https://xanmod.org/)<br>
