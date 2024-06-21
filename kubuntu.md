@@ -209,7 +209,7 @@ QT_LOGGING_RULES="*.debug=false;qt*.debug=false;qt5.debug=false;*.warning=false;
 * [Origin Ad-Blocker](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
 * [Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
 * [Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
-* [HLS D/L]([https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/](https://addons.mozilla.org/en-US/firefox/addon/hls-downloader/) <br>
+* [HLS D-L](https://addons.mozilla.org/en-US/firefox/addon/hls-downloader/) <br>
 #### Firefox Config options
 * [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
 * [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
