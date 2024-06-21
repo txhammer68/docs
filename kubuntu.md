@@ -30,8 +30,8 @@ lsblk -f
 ```
 ##### /etc/fstab <br>
 ``` 
-Root   UUID="" /               ext4    defaults,noatime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro 0  0
-Data   UUID="" /home/Data      ext4    defaults,noatime,errors=remount-ro            0  0
+Root   UUID="" /               ext4    defaults,noatime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro 0  1
+Data   UUID="" /home/Data      ext4    defaults,noatime,errors=remount-ro            0  2
 ```
 ### EXT4 options<br>
 Enable fast_commit journal option speed up FS writes <br>
@@ -134,6 +134,9 @@ fsck.mode=skip
 sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
 sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
+# Hide fsck clean messages
+https://wiki.archlinux.org/title/Silent_boot <br>
+
 ### [To automatically switch audio device to newly connected devices, create this file:](https://wiki.archlinux.org/title/PipeWire#Troubleshooting)
 * Used for HTPC connected to HDTV, when switching monitor outputs
 ```
