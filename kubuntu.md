@@ -24,6 +24,10 @@ Create [partitions](https://wiki.archlinux.org/title/partitioning) for each driv
 
 Install as usual after creating partitions.
 Reboot.
+
+Before makeing changes to system run this, then again when finished
+``` systemd-analyze critical-chain ``` <br>
+
 ### fstab
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 Obtain UUID for each drive/partiton on system.<br>
@@ -49,6 +53,15 @@ sudo tune2fs -l /dev/nvme0n1p2 | grep features
 /etc/default/grub<br>
 ```
 mitigations=off loglevel=3
+```
+
+### CPUFreqUtils Change CPU Governor and Frequencies
+/etc/init.d/cpufrequtils
+```
+ENABLE="true"
+GOVERNOR="performance"
+MAX_SPEED="4000"
+MIN_SPEED="1600"
 ```
 
 ### Modprobe<br>
