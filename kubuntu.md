@@ -116,17 +116,6 @@ MaxLevelKMsg=err
 MaxLevelConsole=err
 MaxLevelWall=emerg
 ```
-### Remove clean disk message at startup
-* grub option <br>
-```
-/etc/default/grub
-fsck.mode=skip
-```
-* systemd-boot <br>
-```
-/etc/kernel/cmdline
-fsck.mode=skip
-```
 
 ### Set fsck check interval
 * 50 boot-ups or 1 month, change devices for your system <br>
@@ -134,8 +123,6 @@ fsck.mode=skip
 sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
 sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
-### Hide fsck clean messages
-https://wiki.archlinux.org/title/Silent_boot <br>
 
 ### [To automatically switch audio device to newly connected devices, create this file:](https://wiki.archlinux.org/title/PipeWire#Troubleshooting)
 * Used for HTPC connected to HDTV, when switching monitor outputs
