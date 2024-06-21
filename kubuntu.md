@@ -9,7 +9,7 @@ Some useful links for optimizing system performance<br>
 My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, nvme SSD - 500GB, 4TB HDD, 10Mbs Internet
 
 <picture>
-  <img alt="system" src="system.png" width="60%">
+  <img alt="system" src="images/system.png" width="60%">
 </picture> <br>
 
 ### Pre Install Setup
