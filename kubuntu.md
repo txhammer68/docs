@@ -25,7 +25,10 @@ Create [partitions](https://wiki.archlinux.org/title/partitioning) for each driv
 Install as usual after creating partitions. <br>
 Reboot <br>
 
-Before makeing changes to system run this, then again when finished <br>
+Before making changes to your system run this, then again when finished <br>
+Check system log for errors or issues <br>
+``` free -m ``` <br>
+``` sudo hdparm -t --direct /dev/nvme0n1p2 ``` <br>
 ``` systemd-analyze critical-chain ``` <br>
 
 ### fstab
