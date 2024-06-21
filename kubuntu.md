@@ -6,7 +6,9 @@ Some useful links for optimizing system performance<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 [Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
 
-My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, nvme SSD - 500GB, 4TB HDD, 10Mbs Internet
+### My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, nvme SSD - 500GB, 4TB HDD, 10Mbs Internet
+
+### Some settings are specific for my system setup, use at own risk!
 
 <picture>
   <img alt="system" src="images/system.png" width="60%">
@@ -227,8 +229,8 @@ After install and setup of systemd-boot run <br>
 sudo update-initramfs -u
 ```
 Verify <br>
-``` sudo bootctl ```
-Reboot. <br>
+``` sudo bootctl ``` <br>
+Reboot <br>
 
 ### [xanmod kernel](https://xanmod.org/)<br>
 
