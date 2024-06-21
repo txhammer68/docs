@@ -30,6 +30,7 @@ Check system log for errors or issues <br>
 ``` free -m ``` <br>
 ``` sudo hdparm -t --direct /dev/nvme0n1p2 ``` <br>
 ``` systemd-analyze critical-chain ``` <br>
+``` systemd-analyze --user blame ``` <br>
 
 ### fstab
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
@@ -217,6 +218,9 @@ QT_LOGGING_RULES="*.debug=false;qt*.debug=false;qt5.debug=false;*.warning=false;
   * Add to /etc/environment or .bashrc <br>
 ``` QML_XHR_ALLOW_FILE_READ="1" ``` <br>
 ``` kdebugdialog5   - kde debugging settings```<br>
+* Remove extra fonts, check Noto Sans/Serif extra language fonts, unnecessary for most cases
+* Run this after, clean font cache
+``` fc-cache -f -v ``` <br>
 
 ### Install Firefox PPA
 * https://support.mozilla.org/en-US/kb/install-firefox-linux <br>
