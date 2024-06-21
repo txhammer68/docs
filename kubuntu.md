@@ -17,10 +17,9 @@ My Setup  - Intel Haswell CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, nvme SSD - 500G
 ### Pre Install Setup
 
 Create [partitions](https://wiki.archlinux.org/title/partitioning) for each drive before the install process
-* EFI partition for UEFI Boot drive 512MB type fat32 /dev/sda1
-* Root system partition remaining space type ext4 /dev/sda2
-* Swap space partiton 16GB type swap /dev/sdb1
-* Home partition/drive remaining space ssd /dev/sdb2
+* EFI partition for UEFI Boot drive 512MB type fat32 /dev/nvme0n1p1
+* Swap space file 16GB type swap /dev/nvme0n1p2
+* Root system partition remaining space type ext4 /dev/nvme0n1p2
 * Data drive 4TB hdd ext4 /dev/sdc1
 
 Install as usual after creating partitions.
@@ -33,21 +32,18 @@ lsblk -f
 ```
 ##### /etc/fstab <br>
 ``` 
-Root   UUID="" /               ext4    auto,noatime,errors=remount-ro 0  1
-home   UUID="" /home           ext4    auto,noatime,nouser            0  1
-Data   UUID="" /home/Data      ext4    auto,noatime,nouser            0  1
-SWAP   UUID="" swap            swap    sw                             0  0
-tmpfs          /tmp            tmpfs   auto,noatime,mode=1777         0  0
+Root   UUID="" /               ext4    defaults,noatime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro 0  0
+Data   UUID="" /home/Data      ext4    defaults,noatime,errors=remount-ro            0  0
 ```
 ### EXT4 options<br>
 Enable fast_commit journal option speed up FS writes <br>
 ```
-sudo tune2fs -O fast_commit /dev/sda2
-sudo tune2fs -O fast_commit /dev/sdc2
+sudo tune2fs -O fast_commit /dev/nvme0n1p2
+sudo tune2fs -O fast_commit /dev/sdc1
 ```
 Verify
 ```
-sudo tune2fs -l /dev/sda2 | grep features
+sudo tune2fs -l /dev/nvme0n1p2 | grep features
 ```
 ### Grub options<br>
 /etc/default/grub<br>
@@ -63,7 +59,13 @@ options snd_hda_intel power_save=0 power_save_controller=N
 ```
 GPU /etc/modprobe.d/intel.conf
 ```
-options i915 modeset=1  mitigations=off enable_fbc=1
+options i915 modeset=1 mitigations=off enable_fbc=0 enable_psr=0 enable_guc=-1
+```
+### Disable evbug logging
+* modprobe blacklist <br>
+```
+/etc/modprobe.d/blacklist.conf
+blacklist evbug
 ```
 After creating these files run <br>
 ```
@@ -104,12 +106,7 @@ Disable LVM
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ````
-### Disable evbug logging
-* modprobe blacklist <br>
-```
-/etc/modprobe.d/blacklist.conf
-blacklist evbug
-```
+
 ### journald logging
 * Change log retention and logging settings, check logs first for errors <br>
 ```/etc/systemd/journald.conf
