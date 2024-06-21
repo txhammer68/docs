@@ -136,12 +136,12 @@ fsck.mode=skip
 sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
 sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
-### To automatically switch audio device to newly connected devices, create this file:
+### [To automatically switch audio device to newly connected devices, create this file:](https://wiki.archlinux.org/title/PipeWire#Troubleshooting)
 * Used for HTPC connected to HDTV, when switching monitor outputs
 ```
 /etc/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf (or ~/.config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf)
 ```
-# override for pipewire-pulse.conf file
+override for pipewire-pulse.conf file
 ``` pulse.cmd = [
     { cmd = "load-module" args = "module-always-sink" flags = [ ] }
     { cmd = "load-module" args = "module-switch-on-connect" }
@@ -209,7 +209,7 @@ QT_LOGGING_RULES="*.debug=false;qt*.debug=false;qt5.debug=false;*.warning=false;
 * [Origin Ad-Blocker](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
 * [Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
 * [Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
-* [HLS D/L]([https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/](https://addons.mozilla.org/en-US/firefox/addon/hls-downloader/))<br>
+* [HLS D/L]([https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/](https://addons.mozilla.org/en-US/firefox/addon/hls-downloader/) <br>
 #### Firefox Config options
 * [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
 * [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
