@@ -238,8 +238,8 @@ sudo update-initramfs -u
 ```
 Verify <br>
 ``` sudo bootctl ```
-This wil update systemd-boot config files.<br>
 Reboot. <br>
+
 ### [xanmod kernel](https://xanmod.org/)<br>
 
 ### [Customizing KDE Plasma Desktop](index.md)<br>
