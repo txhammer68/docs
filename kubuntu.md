@@ -52,6 +52,9 @@ Verify
 ```
 sudo tune2fs -l /dev/nvme0n1p2 | grep features
 ```
+#### Set Disk Label
+``` sudo e2label /dev/nvme0n1p2 "SYSTEM" ``` <br>
+
 ### Grub options<br>
 /etc/default/grub<br>
 ```
@@ -122,6 +125,11 @@ Disable LVM
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ````
+<br>Disable Wait for Network online service, slows down boot
+```
+sudo systemctl disable NetworkManager-wait-online.service
+sudo systemctl mask NetworkManager-wait-online.service
+```
 
 ### journald logging
 * Change log retention and logging settings, check logs first for errors <br>
@@ -173,6 +181,7 @@ realtime-priority = 9
 rlimit-rtprio = 9
 daemonize = no
 ```
+
 ### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
 ```
@@ -206,7 +215,8 @@ QT_LOGGING_RULES="*.debug=false;qt*.debug=false;qt5.debug=false;*.warning=false;
 ```
 * Allow xmlrequest for loading json file
   * Add to /etc/environment or .bashrc <br>
-``` QML_XHR_ALLOW_FILE_READ="1" ```
+``` QML_XHR_ALLOW_FILE_READ="1" ``` <br>
+``` kdebugdialog5   - kde debugging settings```<br>
 
 ### Install Firefox PPA
 * https://support.mozilla.org/en-US/kb/install-firefox-linux <br>
