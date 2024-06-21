@@ -22,10 +22,10 @@ Create [partitions](https://wiki.archlinux.org/title/partitioning) for each driv
 * Root system partition remaining space type ext4 /dev/nvme0n1p2
 * Data drive 4TB hdd ext4 /dev/sdc1
 
-Install as usual after creating partitions.
-Reboot.
+Install as usual after creating partitions. <br>
+Reboot <br>
 
-Before makeing changes to system run this, then again when finished
+Before makeing changes to system run this, then again when finished <br>
 ``` systemd-analyze critical-chain ``` <br>
 
 ### fstab
