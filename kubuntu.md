@@ -190,6 +190,30 @@ ping -s 1472 -c1 espn.com
 ```
 Retest changing packet size until 0% packet loss<br>
 
+### Sysctl Settings
+[Arch](https://wiki.archlinux.org/title/Sysctl#Improving_performance) <br>
+[Github](https://gist.github.com/JoeyBurzynski/a4359dd19b211e5c37b6fcd2eff67286) <br>
+[Ubuntu](https://www.howtouseubuntu.com/cloud/understanding-etc-sysctl-conf-file-in-linux/) <br>
+Some useful sysctl settings place in /etc/sysctl.conf
+```
+kernel.sysrq=0
+fs.file-max = 209708
+net.ipv4.tcp_fastopen=3
+net.core.default_qdisc=cake
+net.ipv4.tcp_congestion_control=bbr
+net.ipv4.tcp_window_scaling = 1
+vm.swappiness = 30
+vm.dirty_ratio = 30
+vm.dirty_background_ratio = 5
+net.ipv4.tcp_syncookies = 1
+net.ipv4.tcp_syn_retries = 2
+net.ipv4.tcp_synack_retries = 2
+net.ipv4.tcp_max_syn_backlog = 4096
+net.ipv4.ip_forward = 0
+net.ipv4.route.flush = 1
+net.ipv6.route.flush = 1
+```
+
 ### [Remove snapd](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)<br>
 ```
 snap list
