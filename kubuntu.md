@@ -134,7 +134,7 @@ fsck.mode=skip
 sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
 sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
-# Hide fsck clean messages
+### Hide fsck clean messages
 https://wiki.archlinux.org/title/Silent_boot <br>
 
 ### [To automatically switch audio device to newly connected devices, create this file:](https://wiki.archlinux.org/title/PipeWire#Troubleshooting)
