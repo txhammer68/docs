@@ -236,10 +236,10 @@ After install and setup of systemd-boot run <br>
 ```
 sudo update-initramfs -u
 ```
-Verify
+Verify <br>
 ``` sudo bootctl ```
 This wil update systemd-boot config files.<br>
-Reboot.<br>
+Reboot. <br>
 ### [xanmod kernel](https://xanmod.org/)<br>
 
 ### [Customizing KDE Plasma Desktop](index.md)<br>
