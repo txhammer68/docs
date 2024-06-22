@@ -157,7 +157,8 @@ sudo tune2fs -c 50 -i 1m /dev/sdb1
 /etc/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf (or ~/.config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf)
 ```
 override for pipewire-pulse.conf file
-``` pulse.cmd = [
+```
+pulse.cmd = [
     { cmd = "load-module" args = "module-always-sink" flags = [ ] }
     { cmd = "load-module" args = "module-switch-on-connect" }
 ]
@@ -174,7 +175,6 @@ default-fragments = 2
 default-fragment-size-msec = 125
 resample-method = soxr-vhq
 avoid-resampling = yes
-
 high-priority = yes
 nice-level = -11
 realtime-scheduling = yes
