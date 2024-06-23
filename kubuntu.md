@@ -134,7 +134,8 @@ sudo systemctl mask NetworkManager-wait-online.service
 
 ### journald logging
 * Change log retention and logging settings, check logs first for errors <br>
-```/etc/systemd/journald.conf
+```/etc/systemd/journald.conf```
+```
 MaxRetentionSec=3month
 MaxFileSec=1month
 MaxLevelStore=err
