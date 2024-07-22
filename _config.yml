@@ -2,6 +2,7 @@ avatar: "images/yosimte-sam.png"
 favicon_ico: "images/yosimte-sam.png"
 logo:  "images/yosimte-sam.png"
 nav_enabled: true
+layout: default
 # title: "Hacking the web"
 description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
