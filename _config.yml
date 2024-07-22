@@ -6,10 +6,11 @@ layout: default
 # title: "Hacking the web"
 description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
-#theme: pages-themes/minimal@v0.2.0
+minima:
+  skin: dark
 theme_mode: dark
 color_scheme: dark
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: jekyll/minima
 plugins:
 - jekyll-remote-theme
 name: TxHammer - DigiTech
