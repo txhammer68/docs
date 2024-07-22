@@ -4,7 +4,7 @@ avatar: "images/yosimte-sam.png"
 description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
 # theme: pages-themes/primer@v0.2.0
-remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme
 # remote_theme: jekyll/minima
