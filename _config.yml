@@ -4,12 +4,13 @@ avatar: "images/yosimte-sam.png"
 description: "Personal notes for linux,coding,web."
 title_image: "images/yosimte-sam.png"
 theme: just-the-docs
+color_scheme: dark
 # remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
 # remote_theme: jekyll/minima
 # tactile:
- skin: dark
+ # skin: dark
   # avatar: images/yosimte-sam.png
 # remote_theme: chrisrhymes/bulma-clean-theme
 # theme: txhammer68/forty
