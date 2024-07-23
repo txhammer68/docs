@@ -1,4 +1,4 @@
-### Optimizing Kubuntu 24.04 LTS desktop
+### Optimizing Kubuntu 24.04 LTS
 
 Some useful links for optimizing system performance<br>
 [Arch](https://wiki.archlinux.org/title/improving_performance)<br>
