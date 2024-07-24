@@ -2,6 +2,7 @@
 ### Customizing KDE Plasma Desktop
 ### [Optimizing Kubuntu](kubuntu.md)<br>
 ### [Debian 12 Install Notes](debian12.md)<br>
+### [Misc QML Code](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)<br>
 
 <picture>
   <img alt="OWM" src="desktop.png" width="640">
