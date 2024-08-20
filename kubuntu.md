@@ -6,7 +6,7 @@ Some useful links for optimizing system performance<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 [Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
 
-#### My Setup  - Dell Optiplex 7050 Intel Core 5-Skylake CPU OC'd to 4Ghz, Intel GPU, 16GB RAM, nvme SSD - 500GB, 4TB HDD, 10Mib Internet
+#### My Setup  - Dell Optiplex 7050 Intel Core 5-Skylake CPU OC'd to 3.8Ghz, Intel GPU, 16GB RAM, nvme SSD - 500GB, 4TB HDD, 10Mib Internet
 
 #### Some settings are specific for my system setup, use at own risk!
 
@@ -67,7 +67,7 @@ mitigations=off loglevel=3
 ```
 ENABLE="true"
 GOVERNOR="performance"
-MAX_SPEED="4000"
+MAX_SPEED="3800"
 MIN_SPEED="1600"
 ```
 
@@ -196,6 +196,7 @@ Retest changing packet size until 0% packet loss<br>
 [Arch](https://wiki.archlinux.org/title/Sysctl#Improving_performance) <br>
 [Github](https://gist.github.com/JoeyBurzynski/a4359dd19b211e5c37b6fcd2eff67286) <br>
 [Ubuntu](https://www.howtouseubuntu.com/cloud/understanding-etc-sysctl-conf-file-in-linux/) <br>
+[sysAdmin](https://lonesysadmin.net/2013/12/22/better-linux-disk-caching-performance-vm-dirty_ratio/) <br>
 Some useful sysctl settings place in /etc/sysctl.conf
 ```
 kernel.sysrq=0
@@ -204,7 +205,7 @@ net.ipv4.tcp_fastopen=3
 net.core.default_qdisc=cake
 net.ipv4.tcp_congestion_control=bbr
 net.ipv4.tcp_window_scaling = 1
-vm.swappiness = 30
+vm.swappiness = 1
 vm.dirty_ratio = 30
 vm.dirty_background_ratio = 5
 net.ipv4.tcp_syncookies = 1
@@ -277,7 +278,7 @@ sudo bootctl install --path=/boot/efi
 ```
 Root flags are same as grub options in /etc/default/grub <br>
 ```
-ROOTFLAGS="root=UUID=efc95b50-5747-*** ro quiet loglevel=3 mitigations=off resume=UUID=123"
+ROOTFLAGS="root=UUID=efc95b50-5747-*** ro quiet preempt=full nohz_full=all threadirqs loglevel=3 mitigations=off resume=UUID=123"
 ROOTFLAGS1="root=UUID=efc95b50-5747-*** ro quiet mitigations=off resume=UUID=123 3"
 ```
 After install and setup of systemd-boot run <br>
