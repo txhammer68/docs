@@ -6,7 +6,7 @@ Some useful links for optimizing system performance<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 [Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
 
-#### My Setup  - Dell Optiplex 7050 Intel Core 5-Skylake CPU OC'd to 3.8Ghz, Intel GPU, 16GB RAM, nvme SSD - 500GB, 4TB HDD, 10Mib Internet
+#### My Setup  - Dell Optiplex 7050 Intel Core 5-Skylake CPU OC'd to 3.8Ghz, Intel GPU, 16GB RAM, 500GB NVME-SSD, 4TB HDD, 10Mib Internet
 
 #### Some settings are specific for my system setup, use at own risk!
 
@@ -197,6 +197,7 @@ Retest changing packet size until 0% packet loss<br>
 [Github](https://gist.github.com/JoeyBurzynski/a4359dd19b211e5c37b6fcd2eff67286) <br>
 [Ubuntu](https://www.howtouseubuntu.com/cloud/understanding-etc-sysctl-conf-file-in-linux/) <br>
 [sysAdmin](https://lonesysadmin.net/2013/12/22/better-linux-disk-caching-performance-vm-dirty_ratio/) <br>
+
 Some useful sysctl settings place in /etc/sysctl.conf
 ```
 kernel.sysrq=0
