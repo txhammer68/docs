@@ -5,7 +5,7 @@
 ### [Misc QML Code](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)<br>
 
 <picture>
-  <img alt="OWM" src="desktop.png" width="640">
+  <img alt="OWM" src="desktop.png" width="80%">
 </picture>
 <br>
 
