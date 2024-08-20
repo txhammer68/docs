@@ -11,7 +11,7 @@ Some useful links for optimizing system performance<br>
 #### Some settings are specific for my system setup, use at own risk!
 
 <picture>
-  <img alt="system" src="images/system.png" width="60%">
+  <img alt="system" src="images/system.png" width="80%">
 </picture> <br>
 
 ### Pre Install Setup
