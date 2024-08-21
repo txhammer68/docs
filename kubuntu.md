@@ -279,7 +279,7 @@ sudo bootctl install --path=/boot/efi
 ```
 Root flags are same as grub options in /etc/default/grub <br>
 ```
-ROOTFLAGS="root=UUID=efc95b50-5747-*** ro quiet nowatchdog preempt=full nohz_full=all threadirqs loglevel=3 mitigations=off resume=UUID=123"
+ROOTFLAGS="root=UUID=efc95b50-5747-*** ro quiet nowatchdog preempt=full threadirqs loglevel=3 mitigations=off resume=UUID=123"
 ROOTFLAGS1="root=UUID=efc95b50-5747-*** ro quiet mitigations=off resume=UUID=123 3"
 ```
 After install and setup of systemd-boot run <br>
