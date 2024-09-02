@@ -223,6 +223,10 @@ Verify Status
 ```
 resolvectl status
 ```
+Some useful secuity sites
+* https://internet.nl/
+* https://ipleak.net/
+* https://1.1.1.1/help/
 
 ### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
