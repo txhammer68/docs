@@ -278,6 +278,29 @@ sudo apt autoremove --purge snapd
 rm -rf ~/snap
 ```
 ### KDE Plasma Fixes
+* X11 setup for dual monitors
+* run xrandr to get inuput id's
+* Create /etc/X11/xorg.conf.d/10-monitor.conf
+```
+  Section "Monitor"
+    Identifier  "HDMI-3"
+    Option      "Primary" "true"
+    Option      "Enable"   "true"
+    Option      "PreferredMode" "1920x1080x60.0"
+    Option      "Broadcast RGB" "Full"
+EndSection
+Section "Monitor"
+    Identifier  "HDMI-1"
+    Option      "RightOf" "HDMI-3"
+    Option      "Primary" "false"
+    Option      "Disable"  "true"
+    Option      "Enable"   "false"
+    Option      "PreferredMode" "1920x1080x60.0"
+    Option      "Broadcast RGB" "Full"
+EndSection
+```
+* This will allow SDDM to show login prompt focused on primary screen. <br>
+
 * WSL messes up Qt.openUrlExternally() <br>
 ```sudo mv /usr/share/applications/wslview.desktop /usr/share/applications/wslview.desktop.disabled```
 * MSFT is starting to mess with my linux desktop :( <br>
@@ -285,7 +308,7 @@ rm -rf ~/snap
 ```
 QT_LOGGING_RULES="*.debug=false;qt*.debug=false;qt5.debug=false;*.warning=false;*.critical=false;qt.qpa.xcb.xcberror.warning=false;qt.qpa.xcb.xcberror.error=false;qt.qpa.xcb.warning=false;qt.qpa.xcb.error=false;qt.qpa.xcb=false"
 ```
-* Allow xmlrequest for loading json file
+* Allow xmlrequest for loading json files
   * Add to /etc/environment or .bashrc <br>
 ``` QML_XHR_ALLOW_FILE_READ="1" ``` <br>
 ``` kdebugdialog5   - kde debugging settings```<br>
