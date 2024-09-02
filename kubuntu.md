@@ -200,7 +200,7 @@ Add, change DNS to your preferred DNS server
 ```
 DNS=1.1.1.1
 DNSSEC=yes
-DNSOverTLS=opportunistic
+DNSOverTLS=yes
 ```
 Change Network Manager
 /etc/NetworkManager/NetworkManager.conf
@@ -218,6 +218,10 @@ if not running then
 ```
 systemctl enable systemd-resolved.service
 systemctl start systemd-resolved.service
+```
+Verify Status
+```
+resolvectl status
 ```
 
 ### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
