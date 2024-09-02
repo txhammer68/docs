@@ -332,6 +332,7 @@ sudo update-initramfs -u
 Verify <br>
 ``` sudo bootctl ``` <br>
 Reboot <br>
+System should now be running at optimal performance and security
 
 ### [xanmod kernel](https://xanmod.org/)<br>
 
