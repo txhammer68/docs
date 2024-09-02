@@ -184,6 +184,41 @@ realtime-priority = 9
 rlimit-rtprio = 9
 daemonize = no
 ```
+### Networking
+#### systemd-resolve
+systemd-resolved provides a system-level DNS cache that can substantially improve performance for applications that do not cache their own DNS results.  DNS queries and responses have traditionally been unencrypted, but more and more resolvers now support DNS over an encrypted TLS connection (DNS over TLS.) TLS can help ensure that no parties between the DNS server and the resolver can see or modify the DNS responses.
+
+[CTRL Blog](https://www.ctrl.blog/entry/systemd-resolved.html)<br>
+[Linux Insider](https://www.linuxinsider.com/story/be-it-resolved-systemd-shall-serve-dns-177275.html)<br>
+[Blog](https://www.adityathebe.com/systemd-resolved-dns-over-tls/)<br>
+Check Status
+```
+resolvectl status
+```
+* Edit /etc/systemd/resolved.conf
+Add, change DNS to your preferred DNS server
+```
+DNS=1.1.1.1
+DNSSEC=yes
+DNSOverTLS=opportunistic
+```
+Change Network Manager
+/etc/NetworkManager/NetworkManager.conf
+```
+[main]
+dns=systemd-resolved
+```
+
+if working just restart after changes to resolved.conf file
+```
+systemctl restart systemd-resolved.service
+systemctl restart NetworkManager.service
+```
+if not running then
+```
+systemctl enable systemd-resolved.service
+systemctl start systemd-resolved.service
+```
 
 ### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
