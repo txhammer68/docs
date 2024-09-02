@@ -300,6 +300,10 @@ Section "Monitor"
 EndSection
 ```
 * This will allow SDDM to show login prompt focused on primary screen. <br>
+After creating this file run <br>
+```
+sudo update-initramfs -u
+```
 
 * WSL messes up Qt.openUrlExternally() <br>
 ```sudo mv /usr/share/applications/wslview.desktop /usr/share/applications/wslview.desktop.disabled```
