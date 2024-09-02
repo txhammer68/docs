@@ -223,10 +223,10 @@ Verify Status
 ```
 resolvectl status
 ```
-Some useful security sites
-* https://internet.nl/
-* https://ipleak.net/
-* https://1.1.1.1/help/
+Some useful sites to verify internet security connection
+[Test your connection](https://internet.nl/)<br>
+[IP Leak Test](https://ipleak.net/)<br>
+[Cloudfare Test](https://1.1.1.1/help/)<br>
 
 ### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
@@ -361,8 +361,7 @@ Verify <br>
 Reboot <br>
 System should now be running at optimal performance and security
 
-Some usefull tips i have collected over the years
-* https://gist.github.com/txhammer68/487164d7e59df958bf41a12178dacd12
+[Some usefull tips i have collected over the years](https://gist.github.com/txhammer68/487164d7e59df958bf41a12178dacd12)<br>
 
 ### [xanmod kernel](https://xanmod.org/)<br>
 
