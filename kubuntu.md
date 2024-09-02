@@ -223,7 +223,7 @@ Verify Status
 ```
 resolvectl status
 ```
-Some useful secuity sites
+Some useful security sites
 * https://internet.nl/
 * https://ipleak.net/
 * https://1.1.1.1/help/
