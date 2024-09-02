@@ -223,7 +223,7 @@ Verify Status
 ```
 resolvectl status
 ```
-Some useful sites to verify internet security connection
+Some useful sites to verify internet security connection <br>
 [Test your connection](https://internet.nl/)<br>
 [IP Leak Test](https://ipleak.net/)<br>
 [Cloudfare Test](https://1.1.1.1/help/)<br>
