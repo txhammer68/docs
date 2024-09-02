@@ -82,7 +82,7 @@ GPU /etc/modprobe.d/intel.conf
 options i915 modeset=1 mitigations=off enable_fbc=0 enable_psr=0 enable_guc=-1
 ```
 ### Disable evbug logging
-* modprobe blacklist <br>
+modprobe blacklist <br>
 ```
 /etc/modprobe.d/blacklist.conf
 blacklist evbug
@@ -133,7 +133,7 @@ sudo systemctl mask NetworkManager-wait-online.service
 ```
 
 ### journald logging
-* Change log retention and logging settings, check logs first for errors <br>
+Change log retention and logging settings, check logs first for errors <br>
 ```/etc/systemd/journald.conf```
 
 ```
@@ -147,14 +147,14 @@ MaxLevelWall=emerg
 ```
 
 ### Set fsck check interval
-* 50 boot-ups or 1 month, change devices for your system <br>
+50 boot-ups or 1 month, change devices for your system <br>
 ```
 sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
 sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
 
 ### [To automatically switch audio device to newly connected devices, create this file:](https://wiki.archlinux.org/title/PipeWire#Troubleshooting)
-* Used for HTPC connected to HDTV, when switching monitor outputs
+Used for HTPC connected to HDTV, when switching monitor outputs
 ```
 /etc/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf (or ~/.config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf)
 ```
@@ -195,31 +195,31 @@ Check Status
 ```
 resolvectl status
 ```
-* Edit /etc/systemd/resolved.conf
-Add, change DNS to your preferred DNS server
+Edit /etc/systemd/resolved.conf <br>
+Add, change DNS to your preferred DNS server <br>
 ```
 DNS=1.1.1.1
 DNSSEC=yes
 DNSOverTLS=yes
 ```
-Change Network Manager
-/etc/NetworkManager/NetworkManager.conf
+Change Network Manager <br>
+/etc/NetworkManager/NetworkManager.conf<br>
 ```
 [main]
 dns=systemd-resolved
 ```
 
-if working just restart after changes to resolved.conf file
+if working just restart after changes to resolved.conf file<br>
 ```
 systemctl restart systemd-resolved.service
 systemctl restart NetworkManager.service
 ```
-if not running then
+if not running then<br>
 ```
 systemctl enable systemd-resolved.service
 systemctl start systemd-resolved.service
 ```
-Verify Status
+Verify Status<br>
 ```
 resolvectl status
 ```
@@ -278,9 +278,9 @@ sudo apt autoremove --purge snapd
 rm -rf ~/snap
 ```
 ### KDE Plasma Fixes
-* X11 setup for dual monitors
-* run xrandr to get inuput id's
-* Create /etc/X11/xorg.conf.d/10-monitor.conf
+X11 setup for dual monitors <br>
+Run xrandr to get inuput id's <br>
+Create /etc/X11/xorg.conf.d/10-monitor.conf <br>
 ```
   Section "Monitor"
     Identifier  "HDMI-3"
@@ -299,25 +299,25 @@ Section "Monitor"
     Option      "Broadcast RGB" "Full"
 EndSection
 ```
-* This will allow SDDM to show login prompt focused on primary screen. <br>
+This will allow SDDM to show login prompt focused on primary screen. <br>
 After creating this file run <br>
 ```
 sudo update-initramfs -u
 ```
 
-* WSL messes up Qt.openUrlExternally() <br>
+WSL messes up Qt.openUrlExternally() <br>
 ```sudo mv /usr/share/applications/wslview.desktop /usr/share/applications/wslview.desktop.disabled```
-* MSFT is starting to mess with my linux desktop :( <br>
-* Disable Qt Logging, add to /etc/environment or .bashrc
+MSFT is starting to mess with my linux desktop :( <br>
+Disable Qt Logging, add to /etc/environment or .bashrc <br>
 ```
 QT_LOGGING_RULES="*.debug=false;qt*.debug=false;qt5.debug=false;*.warning=false;*.critical=false;qt.qpa.xcb.xcberror.warning=false;qt.qpa.xcb.xcberror.error=false;qt.qpa.xcb.warning=false;qt.qpa.xcb.error=false;qt.qpa.xcb=false"
 ```
-* Allow xmlrequest for loading json files
-  * Add to /etc/environment or .bashrc <br>
+Allow xmlrequest for loading json files <br>
+Add to /etc/environment or .bashrc <br>
 ``` QML_XHR_ALLOW_FILE_READ="1" ``` <br>
 ``` kdebugdialog5   - kde debugging settings```<br>
-* Remove extra fonts, check Noto Sans/Serif extra language fonts, unnecessary for most cases
-* Run this after, clean font cache
+Remove extra fonts, check Noto Sans/Serif extra language fonts, unnecessary for most cases <br>
+Run this after, clean font cache <br>
 ``` fc-cache -f -v ``` <br>
 
 ### Install Firefox PPA
