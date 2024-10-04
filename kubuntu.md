@@ -244,6 +244,7 @@ sudo systemctl restart nfs-server
 mount share
 ```
 sudo mount -t nfs -o resvport,ro 192.168.1.101:/home/data/Movies/ /home/matt/Temp/
+sudo showmount -e
 ```
 For iOS NFS path
 ``` 192.168.1.101:/home/data/Movies/ ```
