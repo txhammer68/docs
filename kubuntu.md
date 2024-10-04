@@ -227,6 +227,23 @@ Some useful sites to verify internet security connection <br>
 [IP Leak Test](https://ipleak.net/)<br>
 [Cloudfare Test](https://1.1.1.1/help/)<br>
 
+### NFS Sharing
+[NFS](https://www.linuxbabe.com/ubuntu/nfs-share)<br>
+```
+ sudo apt install nfs-kernel-server
+```
+Create /etc/exports
+```
+/home/data/Movies/    192.168.1.0/24(ro,sync,no_subtree_check,no_root_squash,all_squash)
+```
+```
+sudo exportfs -ra
+sudo systemctl restart nfs-server
+```
+
+For iOS NFS path
+``` 192.168.1.101:/home/data/Movies/ ```
+
 ### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
 The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
 ```
