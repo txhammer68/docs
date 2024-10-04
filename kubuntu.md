@@ -227,8 +227,9 @@ Some useful sites to verify internet security connection <br>
 [IP Leak Test](https://ipleak.net/)<br>
 [Cloudfare Test](https://1.1.1.1/help/)<br>
 
-### NFS Sharing
+### NFS Shares
 [NFS](https://www.linuxbabe.com/ubuntu/nfs-share)<br>
+[NFS shares on Ubuntu](https://www.nodinrogers.com/post/2021-10-10-nfs-shares-on-ubuntu/)<br>
 ```
  sudo apt install nfs-kernel-server
 ```
@@ -240,7 +241,10 @@ Create /etc/exports
 sudo exportfs -ra
 sudo systemctl restart nfs-server
 ```
-
+mount share
+```
+sudo mount -t nfs -o resvport,ro 192.168.1.101:/home/data/Movies/ /home/matt/Temp/
+```
 For iOS NFS path
 ``` 192.168.1.101:/home/data/Movies/ ```
 
