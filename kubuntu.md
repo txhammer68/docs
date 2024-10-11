@@ -317,13 +317,6 @@ sudo mkdir -p /etc/systemd/system.conf.d && echo -e "# Reduce timeout (default =
 ```
 sudo mkdir -p /etc/systemd/user.conf.d && echo -e "# Reduce timeout (default = 90s)\n\n[Manager]\nDefaultTimeoutStopSec=15s" | sudo tee /etc/systemd/user.conf.d/99-usertimeout.conf
 ```
-Install fundamental missing software like
-* Multimedia codecs etc.
-* Microsoft Web and replacement fonts
-* exFAT utilities (the file system you should use to e.g. share USB sticks between Linux, Windows and macOS)
-```
-sudo apt update && sudo apt install kubuntu-restricted-extras gstreamer1.0-vaapi libvdpau-va-gl1 rar fonts-crosextra-carlito fonts-crosextra-caladea exfatprogs
-```
 * Disable fast user switching
 ```
 echo -e "\n[KDE Action Restrictions] [\$i]\naction/switch_user=false\naction/start_new_session=false" | sudo tee -a /usr/share/kubuntu-default-settings/kf5-settings/kdeglobals
