@@ -307,6 +307,27 @@ Pin-Priority: -10
 EOF
 ```
 ### KDE Plasma Fixes
+[kubuntu](https://www.kubuntuforums.net/forum/currently-supported-releases/kubuntu-24-04-nitpick-noble-lts/post-installation-az/678534-essential-and-strongly-recommended-things-to-do-directly-after-a-kubuntu-24-04-lts-installation)
+
+* Reduce systemd timeouts for desktop installations like KDE suggests for Plasma in their Distributions/Packaging Recommendations
+( = the system will not "hang" for 90 seconds and longer from time to time when logging out, rebooting or shutting down). <br>
+```
+sudo mkdir -p /etc/systemd/system.conf.d && echo -e "# Reduce timeout (default = 90s)\n\n[Manager]\nDefaultTimeoutStopSec=15s" | sudo tee /etc/systemd/system.conf.d/99-systemtimeout.conf
+```
+```
+sudo mkdir -p /etc/systemd/user.conf.d && echo -e "# Reduce timeout (default = 90s)\n\n[Manager]\nDefaultTimeoutStopSec=15s" | sudo tee /etc/systemd/user.conf.d/99-usertimeout.conf
+```
+Install fundamental missing software like
+* Multimedia codecs etc.
+* Microsoft Web and replacement fonts
+* exFAT utilities (the file system you should use to e.g. share USB sticks between Linux, Windows and macOS)
+```
+sudo apt update && sudo apt install kubuntu-restricted-extras gstreamer1.0-vaapi libvdpau-va-gl1 rar fonts-crosextra-carlito fonts-crosextra-caladea exfatprogs
+```
+* Disable fast user switching
+```
+echo -e "\n[KDE Action Restrictions] [\$i]\naction/switch_user=false\naction/start_new_session=false" | sudo tee -a /usr/share/kubuntu-default-settings/kf5-settings/kdeglobals
+```
 X11 setup for dual monitors <br>
 Run xrandr to get inuput id's <br>
 Create /etc/X11/xorg.conf.d/10-monitor.conf <br>
@@ -348,6 +369,7 @@ Add to /etc/environment or .bashrc <br>
 Remove extra fonts, check Noto Sans/Serif extra language fonts, unnecessary for most cases <br>
 Run this after, clean font cache <br>
 ``` fc-cache -f -v ``` <br>
+* Reboot to apply changes
 
 ### Install Firefox PPA
 [FireFox](https://support.mozilla.org/en-US/kb/install-firefox-linux)<br>
