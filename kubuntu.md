@@ -6,7 +6,7 @@ Some useful links for optimizing system performance<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 [Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
 
-#### My Setup  - Dell Optiplex 7050 Intel Core 5-Skylake CPU OC'd to 3.8Ghz, Intel GPU, 16GB RAM, 500GB NVME-SSD, 4TB HDD, 10Mib Internet
+#### My Setup  - Dell Optiplex 7050 Intel Core 5-Skylake CPU OC'd to 3.6Ghz, Intel GPU, 16GB RAM, 500GB NVME-SSD, 4TB HDD, 10Mib Internet
 
 #### Some settings are specific for my system setup, use at own risk!
 
@@ -67,8 +67,8 @@ mitigations=off loglevel=3
 ```
 ENABLE="true"
 GOVERNOR="performance"
-MAX_SPEED="3800"
-MIN_SPEED="1600"
+MAX_SPEED="3600"
+MIN_SPEED="2000"
 ```
 
 ### Modprobe<br>
