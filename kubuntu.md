@@ -388,8 +388,16 @@ Run this after, clean font cache <br>
 * [different script using kernel cmdline options](https://gist.github.com/gdamjan/ccdcda2c91119406a0f8d22f8b8f2c4a) <br>
 #### Install systemd-boot loader <br>
 ```
-sudo apt install systemd-boot
+sudo apt install systemd-boot systemd-ukify
 sudo bootctl install --path=/boot/efi
+```
+updates for Ubuntu 24.04:
+* install systemd-ukify - it has been added since
+* the zz-update-systemd-boot script is not needed
+add in /etc/kernel/install.conf
+```
+layout=uki
+BOOT_ROOT=/boot/efi
 ```
 Root flags are same as grub options in /etc/default/grub <br>
 ```
