@@ -36,6 +36,7 @@ Check system log for errors or issues <br>
 #### fstab
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 Obtain UUID for each drive/partiton on system.<br>
+[ext4](https://man7.org/linux/man-pages/man5/ext4.5.html)
 ```
 lsblk -f
 ```
@@ -44,6 +45,10 @@ edit /etc/fstab <br>
 Root   UUID="" /               ext4    defaults,noatime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro 0  1
 Data   UUID="" /home/Data      ext4    defaults,noatime,errors=remount-ro            0  2
 ```
+* noatime - disable access time stamps
+* auto_da_alloc - If auto_da_alloc is enabled, ext4 will detect the replace via-rename and replace-via-truncate patterns and orce that any delayed allocation blocks are allocated such that at the next journal commit
+* inode_readahead_blks - This tuning parameter controls the maximum number of inode table blocks that ext4's inode table adahead algorithm will pre-read into the buffer cache.  The value must be a power of 2. The default value is 32 blocks
+  
 ### EXT4 options<br>
 Enable fast_commit journal option speed up FS writes <br>
 ```
