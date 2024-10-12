@@ -77,7 +77,7 @@ MIN_SPEED="2000"
 [Ubuntu](https://www.howtouseubuntu.com/cloud/understanding-etc-sysctl-conf-file-in-linux/) <br>
 [sysAdmin](https://lonesysadmin.net/2013/12/22/better-linux-disk-caching-performance-vm-dirty_ratio/) <br>
 
-Some useful sysctl settings place in /etc/sysctl.conf
+Some useful sysctl settings edit /etc/sysctl.conf
 ```
 kernel.sysrq=0
 fs.file-max = 209708
@@ -98,11 +98,11 @@ net.ipv6.route.flush = 1
 ```
 ### Modprobe various driver settings<br>
 Disable power saving for audio device, remove pop sounds <br>
-edit /etc/modprobe.d/audio.conf
+Audio Device /etc/modprobe.d/audio.conf
 ```
 options snd_hda_intel power_save=0 power_save_controller=N
 ```
-GPU edit /etc/modprobe.d/intel.conf
+GPU /etc/modprobe.d/intel.conf
 ```
 options i915 modeset=1 mitigations=off enable_fbc=0 enable_psr=0 enable_guc=-1
 ```
@@ -180,7 +180,7 @@ sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
 sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libk3b-extracodecs lame libavcodec-extra libavcodec-extra60 intel-media-va-driver-non-free
 ```
-### [To automatically switch audio device to newly connected devices, create this file:](https://wiki.archlinux.org/title/PipeWire#Troubleshooting)
+#### [To automatically switch audio device to newly connected devices, create this file:](https://wiki.archlinux.org/title/PipeWire#Troubleshooting)
 Used for HTPC connected to HDTV, when switching monitor outputs
 ```
 /etc/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf (or ~/.config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf)
@@ -192,7 +192,7 @@ pulse.cmd = [
     { cmd = "load-module" args = "module-switch-on-connect" }
 ]
 ```
-### [Better Pulse Audio Settings](https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f)
+#### [Better Pulse Audio Settings](https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f)
 /etc/pulse/daemon.conf
 ```
 default-sample-format = float32le
