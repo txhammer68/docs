@@ -174,6 +174,12 @@ modprobe blacklist <br>
 /etc/modprobe.d/blacklist.conf
 blacklist evbug
 ```
+After creating these files run <br>
+```
+sudo update-initramfs -u
+```
+This wil update boot image to include the changes.<br>
+Reboot.<br>
 ### Set fsck check interval
 50 boot-ups or 1 month, change devices for your system <br>
 ```
