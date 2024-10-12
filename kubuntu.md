@@ -31,14 +31,15 @@ Check system log for errors or issues <br>
 ``` sudo hdparm -t --direct /dev/nvme0n1p2 ``` <br>
 ``` systemd-analyze critical-chain ``` <br>
 ``` systemd-analyze --user blame ``` <br>
+### System Tuning
 
-### fstab
+#### fstab
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
 Obtain UUID for each drive/partiton on system.<br>
 ```
 lsblk -f
 ```
-##### /etc/fstab <br>
+edit /etc/fstab <br>
 ``` 
 Root   UUID="" /               ext4    defaults,noatime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro 0  1
 Data   UUID="" /home/Data      ext4    defaults,noatime,errors=remount-ro            0  2
@@ -70,22 +71,40 @@ GOVERNOR="performance"
 MAX_SPEED="3600"
 MIN_SPEED="2000"
 ```
+### Sysctl Settings
+[Arch](https://wiki.archlinux.org/title/Sysctl#Improving_performance) <br>
+[Github](https://gist.github.com/JoeyBurzynski/a4359dd19b211e5c37b6fcd2eff67286) <br>
+[Ubuntu](https://www.howtouseubuntu.com/cloud/understanding-etc-sysctl-conf-file-in-linux/) <br>
+[sysAdmin](https://lonesysadmin.net/2013/12/22/better-linux-disk-caching-performance-vm-dirty_ratio/) <br>
 
-### Modprobe<br>
-/etc/modprobe.d<br>
-Audio /etc/modprobe.d/audio.conf
+Some useful sysctl settings place in /etc/sysctl.conf
+```
+kernel.sysrq=0
+fs.file-max = 209708
+net.ipv4.tcp_fastopen=3
+net.core.default_qdisc=cake
+net.ipv4.tcp_congestion_control=bbr
+net.ipv4.tcp_window_scaling = 1
+vm.swappiness = 1
+vm.dirty_ratio = 30
+vm.dirty_background_ratio = 5
+net.ipv4.tcp_syncookies = 1
+net.ipv4.tcp_syn_retries = 2
+net.ipv4.tcp_synack_retries = 2
+net.ipv4.tcp_max_syn_backlog = 4096
+net.ipv4.ip_forward = 0
+net.ipv4.route.flush = 1
+net.ipv6.route.flush = 1
+```
+### Modprobe various driver settings<br>
+Disable power saving for audio device, remove pop sounds
+edit /etc/modprobe.d/audio.conf
 ```
 options snd_hda_intel power_save=0 power_save_controller=N
 ```
-GPU /etc/modprobe.d/intel.conf
+GPU edit /etc/modprobe.d/intel.conf
 ```
 options i915 modeset=1 mitigations=off enable_fbc=0 enable_psr=0 enable_guc=-1
-```
-### Disable evbug logging
-modprobe blacklist <br>
-```
-/etc/modprobe.d/blacklist.conf
-blacklist evbug
 ```
 After creating these files run <br>
 ```
@@ -131,8 +150,8 @@ sudo systemctl mask lvm2-monitor.service
 sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl mask NetworkManager-wait-online.service
 ```
-
-### journald logging
+### Minimize logging
+* journald logging
 Change log retention and logging settings, check logs first for errors <br>
 /etc/systemd/journald.conf<br>
 ```
@@ -144,14 +163,23 @@ MaxLevelKMsg=err
 MaxLevelConsole=err
 MaxLevelWall=emerg
 ```
-
+### Disable evbug logging
+modprobe blacklist <br>
+```
+/etc/modprobe.d/blacklist.conf
+blacklist evbug
+```
 ### Set fsck check interval
 50 boot-ups or 1 month, change devices for your system <br>
 ```
 sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
 sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
-
+### MultiMedia
+* Restricted Codecs
+```
+sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libk3b-extracodecs lame libavcodec-extra libavcodec-extra60 intel-media-va-driver-non-free
+```
 ### [To automatically switch audio device to newly connected devices, create this file:](https://wiki.archlinux.org/title/PipeWire#Troubleshooting)
 Used for HTPC connected to HDTV, when switching monitor outputs
 ```
@@ -255,32 +283,6 @@ The ping command will let you know if the packet was sent as more than one fragm
 ping -s 1472 -c1 espn.com
 ```
 Retest changing packet size until 0% packet loss<br>
-
-### Sysctl Settings
-[Arch](https://wiki.archlinux.org/title/Sysctl#Improving_performance) <br>
-[Github](https://gist.github.com/JoeyBurzynski/a4359dd19b211e5c37b6fcd2eff67286) <br>
-[Ubuntu](https://www.howtouseubuntu.com/cloud/understanding-etc-sysctl-conf-file-in-linux/) <br>
-[sysAdmin](https://lonesysadmin.net/2013/12/22/better-linux-disk-caching-performance-vm-dirty_ratio/) <br>
-
-Some useful sysctl settings place in /etc/sysctl.conf
-```
-kernel.sysrq=0
-fs.file-max = 209708
-net.ipv4.tcp_fastopen=3
-net.core.default_qdisc=cake
-net.ipv4.tcp_congestion_control=bbr
-net.ipv4.tcp_window_scaling = 1
-vm.swappiness = 1
-vm.dirty_ratio = 30
-vm.dirty_background_ratio = 5
-net.ipv4.tcp_syncookies = 1
-net.ipv4.tcp_syn_retries = 2
-net.ipv4.tcp_synack_retries = 2
-net.ipv4.tcp_max_syn_backlog = 4096
-net.ipv4.ip_forward = 0
-net.ipv4.route.flush = 1
-net.ipv6.route.flush = 1
-```
 
 ### [Remove snapd](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)<br>
 ```
