@@ -97,7 +97,7 @@ net.ipv4.route.flush = 1
 net.ipv6.route.flush = 1
 ```
 ### Modprobe various driver settings<br>
-Disable power saving for audio device, remove pop sounds
+Disable power saving for audio device, remove pop sounds <br>
 edit /etc/modprobe.d/audio.conf
 ```
 options snd_hda_intel power_save=0 power_save_controller=N
