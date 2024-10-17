@@ -257,10 +257,18 @@ Verify Status<br>
 ```
 resolvectl status
 ```
+
 Some useful sites to verify internet security connection <br>
 [Test your connection](https://internet.nl/)<br>
 [IP Leak Test](https://ipleak.net/)<br>
 [Cloudfare Test](https://1.1.1.1/help/)<br>
+
+### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
+The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
+```
+ping -s 1472 -c1 espn.com
+```
+Retest changing packet size until 0% packet loss<br>
 
 ### NFS Shares
 [NFS](https://www.linuxbabe.com/ubuntu/nfs-share)<br>
@@ -283,13 +291,6 @@ sudo showmount -e
 ```
 For iOS NFS path
 ``` 192.168.1.101:/home/data/Movies/ ```
-
-### [Optimize network MTU](https://appuals.com/how-to-optimize-ubuntu-internet-speed-with-mtu-settings/)<br> 
-The ping command will let you know if the packet was sent as more than one fragment with multiple header data attached.<br>
-```
-ping -s 1472 -c1 espn.com
-```
-Retest changing packet size until 0% packet loss<br>
 
 ### [Remove snapd](https://haydenjames.io/remove-snap-ubuntu-22-04-lts/)<br>
 ```
