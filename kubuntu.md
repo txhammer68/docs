@@ -59,15 +59,11 @@ Verify
 ```
 sudo tune2fs -l /dev/nvme0n1p2 | grep features
 ```
-#### Set Disk Label
-``` sudo e2label /dev/nvme0n1p2 "SYSTEM" ``` <br>
-
 ### Grub options<br>
 /etc/default/grub<br>
 ```
 mitigations=off loglevel=3
 ```
-
 ### CPUFreqUtils Change CPU Governor and Frequencies
 /etc/init.d/cpufrequtils
 ```
@@ -109,7 +105,7 @@ options snd_hda_intel power_save=0 power_save_controller=N
 ```
 GPU /etc/modprobe.d/intel.conf
 ```
-options i915 modeset=1 mitigations=off enable_fbc=0 enable_psr=0 enable_guc=-1
+options i915 modeset=1 mitigations=off enable_fbc=0 enable_psr=0 enable_guc=2
 ```
 After creating these files run <br>
 ```
