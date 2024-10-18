@@ -127,7 +127,7 @@ Audio Device /etc/modprobe.d/audio.conf
 ```
 options snd_hda_intel power_save=0 power_save_controller=N
 ```
-GPU /etc/modprobe.d/intel.conf
+GPU /etc/modprobe.d/i915.conf
 ```
 options i915 modeset=1 mitigations=off enable_fbc=0 enable_psr=0 enable_guc=2
 ```
