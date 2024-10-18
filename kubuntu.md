@@ -76,7 +76,7 @@ MIN_SPEED="2000"
 * [Intel](https://www.intel.com/content/www/us/en/content-details/609249/enabling-the-guc-huc-firmware-for-linux-on-new-intel-gpu-platforms.html) 
 * [Arch](https://wiki.archlinux.org/title/Intel_graphics)
 * [GitHub](https://gist.github.com/Brainiarc7/aa43570f512906e882ad6cdd835efe57)
-* 
+
 i915 GPU settings edit /etc/modprobe.d/i915.conf <br>
 ```
 options i915 modeset=1 mitigations=off enable_fbc=1 enable_guc=2 enable_psr=0
