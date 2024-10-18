@@ -72,6 +72,29 @@ GOVERNOR="performance"
 MAX_SPEED="3600"
 MIN_SPEED="2000"
 ```
+### Intel GPU
+[Intel](https://www.intel.com/content/www/us/en/content-details/609249/enabling-the-guc-huc-firmware-for-linux-on-new-intel-gpu-platforms.html)
+[Arch](https://wiki.archlinux.org/title/Intel_graphics)
+[GitHub](https://gist.github.com/Brainiarc7/aa43570f512906e882ad6cdd835efe57)
+i915 GPU settings edit /etc/modprobe.d/i915.conf
+```
+options i915 modeset=1 mitigations=off enable_fbc=1 enable_guc=2 enable_psr=0
+```
+* Override the security mitigations default for the Intel graphics driver for perfromance gains
+* Framebuffer compression (FBC) is a feature that can reduce power consumption and memory bandwidth during screen refreshes. 
+* GuC is designed to perform graphics workload scheduling on the various graphics parallel engines, (better.faster x264 decoding)
+* Panel Self Refresh (PSR), a power saving feature used by Intel iGPUs is known to cause flickering in some instances
+* Some usefull tools for Intel GPU's
+ ```
+sudo apt install
+intel-media-va-driver (decode)
+intel-media-va-driver-non-free (encode)
+firmware-misc-nonfree
+intel-gpu-tools
+```
+Run ```sudo update-initramfs -u```
+Verify changes after reboot
+``` sudo systool -m i915 -av ```
 ### Sysctl Settings
 [Arch](https://wiki.archlinux.org/title/Sysctl#Improving_performance) <br>
 [Github](https://gist.github.com/JoeyBurzynski/a4359dd19b211e5c37b6fcd2eff67286) <br>
@@ -105,7 +128,7 @@ options snd_hda_intel power_save=0 power_save_controller=N
 ```
 GPU /etc/modprobe.d/intel.conf
 ```
-options i915 modeset=1 mitigations=off enable_fbc=0 enable_psr=0 enable_guc=2
+options i915 modeset=1 mitigations=off enable_fbc=1 enable_psr=0 enable_guc=2
 ```
 After creating these files run <br>
 ```
