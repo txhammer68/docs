@@ -8,7 +8,7 @@ Some useful links for optimizing system performance<br>
 
 #### My Setup  - Dell Optiplex 7050 Intel Core 5-Skylake CPU OC'd to 3.6Ghz, Intel GPU, 16GB RAM, 500GB NVME-SSD, 4TB HDD, 10Mib Internet
 
-#### Some settings are specific for my system setup, use at own risk!
+#### Some settings are specific for my system setup, trying to get every performance gain i can on this older PC, use at own risk!
 
 <picture>
   <img alt="system" src="images/system.png" width="80%">
