@@ -2,21 +2,17 @@
 
 ### Win 10 Lockscreen <br>
 <picture>
-  <img alt="OWM" src="lockscreen-win10.png" width="512">
+  <img alt="OWM" src="lockscreen-win10.png" width="80%">
 </picture>
 <br>
 
 ### Hub Info Lockscreen <br>
-<a target="_blank" href="https://youtu.be/r_tKC0dHKZQ">
-  <picture>
-    <img alt="OWM" src="lockscreen.png" width="512">
-  </picture>
-</a>
+[<img alt="alt_text" width="80%" src="lockscreen.png" />](https://youtu.be/r_tKC0dHKZQ)
 <br>
 
 ### Lockscreen Settings <br>
 <picture>
-  <img alt="config" src="lockscreenSettings.png" width="512">
+  <img alt="config" src="lockscreenSettings.png" width="80%">
 </picture> <br>
 <br>
 
