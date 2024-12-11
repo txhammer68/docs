@@ -5,11 +5,7 @@
 ### [Misc QML Code](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)<br>
 
 ### My Plasma setup
-<a target="_blank" href="https://www.youtube.com/watch?v=nE3HVLKpwc0">
-  <picture>
-    <img alt="OWM" src="desktop.png" width="80%">
-  </picture>
-</a>
+[<img alt="alt_text" width="80%" src="desktop.png" />](https://www.youtube.com/watch?v=nE3HVLKpwc0)
 
 ### [Custom Lockscreen](lockscreen.md) <br>
 * Display current weather conditions,calendar events <br>
