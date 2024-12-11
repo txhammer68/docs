@@ -4,19 +4,12 @@
 ### [Debian 12 Install Notes](debian12.md)<br>
 ### [Misc QML Code](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)<br>
 
+### My Plasma setup
+<a target="_blank" href="https://www.youtube.com/watch?v=nE3HVLKpwc0">
 <picture>
   <img alt="OWM" src="desktop.png" width="80%">
 </picture>
-<br>
-
-### My Plasma setup
-<br>
-
-[![YouTube](http://i.ytimg.com/vi/nE3HVLKpwc0/hqdefault.jpg)](https://www.youtube.com/watch?v=nE3HVLKpwc0)
-
-<video src="https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4" controls="controls" style="max-width: 80%;">
-</video>
-
+</a>
 <br>
 
 <picture>
