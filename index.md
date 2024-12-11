@@ -11,14 +11,12 @@
 </picture>
 </a>
 <br>
-<br>
+### [Custom Lockscreen](lockscreen.md) <br>
+* Display current weather conditions,calendar events <br>
 <picture>
   <img alt="OWM" src="lockscreen-win10.png" width="80%">
 </picture>
 <br>
-
-### [Custom Lockscreen](lockscreen.md) <br>
-* Display current weather conditions,calendar events <br>
 
 ### [Plasma Widgets](https://github.com/txhammer68/qml#misc-kde-5-plasma-qml-widgets)
 
