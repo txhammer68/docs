@@ -6,9 +6,9 @@
 
 ### My Plasma setup
 <a target="_blank" href="https://www.youtube.com/watch?v=nE3HVLKpwc0">
-<picture>
-  <img alt="OWM" src="desktop.png" width="80%">
-</picture>
+  <picture>
+    <img alt="OWM" src="desktop.png" width="80%">
+  </picture>
 </a>
 
 ### [Custom Lockscreen](lockscreen.md) <br>
