@@ -7,9 +7,11 @@
 <br>
 
 ### Hub Info Lockscreen <br>
-<picture>
-  <img alt="OWM" src="lockscreen.png" width="512">
-</picture>
+<a target="_blank" href="https://youtu.be/r_tKC0dHKZQ">
+  <picture>
+    <img alt="OWM" src="lockscreen.png" width="512">
+  </picture>
+</a>
 <br>
 
 ### Lockscreen Settings <br>
