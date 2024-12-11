@@ -10,7 +10,7 @@
   <img alt="OWM" src="desktop.png" width="80%">
 </picture>
 </a>
-<br>
+
 ### [Custom Lockscreen](lockscreen.md) <br>
 * Display current weather conditions,calendar events <br>
 <picture>
