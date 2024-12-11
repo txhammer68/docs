@@ -12,16 +12,15 @@
 ### My Plasma setup
 <br>
 
-[![Plasma Desktop](https://img.youtube.com/vi/nE3HVLKpwc0/0.jpg)](https://www.youtube.com/watch?v=nE3HVLKpwc0)
+[![YouTube](http://i.ytimg.com/vi/nE3HVLKpwc0/hqdefault.jpg)](https://www.youtube.com/watch?v=nE3HVLKpwc0)
 
-
-<video src="https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://user-images.githubusercontent.com/9554887/209914580-0f57f03e-1f00-4f21-bdb0-5f62c3541392.mp4" controls="controls" style="max-width: 80%;">
 </video>
 
 <br>
 
 <picture>
-  <img alt="OWM" src="lockscreen-win10.png" width="640">
+  <img alt="OWM" src="lockscreen-win10.png" width="80%">
 </picture>
 <br>
 
