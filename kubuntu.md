@@ -141,6 +141,11 @@ This wil update boot image to include the changes.<br>
 Reboot.<br>
 
 ### Disable some uneeded system services<br>
+Remove plymouth boot splash screen
+```
+sudo apt purge plymouth && sudo apt autoremove
+sudo rm -rf /usr/share/plymouth
+```
 Disable ModemManager If you do not have a mobile broadband interface.
 ```
 sudo systemctl disable ModemManager.service
@@ -166,16 +171,21 @@ sudo systemctl disable apt-daily-upgrade.timer
 sudo systemctl disable apt-daily-upgrade.service
 sudo systemctl mask apt-daily-upgrade.service
 ```
-<br>Logical Volume Manager (LVM) is a device mapper framework that provides logical volume management.<br>
+Logical Volume Manager (LVM) is a device mapper framework that provides logical volume management.<br>
 Disable LVM
 ```
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ````
-<br>Disable Wait for Network online service, slows down boot
+Disable Wait for Network online service, slows down boot
 ```
 sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl mask NetworkManager-wait-online.service
+```
+[Apport](https://wiki.ubuntu.com/Apport) collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
+```
+sudo systemctl disable apport.service
+sudo systemctl mask apport.service
 ```
 ### Minimize logging
 * journald logging
