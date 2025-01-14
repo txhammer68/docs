@@ -204,7 +204,9 @@ MaxLevelConsole=err
 MaxLevelWall=emerg
 ```
 ### Disable evbug logging
+EVBUG is the driver for the Linux kernel input subsystem's event debugging. Enabling the EVBUG driver (INPUT_EVBUG) will cause all input events to be logged to the system log... So all key presses, mouse movements, etc, will end up in the kernel log. That includes all key presses, so logging your passwords and other data to the kernel log. Practically a built-in kernel key logger. 
 modprobe blacklist <br>
+Not sure why this enabled on kubuntu maybe they forgot to disable after testing..., safe to disable
 ```
 /etc/modprobe.d/blacklist.conf
 blacklist evbug
