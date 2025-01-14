@@ -65,6 +65,7 @@ sudo tune2fs -l /dev/nvme0n1p2 | grep features
 ```
 ### Grub options<br>
 /etc/default/grub<br>
+* [Turning off CPU exploit mitigations may improve performance.](https://wiki.archlinux.org/title/Improving_performance#Turn_off_CPU_exploit_mitigations)
 ```
 mitigations=off loglevel=3
 ```
