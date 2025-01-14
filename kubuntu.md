@@ -17,7 +17,8 @@ Some useful links for optimizing system performance<br>
 ### Pre Install Setup
 
 Create [partitions](https://wiki.archlinux.org/title/partitioning) for each drive before the install process
-* EFI partition for UEFI Boot drive 650MB type fat32 /dev/nvme0n1p1
+* EFI partition for UEFI Boot drive 512MB type fat32 /dev/nvme0n1p1
+  * More space for custom kernel testing
 * Root system partition remaining space type ext4 /dev/nvme0n1p2
 * Swap space file 16GB
 * Data drive 4TB hdd ext4 /dev/sdc1
