@@ -450,6 +450,11 @@ add in /etc/kernel/install.conf
 layout=uki
 BOOT_ROOT=/boot/efi
 ```
+edit /etc/kernel/cmdline
+add 
+```
+root=UUID=xxxyyy ro quiet nowatchdog preempt=voluntary threadirqs mitigations=off vt.handoff=7 loglevel=3 rd.udev.log-priority=3 udev.log_priority=3
+```
 Root flags are same as grub options in /etc/default/grub <br>
 ```
 ROOTFLAGS="root=UUID=efc95b50-5747-*** ro quiet nowatchdog preempt=voluntary threadirqs loglevel=3 mitigations=off resume=UUID=123"
