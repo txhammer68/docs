@@ -457,7 +457,7 @@ root=UUID=xxxyyy ro quiet nowatchdog preempt=voluntary threadirqs mitigations=of
 ```
 * threadirqs - Improved interrupt handling:
 By distributing interrupts across multiple threads, the system can handle a higher volume of interrupts concurrently, potentially reducing latency and improving responsiveness.
-* [nowatchdog](https://wiki.archlinux.org/title/Improving_performance#Watchdogs) - Disabling watchodog timers will speed up your boot and shutdown, because one less module is loaded. Additionally disabling watchdog timers increases performance and lowers power consumption. Personal computer users don’t need watchdog as they can reset the system manually.
+* [nowatchdog](https://wiki.archlinux.org/title/Improving_performance#Watchdogs) - Disabling watchodog timers will speed up your boot and shutdown, because one less module is loaded. Additionally disabling watchdog timers increases performance and lowers power consumption. Personal computer users don’t need watchdog as they can reset the system manually.<br>
 Root flags are same as grub options in /etc/default/grub <br>
 ```
 ROOTFLAGS="root=UUID=efc95b50-5747-*** ro quiet nowatchdog preempt=voluntary threadirqs loglevel=3 mitigations=off resume=UUID=123"
