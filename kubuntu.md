@@ -44,8 +44,8 @@ lsblk -f
 ```
 edit /etc/fstab <br>
 ``` 
-Root   UUID="" /               ext4    defaults,auto,auto_da_alloc,noatime,nodiratime,commit=15,inode_readahead_blks=64,errors=remount-ro   0 1
-Data   UUID="" /home/Data      ext4    defaults,auto,noatime,nodiratime,commit=15,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro   0 2
+Root   UUID="" /               ext4    defaults,auto,auto_da_alloc,noatime,nodiratime,inode_readahead_blks=64,errors=remount-ro   0 1
+Data   UUID="" /home/Data      ext4    defaults,auto,noatime,nodiratime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro   0 2
 tmpfs         /tmp             tmpfs   defaults,rw,nosuid,nodev,size=50%,noatime,nodiratime,nr_inodes=1m,mode=1777 0 0
 /swapfile     swap             swap    defaults   0 0
 ```
