@@ -189,11 +189,7 @@ Disable Wait for Network online service, slows down boot
 sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl mask NetworkManager-wait-online.service
 ```
-[Apport](https://wiki.ubuntu.com/Apport) collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material.
-```
-sudo systemctl disable apport.service
-sudo systemctl mask apport.service
-```
+
 ### Minimize logging
 * journald logging
 Change log retention and logging settings, check logs first for errors <br>
