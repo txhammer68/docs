@@ -5,6 +5,7 @@ Some useful links for optimizing system performance<br>
 [KDE](https://wiki.archlinux.org/title/KDE)<br>
 [Ubuntu](https://github.com/themagicalmammal/howtodebuntu#5-optimize-boot-time--ram-usage)<br>
 [Ubuntu Desktop optimization](https://www.orangesputnik.eu/ubuntu-desktop-optimization/)<br>
+[Ubuntu system hardening guide for desktops and servers](https://linux-audit.com/system-hardening/guides/ubuntu/)
 
 #### My Setup  - Dell Optiplex 7050 Intel Core 5-Skylake CPU OC'd to 3.6Ghz, Intel GPU, 16GB RAM, 500GB NVME-SSD, 4TB HDD, 10Mib Internet
 
