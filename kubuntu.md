@@ -44,10 +44,10 @@ lsblk -f
 ```
 edit /etc/fstab <br>
 ``` 
-Root   UUID="" /               ext4    defaults,auto,auto_da_alloc,noatime,nodiratime,inode_readahead_blks=64,errors=remount-ro   0 1
-Data   UUID="" /home/Data      ext4    defaults,auto,noatime,nodiratime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro   0 2
+Root   UUID="" /               ext4    defaults,noatime,nodiratime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro   0 1
+Data   UUID="" /home/Data      ext4    defaults,noatime,nodiratime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro   0 2
 tmpfs         /tmp             tmpfs   defaults,rw,nosuid,nodev,size=50%,noatime,nodiratime,nr_inodes=1m,mode=1777 0 0
-/swapfile     swap             swap    defaults   0 0
+/swapfile     swap             swap    defaults,noatime,nodiratime   0 0
 ```
 * noatime - disable access time stamps
 * auto_da_alloc - If auto_da_alloc is enabled, ext4 will detect the replace via-rename and replace-via-truncate patterns and orce that any delayed allocation blocks are allocated such that at the next journal commit
