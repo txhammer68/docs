@@ -116,8 +116,11 @@ net.core.default_qdisc=cake
 net.ipv4.tcp_congestion_control=bbr
 net.ipv4.tcp_window_scaling = 1
 vm.swappiness = 1
-vm.dirty_ratio = 30
-vm.dirty_background_ratio = 5
+# vm.dirty_ratio = 30
+# vm.dirty_background_ratio = 5
+# speed up usb transfers, can't have both ratio or bytes, this will sync usb transfers after ~ 1Gib transfers
+vm.dirty_background_bytes = 33554432 # ~ 268Mib
+vm.dirty_bytes = 134217728 # ~ 1 Gib
 net.ipv4.tcp_syncookies = 1
 net.ipv4.tcp_syn_retries = 2
 net.ipv4.tcp_synack_retries = 2
