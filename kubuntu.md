@@ -94,8 +94,8 @@ options i915 modeset=1 mitigations=off enable_fbc=0 enable_guc=2 enable_psr=0
 * Some usefull tools for Intel GPU's
  ```
 sudo apt install
-intel-media-va-driver (decode)
-intel-media-va-driver-non-free (encode)
+intel-media-va-driver *(decode)
+intel-media-va-driver-non-free *(encode)
 firmware-misc-nonfree
 intel-gpu-tools
 ```
