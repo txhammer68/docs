@@ -75,8 +75,8 @@ mitigations=off loglevel=3
 ```
 ENABLE="true"
 GOVERNOR="performance"
-MAX_SPEED="3600"
-MIN_SPEED="2000"
+MAX_SPEED="3600000"
+MIN_SPEED="2000000"
 ```
 ### Intel GPU
 * [Intel](https://www.intel.com/content/www/us/en/content-details/609249/enabling-the-guc-huc-firmware-for-linux-on-new-intel-gpu-platforms.html) 
