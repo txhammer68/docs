@@ -120,8 +120,8 @@ vm.swappiness = 1
 # vm.dirty_ratio = 30
 # vm.dirty_background_ratio = 5
 # speed up usb transfers, can't have both ratio or bytes, this will sync usb transfers after ~ 1Gib transfers
-vm.dirty_background_bytes = 33554432 # ~ 268Mib
-vm.dirty_bytes = 134217728 # ~ 1 Gib
+vm.dirty_background_bytes = 64108864 # ~ 64Mib
+vm.dirty_bytes = 134217728 # ~ 128Mib
 net.ipv4.tcp_syncookies = 1
 net.ipv4.tcp_syn_retries = 2
 net.ipv4.tcp_synack_retries = 2
