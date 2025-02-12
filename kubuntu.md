@@ -117,6 +117,7 @@ net.core.default_qdisc=cake
 net.ipv4.tcp_congestion_control=bbr
 net.ipv4.tcp_window_scaling = 1
 vm.swappiness = 1
+vm.vfs_cache_pressure=40
 # vm.dirty_ratio = 30
 # vm.dirty_background_ratio = 5
 # speed up usb transfers, can't have both ratio or bytes, this will sync usb copy after ~ 64Mib transfers
@@ -126,7 +127,9 @@ net.ipv4.tcp_syncookies = 1
 net.ipv4.tcp_syn_retries = 2
 net.ipv4.tcp_synack_retries = 2
 net.ipv4.tcp_max_syn_backlog = 4096
+net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv4.ip_forward = 0
+net.ipv4.tcp_mtu_probing = 1
 net.ipv4.route.flush = 1
 net.ipv6.route.flush = 1
 ```
