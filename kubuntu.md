@@ -47,7 +47,7 @@ edit /etc/fstab <br>
 ``` 
 Root   UUID="" /               ext4    defaults,noatime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro   0 1
 Data   UUID="" /home/Data      ext4    defaults,noatime,auto_da_alloc,inode_readahead_blks=64,errors=remount-ro   0 2
-tmpfs         /tmp             tmpfs   defaults,rw,nosuid,nodev,size=50%,noatime,nodiratime,nr_inodes=10k,mode=1777 0 0
+tmpfs         /tmp             tmpfs   defaults,rw,nosuid,nodev,size=50%,noatime,nr_inodes=10k,mode=1777 0 0
 /swapfile     swap             swap    defaults,noatime   0 0
 ```
 * noatime - disable access time stamps
