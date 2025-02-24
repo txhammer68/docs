@@ -366,17 +366,25 @@ EOF
 ### KDE Plasma Fixes <br>
 [kubuntu](https://www.kubuntuforums.net/forum/currently-supported-releases/kubuntu-24-04-nitpick-noble-lts/post-installation-az/678534-essential-and-strongly-recommended-things-to-do-directly-after-a-kubuntu-24-04-lts-installation)
 
-* Reduce systemd timeouts for desktop installations like KDE suggests for Plasma in their Distributions/Packaging Recommendations
-( = the system will not "hang" for 90 seconds and longer from time to time when logging out, rebooting or shutting down). <br>
+* Reduce systemd timeouts for desktop installations, the system will not "hang" for 90 seconds and longer from time to time when logging out, rebooting or shutting down. <br>
+* Edit etc/systemd/system.conf.d/99-systemtimeout.conf <br>
+Change line <br>
 ```
-sudo mkdir -p /etc/systemd/system.conf.d && echo -e "# Reduce timeout (default = 90s)\n\n[Manager]\nDefaultTimeoutStopSec=15s" | sudo tee /etc/systemd/system.conf.d/99-systemtimeout.conf
+[Manager]
+DefaultTimeoutStopSec=15s
 ```
+Edit /etc/systemd/user.conf.d/99-usertimeout.conf <br>
+Change line <br>
 ```
-sudo mkdir -p /etc/systemd/user.conf.d && echo -e "# Reduce timeout (default = 90s)\n\n[Manager]\nDefaultTimeoutStopSec=15s" | sudo tee /etc/systemd/user.conf.d/99-usertimeout.conf
+[Manager]
+DefaultTimeoutStopSec=15s
 ```
-* Disable fast user switching
+* Disable fast user switching <br>
+* Edit /usr/share/kubuntu-default-settings/kf5-settings/kdeglobals <br>
 ```
-echo -e "\n[KDE Action Restrictions] [\$i]\naction/switch_user=false\naction/start_new_session=false" | sudo tee -a /usr/share/kubuntu-default-settings/kf5-settings/kdeglobals
+[KDE Action Restrictions]
+switch_user=false
+start_new_session=false
 ```
 X11 setup for dual monitors <br>
 Run xrandr to get inuput id's <br>
