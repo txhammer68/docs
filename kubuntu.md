@@ -196,7 +196,7 @@ sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl mask NetworkManager-wait-online.service
 ```
 
-### Minimize logging
+### Minimize logging <br>
 * journald logging
 Change log retention and logging settings, check logs first for errors <br>
 /etc/systemd/journald.conf<br>
@@ -209,7 +209,7 @@ MaxLevelKMsg=err
 MaxLevelConsole=err
 MaxLevelWall=emerg
 ```
-### Disable evbug logging
+### Disable evbug logging <br>
 EVBUG is the driver for the Linux kernel input subsystem's event debugging. Enabling the EVBUG driver (INPUT_EVBUG) will cause all input events to be logged to the system log... So all key presses, mouse movements, etc, will end up in the kernel log. That includes all key presses, so logging your passwords and other data to the kernel log. Practically a built-in kernel key logger. 
 modprobe blacklist <br>
 Not sure why this enabled on kubuntu maybe they forgot to disable after testing..., safe to disable
@@ -229,7 +229,7 @@ Reboot.<br>
 sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
 sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
-### MultiMedia
+### MultiMedia <br>
 * Restricted Codecs
 ```
 sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libk3b-extracodecs lame libavcodec-extra libavcodec-extra60 intel-media-va-driver-non-free
@@ -265,7 +265,7 @@ realtime-priority = 9
 rlimit-rtprio = 9
 daemonize = no
 ```
-### Networking
+### Networking <br>
 #### systemd-resolved
 systemd-resolved provides a system-level DNS cache that can substantially improve performance for applications that do not cache their own DNS results.  DNS queries and responses have traditionally been unencrypted, but more and more resolvers now support DNS over an encrypted TLS connection (DNS over TLS.) TLS can help ensure that no parties between the DNS server and the resolver can see or modify the DNS responses.
 
@@ -317,7 +317,7 @@ ping -s 1472 -c1 espn.com
 ```
 Retest changing packet size until 0% packet loss<br>
 
-### NFS Shares
+### NFS Shares <br>
 [NFS](https://www.linuxbabe.com/ubuntu/nfs-share)<br>
 [NFS shares on Ubuntu](https://www.nodinrogers.com/post/2021-10-10-nfs-shares-on-ubuntu/)<br>
 ```
@@ -363,7 +363,7 @@ Pin: release a=*
 Pin-Priority: -10
 EOF
 ```
-### KDE Plasma Fixes
+### KDE Plasma Fixes <br>
 [kubuntu](https://www.kubuntuforums.net/forum/currently-supported-releases/kubuntu-24-04-nitpick-noble-lts/post-installation-az/678534-essential-and-strongly-recommended-things-to-do-directly-after-a-kubuntu-24-04-lts-installation)
 
 * Reduce systemd timeouts for desktop installations like KDE suggests for Plasma in their Distributions/Packaging Recommendations
@@ -421,7 +421,7 @@ Run this after, clean font cache <br>
 ``` fc-cache -f -v ``` <br>
 * Reboot to apply changes
 
-### Install Firefox PPA
+### Install Firefox PPA <br>
 [FireFox](https://support.mozilla.org/en-US/kb/install-firefox-linux)<br>
 #### Firefox Extensions
 * [Youtube enhancer extension](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
