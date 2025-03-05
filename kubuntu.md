@@ -175,16 +175,7 @@ GPU-Manager is software that creates a xorg.conf for you. So running this in eve
 ```
 sudo systemctl disable gpu-manager.service
 sudo systemctl mask gpu-manager.service
-```
-Apt-daily-upgrade solves long boot up time with apt-daily-upgrade.
-```
-sudo systemctl disable apt-daily.service
-sudo systemctl disable apt-daily.timer
-sudo systemctl mask apt-daily.timer
-sudo systemctl disable apt-daily-upgrade.timer
-sudo systemctl disable apt-daily-upgrade.service
-sudo systemctl mask apt-daily-upgrade.service
-```
+```  
 Logical Volume Manager (LVM) is a device mapper framework that provides logical volume management.<br>
 Disable LVM
 ```
