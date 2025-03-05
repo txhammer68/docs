@@ -68,7 +68,7 @@ sudo tune2fs -l /dev/nvme0n1p2 | grep features
 /etc/default/grub<br>
 * [Turning off CPU exploit mitigations may improve performance.](https://wiki.archlinux.org/title/Improving_performance#Turn_off_CPU_exploit_mitigations)
 ```
-mitigations=off loglevel=3
+ro quiet mitigations=off loglevel=3
 ```
 ### CPUFreqUtils Change CPU Governor and Frequencies
 /etc/init.d/cpufrequtils
