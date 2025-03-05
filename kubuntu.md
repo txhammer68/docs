@@ -486,6 +486,6 @@ System should now be running at optimal performance and security
 
 [Some usefull tips i have collected over the years](https://gist.github.com/txhammer68/487164d7e59df958bf41a12178dacd12)<br>
 
-### [Proton VPN](https://protonvpn.com/)<br>
+#### [Proton VPN](https://protonvpn.com/)<br>
 
-### [Customizing KDE Plasma Desktop](index.md)<br>
+#### [Customizing KDE Plasma Desktop](index.md)<br>
