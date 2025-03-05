@@ -480,6 +480,10 @@ apt-get autoremove --purge
 rm -rf /boot/grub/
 rm -rf /boot/efi/EFI/ubuntu
 ```
+* Make sure GRUB is not installed back
+```
+sudo apt-mark hold "grub*"
+```
 
 #### Other Misc <br>
 * [bleachbit cleaner](https://www.bleachbit.org/)
