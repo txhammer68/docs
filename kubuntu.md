@@ -485,12 +485,12 @@ Verify <br>
 Reboot <br>
 System should now be running at optimal performance and security
 
-Other apps <br>
+#### Other Misc <br>
 * [bleachbit cleaner](https://www.bleachbit.org/)
 * [clamav virus scanner](https://www.clamav.net/)
-
-[Some usefull tips i have collected over the years](https://gist.github.com/txhammer68/487164d7e59df958bf41a12178dacd12)<br>
 
 #### [Proton VPN](https://protonvpn.com/)<br>
 
 #### [Customizing KDE Plasma Desktop](index.md)<br>
+
+* [Some usefull tips i have collected over the years](https://gist.github.com/txhammer68/487164d7e59df958bf41a12178dacd12)<br>
