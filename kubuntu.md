@@ -465,9 +465,9 @@ layout=uki
 BOOT_ROOT=/boot/efi
 ```
 edit /etc/kernel/cmdline <br>
-add <br>
+changes <br>
 ```
-root=UUID=xxxyyy ro quiet preempt=voluntary threadirqs mitigations=off vt.handoff=7 loglevel=3 rd.udev.log-priority=3 udev.log_priority=3
+root=UUID=xxxyyy ro quiet raid=noautodetect nowatchdog preempt=voluntary threadirqs mitigations=off loglevel=3 rd.udev.log-priority=3 udev.log_priority=3
 ```
 * threadirqs - Improved interrupt handling:
 By distributing interrupts across multiple threads, the system can handle a higher volume of interrupts concurrently, potentially reducing latency and improving responsiveness. <br>
