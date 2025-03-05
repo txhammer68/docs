@@ -87,10 +87,10 @@ i915 GPU settings edit /etc/modprobe.d/i915.conf <br>
 ```
 options i915 modeset=1 mitigations=off enable_fbc=0 enable_guc=2 enable_psr=0
 ```
-* Override the security mitigations default for the Intel graphics driver for perfromance gains
-* Disabling framebuffer compression (FBC) to prevent screen flicker with VT-d enabled.
+* Override the security mitigations default for the Intel graphics driver for perfromance gains.
+* Framebuffer compression (FBC) is a feature that can reduce power consumption and memory bandwidth during screen refreshes.
 * GuC is designed to perform graphics workload scheduling on the various graphics parallel engines, (better.faster x264 decoding)
-* Panel Self Refresh (PSR), a power saving feature used by Intel iGPUs is known to cause flickering in some instances
+* Panel Self Refresh (PSR), a power saving feature used by Intel iGPUs is known to cause flickering in some instances.
 * Some usefull tools for Intel GPU's
  ```
 sudo apt install
