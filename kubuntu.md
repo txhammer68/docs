@@ -473,6 +473,14 @@ Verify <br>
 Reboot <br>
 System should now be running at optimal performance and security
 
+#### Remove Grub
+```
+sudo apt purge --allow-remove-essential grub2-common grub-pc-bin grub-pc grub-gfxpayload-lists grub-efi-amd64-bin grub-efi-amd64-signed grub-common os-prober shim-signed 
+apt-get autoremove --purge
+rm -rf /boot/grub/
+rm -rf /boot/efi/EFI/ubuntu
+```
+
 #### Other Misc <br>
 * [bleachbit cleaner](https://www.bleachbit.org/)
 * [clamav virus scanner](https://www.clamav.net/)
