@@ -471,7 +471,9 @@ sudo update-initramfs -u -k all
 Verify <br>
 ``` sudo bootctl ``` <br>
 Reboot <br>
-System should now be running at optimal performance and security
+* Verify systemd proper operation
+* Bypass BIOS boot options, select systemd boot option
+* System should now be running at optimal performance and security
 
 #### Remove Grub
 ```
