@@ -435,41 +435,38 @@ Run this after, clean font cache <br>
 * [FastFox](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db) <br>
 * [BetterFox](https://github.com/yokoffing/Betterfox) <br>
 
-### systemd-boot
-* Replace grub, speeds up boot time.<br>
-* [systemd-boot loader -  grub replacement](https://wiki.archlinux.org/title/systemd-boot) <br>
-* [systemd-boot](https://blobfolio.com/2018/replace-grub2-with-systemd-boot-on-ubuntu-18-04/) <br>
-* Custom scipt to update systemd-boot config files after kernel updates <br>
-* [post-kernel-script](https://gist.github.com/txhammer68/84650da9037e9d4ca94613f266eab2c1) <br>
-* [different script using kernel cmdline options](https://gist.github.com/gdamjan/ccdcda2c91119406a0f8d22f8b8f2c4a) <br>
+### systemd-boot and Unified Kernel Images
+* Replace grub, speeds up boot time
+* [UKI](https://wiki.archlinux.org/title/Unified_kernel_image)
+* [systemd-boot loader -  grub replacement](https://wiki.archlinux.org/title/systemd-boot)
+* [different script using kernel cmdline options](https://gist.github.com/gdamjan/ccdcda2c91119406a0f8d22f8b8f2c4a)
 #### Install systemd-boot loader <br>
 ```
 sudo apt install systemd-boot systemd-ukify
 sudo bootctl install --path=/boot/efi
 ```
-updates for Ubuntu 24.04:
-* install systemd-ukify - it has been added since
-* the zz-update-systemd-boot script is not needed
-add in /etc/kernel/install.conf
+Create /etc/kernel/install.conf
 ```
 layout=uki
+uki_generator=ukify
 BOOT_ROOT=/boot/efi
 ```
+Create /etc/kernel/uki.conf
+```
+Cmdline=@/etc/kernel/cmdline
+OSRelease=@/etc/os-release
+Splash=/boot/bootSplash.bmp
+```
 edit /etc/kernel/cmdline <br>
-changes <br>
 ```
 root=UUID=xxxyyy ro quiet raid=noautodetect nowatchdog preempt=voluntary threadirqs mitigations=off loglevel=3 rd.udev.log-priority=3 udev.log_priority=3
 ```
-* threadirqs - Improved interrupt handling:
-By distributing interrupts across multiple threads, the system can handle a higher volume of interrupts concurrently, potentially reducing latency and improving responsiveness. <br>
-Root flags are same as grub options in /etc/default/grub <br>
-```
-ROOTFLAGS="root=UUID=efc95b50-5747-*** ro quiet raid=noautodetect nowatchdog preempt=voluntary threadirqs mitigations=off loglevel=3 rd.udev.log-priority=3 udev.log_priority=3"
-ROOTFLAGS1="root=UUID=efc95b50-5747-*** ro quiet mitigations=off 3"
-```
+* threadirqs - Improved interrupt handling, by distributing interrupts across multiple threads, the system can handle a higher volume of interrupts concurrently, potentially reducing latency and improving responsiveness.
+* [nowatchdog](https://wiki.archlinux.org/title/Improving_performance#Watchdogs)
+
 After install and setup of systemd-boot run <br>
 ```
-sudo update-initramfs -u
+sudo update-initramfs -u -k all
 ```
 Verify <br>
 ``` sudo bootctl ``` <br>
