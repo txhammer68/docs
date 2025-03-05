@@ -436,9 +436,10 @@ Run this after, clean font cache <br>
 * [BetterFox](https://github.com/yokoffing/Betterfox) <br>
 
 ### systemd-boot and Unified Kernel Images
-* Replace grub, speeds up boot time
-* [UKI](https://wiki.archlinux.org/title/Unified_kernel_image)
+* Replace grub, speeds up boot time, this is the future of Linux startup
+* A Unified Kernel Image (UKI) is a combination of a UEFI boot stub program, a Linux kernel image, an initramfs, and further resources in a single UEFI PE file (device tree, cpu µcode, splash screen, secure boot sig/key, ...). This file can either be directly invoked by the UEFI firmware or through a boot loader.
 * [systemd-boot loader -  grub replacement](https://wiki.archlinux.org/title/systemd-boot)
+* [UKI](https://wiki.archlinux.org/title/Unified_kernel_image)
 * [different script using kernel cmdline options](https://gist.github.com/gdamjan/ccdcda2c91119406a0f8d22f8b8f2c4a)
 #### Install systemd-boot loader <br>
 ```
