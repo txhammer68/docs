@@ -304,7 +304,6 @@ Verify Status<br>
 ```
 resolvectl status
 ```
-
 Some useful sites to verify internet security connection <br>
 [Test your connection](https://internet.nl/)<br>
 [IP Leak Test](https://ipleak.net/)<br>
@@ -487,6 +486,6 @@ System should now be running at optimal performance and security
 
 [Some usefull tips i have collected over the years](https://gist.github.com/txhammer68/487164d7e59df958bf41a12178dacd12)<br>
 
-### [xanmod kernel](https://xanmod.org/)<br>
+### [Proton VPN](https://protonvpn.com/)<br>
 
 ### [Customizing KDE Plasma Desktop](index.md)<br>
