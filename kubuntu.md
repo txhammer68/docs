@@ -85,7 +85,7 @@ MIN_SPEED="2000000"
 
 i915 GPU settings edit /etc/modprobe.d/i915.conf <br>
 ```
-options i915 modeset=1 mitigations=off enable_fbc=0 enable_guc=2 enable_psr=0
+options i915 modeset=1 mitigations=off enable_fbc=1 enable_guc=2 enable_psr=0
 ```
 * Override the security mitigations default for the Intel graphics driver for perfromance gains.
 * Framebuffer compression (FBC) is a feature that can reduce power consumption and memory bandwidth during screen refreshes.
