@@ -489,6 +489,9 @@ sudo apt-mark hold "grub*"
 ```
 
 #### Other Misc <br>
+* [nala - Nala is a Python-based frontend for apt package management.](https://itsfoss.com/nala/)
+* [aria2 is a lightweight multi-protocol & multi-source command-line download utility.](https://aria2.github.io/)
+* [Jellyfin is an open source media solution that puts you in control of your media.](https://jellyfin.org/)
 * [bleachbit cleaner](https://www.bleachbit.org/)
 * [clamav virus scanner](https://www.clamav.net/)
 
