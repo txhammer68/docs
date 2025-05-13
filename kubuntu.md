@@ -54,7 +54,7 @@ tmpfs         /tmp             tmpfs   defaults,rw,nosuid,nodev,size=50%,noatime
 * auto_da_alloc - If auto_da_alloc is enabled, ext4 will detect the replace via-rename and replace-via-truncate patterns and orce that any delayed allocation blocks are allocated such that at the next journal commit
 * inode_readahead_blks - This tuning parameter controls the maximum number of inode table blocks that ext4's inode table adahead algorithm will pre-read into the buffer cache.  The value must be a power of 2. The default value is 32 blocks
   
-### EXT4 options<br>
+### EXT4 options <br>
 Enable fast_commit journal option speed up FS writes <br>
 ```
 sudo tune2fs -O fast_commit /dev/nvme0n1p2
@@ -64,21 +64,21 @@ Verify
 ```
 sudo tune2fs -l /dev/nvme0n1p2 | grep features
 ```
-### Grub options<br>
+### Grub options <br>
 /etc/default/grub<br>
-* [Turning off CPU exploit mitigations may improve performance.](https://wiki.archlinux.org/title/Improving_performance#Turn_off_CPU_exploit_mitigations)
+* [Turning off CPU exploit mitigations may improve performance.](https://wiki.archlinux.org/title/Improving_performance#Turn_off_CPU_exploit_mitigations) <br>
 ```
 ro quiet mitigations=off loglevel=3
 ```
-### CPUFreqUtils Change CPU Governor and Frequencies
-/etc/init.d/cpufrequtils
+### CPUFreqUtils Change CPU Governor and Frequencies <br>
+/etc/init.d/cpufrequtils <br>
 ```
 ENABLE="true"
 GOVERNOR="performance"
 MAX_SPEED="3600000"
 MIN_SPEED="2000000"
 ```
-### Intel GPU
+### Intel GPU <br>
 * [Intel](https://www.intel.com/content/www/us/en/content-details/609249/enabling-the-guc-huc-firmware-for-linux-on-new-intel-gpu-platforms.html) 
 * [Arch](https://wiki.archlinux.org/title/Intel_graphics)
 * [GitHub](https://gist.github.com/Brainiarc7/aa43570f512906e882ad6cdd835efe57)
@@ -91,7 +91,7 @@ options i915 modeset=1 mitigations=off enable_fbc=1 enable_guc=2 enable_psr=0
 * Framebuffer compression (FBC) is a feature that can reduce power consumption and memory bandwidth during screen refreshes.
 * GuC is designed to perform graphics workload scheduling on the various graphics parallel engines, (better.faster x264 decoding)
 * Panel Self Refresh (PSR), a power saving feature used by Intel iGPUs is known to cause flickering in some instances.
-* Some usefull tools for Intel GPU's
+* Some usefull tools for Intel GPU's <br>
  ```
 sudo apt install
 intel-media-va-driver *(decode)
@@ -188,10 +188,10 @@ sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl mask NetworkManager-wait-online.service
 ```
 
-### Minimize logging <br>
-* journald logging
+#### Minimize logging <br>
+* journald logging <br>
 Change log retention and logging settings, check logs first for errors <br>
-/etc/systemd/journald.conf<br>
+/etc/systemd/journald.conf <br>
 ```
 MaxRetentionSec=3month
 MaxFileSec=1month
@@ -201,10 +201,10 @@ MaxLevelKMsg=err
 MaxLevelConsole=err
 MaxLevelWall=emerg
 ```
-### Disable evbug logging <br>
+#### Disable evbug logging <br>
 EVBUG is the driver for the Linux kernel input subsystem's event debugging. Enabling the EVBUG driver (INPUT_EVBUG) will cause all input events to be logged to the system log... So all key presses, mouse movements, etc, will end up in the kernel log. That includes all key presses, so logging your passwords and other data to the kernel log. Practically a built-in kernel key logger. 
 modprobe blacklist <br>
-Not sure why this enabled on kubuntu maybe they forgot to disable after testing..., safe to disable
+Not sure why this enabled on kubuntu maybe they forgot to disable after testing..., safe to disable <br>
 ```
 /etc/modprobe.d/blacklist.conf
 blacklist evbug
@@ -213,15 +213,15 @@ After creating these files run <br>
 ```
 sudo update-initramfs -u
 ```
-This wil update boot image to include the changes.<br>
+This wil update boot image to include the changes. <br>
 Reboot.<br>
-### Set fsck check interval
+#### Set fsck check interval <br>
 50 boot-ups or 1 month, change devices for your system <br>
 ```
 sudo tune2fs -c 50 -i 1m /dev/nvme0n1p2
 sudo tune2fs -c 50 -i 1m /dev/sdb1
 ```
-### MultiMedia <br>
+### MultiMedia
 * Restricted Codecs
 ```
 sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libk3b-extracodecs lame libavcodec-extra libavcodec-extra60 intel-media-va-driver-non-free
@@ -257,7 +257,7 @@ realtime-priority = 9
 rlimit-rtprio = 9
 daemonize = no
 ```
-### Networking <br>
+### Networking
 #### systemd-resolved
 systemd-resolved provides a system-level DNS cache that can substantially improve performance for applications that do not cache their own DNS results.  DNS queries and responses have traditionally been unencrypted, but more and more resolvers now support DNS over an encrypted TLS connection (DNS over TLS.) TLS can help ensure that no parties between the DNS server and the resolver can see or modify the DNS responses.
 
@@ -354,8 +354,8 @@ Pin: release a=*
 Pin-Priority: -10
 EOF
 ```
-### KDE Plasma Fixes <br>
-[kubuntu](https://www.kubuntuforums.net/forum/currently-supported-releases/kubuntu-24-04-nitpick-noble-lts/post-installation-az/678534-essential-and-strongly-recommended-things-to-do-directly-after-a-kubuntu-24-04-lts-installation)
+### KDE Plasma Fixes
+[kubuntu](https://www.kubuntuforums.net/forum/currently-supported-releases/kubuntu-24-04-nitpick-noble-lts/post-installation-az/678534-essential-and-strongly-recommended-things-to-do-directly-after-a-kubuntu-24-04-lts-installation) <br>
 
 * Reduce systemd timeouts for desktop installations, the system will not "hang" for 90 seconds and longer from time to time when logging out, rebooting or shutting down. <br>
 * Edit etc/systemd/system.conf.d/99-systemtimeout.conf <br>
@@ -446,13 +446,13 @@ Run this after, clean font cache <br>
 sudo apt install systemd-boot systemd-ukify
 sudo bootctl install --path=/boot/efi
 ```
-Create /etc/kernel/install.conf
+Create /etc/kernel/install.conf <br>
 ```
 layout=uki
 uki_generator=ukify
 BOOT_ROOT=/boot/efi
 ```
-Create /etc/kernel/uki.conf
+Create /etc/kernel/uki.conf <br>
 ```
 Cmdline=@/etc/kernel/cmdline
 OSRelease=@/etc/os-release
@@ -464,7 +464,7 @@ root=UUID=xxxyyy ro quiet raid=noautodetect nowatchdog preempt=voluntary threadi
 ```
 * preempt=voluntary reduces the maximum latency of rescheduling at the price of slightly lower throughput. As a result, faster application reactions, even when under load, are perceived to run more smoothly.
 * threadirqs - Improved interrupt handling, by distributing interrupts across multiple threads, the system can handle a higher volume of interrupts concurrently, potentially reducing latency and improving responsiveness.
-* [nowatchdog](https://wiki.archlinux.org/title/Improving_performance#Watchdogs)
+* [nowatchdog](https://wiki.archlinux.org/title/Improving_performance#Watchdogs) <br>
 
 After install and setup of systemd-boot run <br>
 ```
