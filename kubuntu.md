@@ -29,8 +29,8 @@ Install as usual after creating partitions. <br>
 Reboot <br>
 
 ### System Tuning
-Before making changes to your system run this, then again when finished <br>
-Check system log for errors or issues <br>
+Before making changes to your system run these commands and take note of the info, then compare when finished <br>
+Check system log for errors or issues, try to resolve those first before proceeding <br>
 ``` free -m ``` <br>
 ``` sudo hdparm -t --direct /dev/nvme0n1p2 ``` <br>
 ``` systemd-analyze critical-chain ``` <br>
@@ -38,8 +38,7 @@ Check system log for errors or issues <br>
 
 #### fstab
 The [fstab](https://wiki.archlinux.org/title/fstab) file configures the mounted drives/partitions
-Obtain UUID for each drive/partiton on system.<br>
-[ext4](https://man7.org/linux/man-pages/man5/ext4.5.html)
+Obtain UUID for each drive/partiton on system.  [ext4](https://man7.org/linux/man-pages/man5/ext4.5.html) <br>
 ```
 lsblk -f
 ```
@@ -102,7 +101,9 @@ intel-gpu-tools
 Run ```sudo update-initramfs -u```
 Verify changes after reboot
 ``` sudo systool -m i915 -av ```
-### Sysctl Settings
+
+### Additonal System Tuning
+#### Sysctl Settings
 [Arch](https://wiki.archlinux.org/title/Sysctl#Improving_performance) <br>
 [Github](https://gist.github.com/JoeyBurzynski/a4359dd19b211e5c37b6fcd2eff67286) <br>
 [Ubuntu](https://www.howtouseubuntu.com/cloud/understanding-etc-sysctl-conf-file-in-linux/) <br>
@@ -137,24 +138,24 @@ net.ipv4.tcp_mtu_probing = 1
 net.ipv4.route.flush = 1
 net.ipv6.route.flush = 1
 ```
-### Modprobe various driver settings<br>
+### Modprobe various driver settings <br>
 Disable power saving for audio device, remove pop sounds <br>
-Audio Device /etc/modprobe.d/audio.conf
+Audio Device - create /etc/modprobe.d/audio.conf
 ```
 options snd_hda_intel power_save=0 power_save_controller=N
 ```
-GPU /etc/modprobe.d/i915.conf
+GPU - create /etc/modprobe.d/i915.conf
 ```
 options i915 modeset=1 mitigations=off enable_fbc=1 enable_psr=0 enable_guc=2
 ```
 After creating these files run <br>
 ```
-sudo update-initramfs -u
+sudo update-initramfs -u -k all
 ```
 This wil update boot image to include the changes.<br>
 Reboot.<br>
 
-### Disable some uneeded system services<br>
+### Disable some uneeded system services <br>
 Remove plymouth boot splash screen
 ```
 sudo apt purge plymouth && sudo apt autoremove
@@ -166,7 +167,7 @@ sudo systemctl disable ModemManager.service
 sudo systemctl mask ModemManager.service
 ```
 fwupd is a daemon allowing you to update some devices' firmware, including UEFI for several machines. <br>
-Remove fwupd from boot
+Remove fwupd from boot, newer hardware may want to leave this enabled for future updates...
 ```
 sudo systemctl disable fwupd.service
 sudo systemctl mask fwupd.service
