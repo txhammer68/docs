@@ -490,12 +490,13 @@ rm -rf /boot/efi/EFI/ubuntu
 sudo apt-mark hold "grub*"
 ```
 
-* You can also remove plymouth boot splash manager
+* You can also remove plymouth boot splash manager <br>
 Remove plymouth boot splash screen
 ```
 sudo apt purge plymouth && sudo apt autoremove
 sudo rm -rf /usr/share/plymouth
 ```
+Reboot to verify grub is no longer installed and systemd-boot is working
 
 * bootSplash logo <br>
 <picture>
