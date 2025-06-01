@@ -498,7 +498,7 @@ sudo rm -rf /usr/share/plymouth
 ```
 Reboot to verify grub is no longer installed and systemd-boot is working
 
-* bootSplash logo <br>
+* systemd-boot bootSplash logo <br>
 <picture>
   <img alt="bootSplash" src="bootSplash.png" width="60%">
 </picture> <br>
