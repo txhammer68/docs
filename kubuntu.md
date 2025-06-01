@@ -494,7 +494,7 @@ sudo apt-mark hold "grub*"
 ```
 * bootSplash logo <br>
 <picture>
-  <img alt="bootSplash" src="bootSplash.png" width="80%">
+  <img alt="bootSplash" src="bootSplash.png" width="60%">
 </picture> <br>
 
 #### Other Misc <br>
