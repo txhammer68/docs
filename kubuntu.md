@@ -357,6 +357,22 @@ Pin: release a=*
 Pin-Priority: -10
 EOF
 ```
+
+### Install Firefox PPA <br>
+[FireFox](https://support.mozilla.org/en-US/kb/install-firefox-linux)<br>
+#### Firefox Extensions
+* [Youtube enhancer extension](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
+* [Origin Ad-Blocker](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
+* [Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
+* [Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
+* [HLS D-L](https://addons.mozilla.org/en-US/firefox/addon/hls-downloader/) <br>
+#### Firefox Config options
+* [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
+* [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
+* [Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)<br>
+* [FastFox](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db) <br>
+* [BetterFox](https://github.com/yokoffing/Betterfox) <br>
+
 ### KDE Plasma Fixes
 [kubuntu](https://www.kubuntuforums.net/forum/currently-supported-releases/kubuntu-24-04-nitpick-noble-lts/post-installation-az/678534-essential-and-strongly-recommended-things-to-do-directly-after-a-kubuntu-24-04-lts-installation) <br>
 
@@ -422,21 +438,6 @@ Remove extra fonts, check Noto Sans/Serif extra language fonts, unnecessary for 
 Run this after, clean font cache <br>
 ``` fc-cache -f -v ``` <br>
 * Reboot to apply changes
-
-### Install Firefox PPA <br>
-[FireFox](https://support.mozilla.org/en-US/kb/install-firefox-linux)<br>
-#### Firefox Extensions
-* [Youtube enhancer extension](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
-* [Origin Ad-Blocker](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
-* [Cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)<br>
-* [Duck-Duck Go](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)<br>
-* [HLS D-L](https://addons.mozilla.org/en-US/firefox/addon/hls-downloader/) <br>
-#### Firefox Config options
-* [Firefox smooth scroll](https://github.com/AveYo/fox/blob/main/Natural%20Smooth%20Scrolling%20for%20user.js)<br>
-* [Arch Firefox](https://wiki.archlinux.org/title/Firefox/Tweaks)<br>
-* [Github](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db)<br>
-* [FastFox](https://gist.github.com/RubenKelevra/fd66c2f856d703260ecdf0379c4f59db) <br>
-* [BetterFox](https://github.com/yokoffing/Betterfox) <br>
 
 ### systemd-boot and Unified Kernel Images
 * Replace grub, speeds up boot time, this is the future of Linux startup
