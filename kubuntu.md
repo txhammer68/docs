@@ -492,6 +492,9 @@ rm -rf /boot/efi/EFI/ubuntu
 ```
 sudo apt-mark hold "grub*"
 ```
+<picture>
+  <img alt="system" src="bootSplash.png" width="80%">
+</picture> <br>
 
 #### Other Misc <br>
 * [Nala is a Python-based frontend for apt package management.](https://itsfoss.com/nala/)
