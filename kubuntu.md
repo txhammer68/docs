@@ -446,6 +446,14 @@ Run this after, clean font cache <br>
 sudo apt install systemd-boot systemd-ukify
 sudo bootctl install --path=/boot/efi
 ```
+Create /boot/efi/loader/loader.conf
+```
+timeout 0
+default ubuntu*
+auto-entries 1
+console-mode max
+editor false
+```
 Create /etc/kernel/install.conf <br>
 ```
 layout=uki
