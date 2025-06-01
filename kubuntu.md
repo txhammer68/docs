@@ -158,11 +158,7 @@ This wil update boot image to include the changes.<br>
 Reboot.<br>
 
 ### Disable some uneeded system services <br>
-Remove plymouth boot splash screen
-```
-sudo apt purge plymouth && sudo apt autoremove
-sudo rm -rf /usr/share/plymouth
-```
+
 Disable ModemManager If you do not have a mobile broadband interface.
 ```
 sudo systemctl disable ModemManager.service
@@ -478,8 +474,9 @@ Verify <br>
 ``` sudo bootctl ``` <br>
 Reboot <br>
 * Verify systemd proper operation
-* Bypass BIOS boot options, select systemd boot option
+* Select systemd-boot menu by pressing space bar during boot up
 * System should now be running at optimal performance and security
+* If all seems ok proceed to remove Grub
 
 #### Remove Grub
 ```
@@ -492,6 +489,14 @@ rm -rf /boot/efi/EFI/ubuntu
 ```
 sudo apt-mark hold "grub*"
 ```
+
+* You can also remove plymouth boot splash manager
+Remove plymouth boot splash screen
+```
+sudo apt purge plymouth && sudo apt autoremove
+sudo rm -rf /usr/share/plymouth
+```
+
 * bootSplash logo <br>
 <picture>
   <img alt="bootSplash" src="bootSplash.png" width="60%">
