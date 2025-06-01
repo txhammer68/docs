@@ -459,6 +459,7 @@ OSRelease=@/etc/os-release
 Splash=/boot/bootSplash.bmp
 ```
 edit /etc/kernel/cmdline <br>
+Check /etc/default/grub for boot options of your system, add them here to cmdline
 ```
 root=UUID=xxxyyy ro quiet raid=noautodetect nowatchdog preempt=voluntary threadirqs mitigations=off loglevel=3 rd.udev.log-priority=3 udev.log_priority=3
 ```
