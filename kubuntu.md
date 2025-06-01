@@ -493,7 +493,7 @@ rm -rf /boot/efi/EFI/ubuntu
 sudo apt-mark hold "grub*"
 ```
 <picture>
-  <img alt="system" src="bootSplash.png" width="80%">
+  <img alt="bootSplash" src="bootSplash.png" width="80%">
 </picture> <br>
 
 #### Other Misc <br>
