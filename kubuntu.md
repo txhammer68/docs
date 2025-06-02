@@ -498,7 +498,7 @@ rm -rf /boot/efi/EFI/ubuntu
 ```
 sudo apt-mark hold "grub*"
 ```
-Create /etc/apt/preferences.d/nogrub.pref
+Create /etc/apt/preferences.d/nogrub.pref <br>
 This file forbids grub from ever being installed by APT.
 ```
 Package: grub*
