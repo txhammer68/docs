@@ -345,7 +345,7 @@ sudo rm -rf /var/cache/snapd/
 sudo apt autoremove --purge snapd
 rm -rf ~/snap
 ```
-Create /etc/apt/preferences.d/nosnap.pref
+Create /etc/apt/preferences.d/nosnap.pref <br>
 This file forbids snapd from ever being installed by APT.
 ```
 Package: snapd
