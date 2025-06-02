@@ -344,10 +344,10 @@ sudo snap remove snapd-desktop-integration
 sudo rm -rf /var/cache/snapd/
 sudo apt autoremove --purge snapd
 rm -rf ~/snap
-
-cat <<EOF | sudo tee /etc/apt/preferences.d/nosnap.pref
-# This file forbids snapd from ever being installed by APT.
-
+```
+Create /etc/apt/preferences.d/nosnap.pref
+This file forbids snapd from ever being installed by APT.
+```
 Package: snapd
 Pin: release a=*
 Pin-Priority: -10
@@ -497,6 +497,14 @@ rm -rf /boot/efi/EFI/ubuntu
 * Make sure GRUB is not installed back
 ```
 sudo apt-mark hold "grub*"
+```
+Create /etc/apt/preferences.d/nogrub.pref
+This file forbids grub from ever being installed by APT.
+```
+Package: grub*
+Pin: release a=*
+Pin-Priority: -10
+EOF
 ```
 
 * You can also remove plymouth boot splash manager <br>
