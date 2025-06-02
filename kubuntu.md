@@ -351,7 +351,6 @@ This file forbids snapd from ever being installed by APT.
 Package: snapd
 Pin: release a=*
 Pin-Priority: -10
-EOF
 ```
 
 ### Install Firefox PPA <br>
@@ -504,7 +503,6 @@ This file forbids grub from ever being installed by APT.
 Package: grub*
 Pin: release a=*
 Pin-Priority: -10
-EOF
 ```
 
 * You can also remove plymouth boot splash manager <br>
