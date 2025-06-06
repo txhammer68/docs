@@ -71,6 +71,7 @@ sudo tune2fs -l /dev/nvme0n1p2 | grep features
 ```
 ro quiet mitigations=off loglevel=3
 ```
+
 ### CPUFreqUtils Change CPU Governor and Frequencies <br>
 /etc/init.d/cpufrequtils <br>
 ```
@@ -111,7 +112,7 @@ Verify changes after reboot
 [Ubuntu](https://www.howtouseubuntu.com/cloud/understanding-etc-sysctl-conf-file-in-linux/) <br>
 [sysAdmin](https://lonesysadmin.net/2013/12/22/better-linux-disk-caching-performance-vm-dirty_ratio/) <br>
 
-Some useful sysctl settings edit /etc/sysctl.conf
+Some useful sysctl settings edit /etc/sysctl.conf <br>
 ```
 kernel.sysrq=0
 kernel.nmi_watchdog=0
