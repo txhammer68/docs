@@ -267,6 +267,7 @@ rlimit-rtprio = 9
 daemonize = no
 ```
 ### Networking
+
 #### systemd-resolved
 systemd-resolved provides a system-level DNS cache that can substantially improve performance for applications that do not cache their own DNS results.  DNS queries and responses have traditionally been unencrypted, but more and more resolvers now support DNS over an encrypted TLS connection (DNS over TLS.) TLS can help ensure that no parties between the DNS server and the resolver can see or modify the DNS responses.
 
@@ -306,6 +307,7 @@ Verify Status<br>
 resolvectl status
 ```
 Some useful sites to verify internet security connection <br>
+No firewall needed as most of us are behind an ISP router that has a built in firewall <br>
 [Test your connection](https://internet.nl/)<br>
 [IP Leak Test](https://ipleak.net/)<br>
 [Cloudfare Test](https://1.1.1.1/help/)<br>
