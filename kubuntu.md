@@ -182,11 +182,13 @@ Disable LVM
 sudo systemctl disable lvm2-monitor.service
 sudo systemctl mask lvm2-monitor.service
 ````
+
 Disable Wait for Network online service, slows down boot
 ```
 sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl mask NetworkManager-wait-online.service
 ```
+
 Disable Ubuntu News Updates, only used for ssh connections
 ```
 sudo systemctl disable motd-news.timer
