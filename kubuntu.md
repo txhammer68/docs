@@ -493,7 +493,6 @@ Verify <br>
 Reboot <br>
 * Verify systemd proper operation
 * Select systemd-boot menu by pressing space bar during boot up
-* System should now be running at optimal performance and security
 * If all seems ok proceed to remove Grub
 
 #### Remove Grub
@@ -527,6 +526,8 @@ Reboot to verify grub is no longer installed and systemd-boot is working
 <picture>
   <img alt="bootSplash" src="bootSplash.png" width="60%">
 </picture> <br>
+
+###  System should now be running at optimal performance and security
 
 #### Other Misc <br>
 * [Nala is a Python-based frontend for apt package management.](https://itsfoss.com/nala/)
