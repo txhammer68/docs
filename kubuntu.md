@@ -476,9 +476,9 @@ Splash=/boot/bootSplash.bmp
 edit /etc/kernel/cmdline <br>
 Check /etc/default/grub for boot options of your system, add them here to cmdline
 ```
-root=UUID=xxxyyy ro quiet raid=noautodetect nowatchdog preempt=voluntary threadirqs mitigations=off loglevel=3 rd.udev.log-priority=3 udev.log_priority=3
+root=UUID=xxxyyy ro quiet raid=noautodetect nowatchdog preempt=full threadirqs cpufreq.default_governor=performance mitigations=off loglevel=3 rd.udev.log-priority=3 udev.log_priority=3
 ```
-* preempt=voluntary reduces the maximum latency of rescheduling at the price of slightly lower throughput. As a result, faster application reactions, even when under load, are perceived to run more smoothly.
+* preempt=full A fully-preemptible kernel is most suitable for low-latency workloads - such as gaming, live-streaming, multimedia, etc.
 * threadirqs - Improved interrupt handling, by distributing interrupts across multiple threads, the system can handle a higher volume of interrupts concurrently, potentially reducing latency and improving responsiveness.
 * [nowatchdog](https://wiki.archlinux.org/title/Improving_performance#Watchdogs) <br>
 
