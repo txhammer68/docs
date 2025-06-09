@@ -517,7 +517,6 @@ Pin-Priority: -10
 ```
 
 * You can also remove plymouth boot splash manager <br>
-Remove plymouth boot splash screen
 ```
 sudo apt purge plymouth && sudo apt autoremove
 sudo rm -rf /usr/share/plymouth
