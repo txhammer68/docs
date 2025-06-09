@@ -537,6 +537,7 @@ Reboot to verify grub is no longer installed and systemd-boot is working
 * [Jellyfin is an open source media solution that puts you in control of your media.](https://jellyfin.org/)
 * [bleachbit cleaner](https://www.bleachbit.org/)
 * [clamav virus scanner](https://www.clamav.net/)
+* [Arch Stateful firewall](https://wiki.archlinux.org/title/Simple_stateful_firewall)
 
 #### [Proton VPN](https://protonvpn.com/)<br>
 
