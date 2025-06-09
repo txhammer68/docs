@@ -187,6 +187,13 @@ Disable Wait for Network online service, slows down boot
 sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl mask NetworkManager-wait-online.service
 ```
+Disable Ubuntu News Updates, only used for ssh connections
+```
+sudo systemctl disable motd-news.timer
+sudo systemctl mask motd-news.timer
+sudo systemctl disable apt-news.service
+sudo systemctl mask apt.news.service
+```
 
 #### Minimize logging <br>
 * journald logging <br>
