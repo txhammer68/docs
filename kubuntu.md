@@ -116,28 +116,115 @@ Some useful sysctl settings edit /etc/sysctl.conf <br>
 ```
 kernel.sysrq=0
 kernel.nmi_watchdog=0
-fs.file-max = 209708
-net.ipv4.tcp_fastopen=3
-net.core.default_qdisc=cake
-net.ipv4.tcp_congestion_control=bbr
-net.ipv4.tcp_window_scaling = 1
+kernel.printk = 3 3 1 7
+fs.file-max=209708
+fs.inotify.max_user_instances=2048
+fs.inotify.max_user_watches=126166
+vm.max_map_count = 262144
 vm.swappiness = 1
-vm.vfs_cache_pressure=40
-# vm.dirty_ratio = 30
+# vm.dirty_ratio = 20
 # vm.dirty_background_ratio = 5
-# speed up usb transfers, can't have both ratio or bytes, this will sync usb copy after ~ 64Mib transfers
-# if possible format usb as exFAT instead of FAT32 better results/performance
-vm.dirty_bytes = 134217728 # 1Gib
-vm.dirty_background_bytes = 64108864 # 64Mib
+vm.dirty_bytes = 536870912 # 512Mib
+vm.dirty_background_bytes = 67108864 # 64Mib
+# speed up usb transfers, can't have both ratio or bytes, this will sync usb transfers after ~ 128Mib transfers
+vm.dirty_expire_centisecs = 1000
+vm.dirty_writeback_centisecs = 500
+vm.min_free_kbytes = 167772
+vm.overcommit_ratio = 50
+vm.overcommit_memory = 1
+kernel.dmesg_restrict=0
+# Harden BPF JIT compiler
+net.core.bpf_jit_harden = 1
+###
+### NETWORK SECURITY ###
+###
+# Prevent SYN attack, enable SYNcookies (they will kick-in when the max_syn_backlog reached)
 net.ipv4.tcp_syncookies = 1
 net.ipv4.tcp_syn_retries = 2
 net.ipv4.tcp_synack_retries = 2
 net.ipv4.tcp_max_syn_backlog = 4096
+net.ipv4.tcp_fin_timeout = 15
+net.ipv4.tcp_sack = 1
+net.ipv4.tcp_timestamps = 0
+net.ipv4.icmp_echo_ignore_broadcasts = 1
+
+# Disable packet forwarding
+net.ipv4.ip_forward = 0
+net.ipv4.conf.all.forwarding = 0
+net.ipv4.conf.default.forwarding = 0
+net.ipv6.conf.all.forwarding = 0
+net.ipv6.conf.default.forwarding = 0
+
+# Enable IP spoofing protection
+# Turn on source route verification
+net.ipv4.conf.all.rp_filter = 2
+net.ipv4.conf.default.rp_filter = 2
+
+# Disable Redirect Acceptance
+net.ipv4.conf.all.accept_redirects = 0
+net.ipv4.conf.default.accept_redirects = 0
+net.ipv4.conf.all.secure_redirects = 0
+net.ipv4.conf.default.secure_redirects = 0
+net.ipv6.conf.all.accept_redirects = 0
+net.ipv6.conf.default.accept_redirects = 0
+
+# Disable Redirect Sending
+net.ipv4.conf.all.send_redirects = 0
+net.ipv4.conf.default.send_redirects = 0
+
+# Disable IP source routing
+net.ipv4.conf.all.accept_source_route = 0
+net.ipv4.conf.default.accept_source_route = 0
+net.ipv6.conf.all.accept_source_route = 0
+net.ipv6.conf.default.accept_source_route = 0
+
+# Don't relay bootp
+net.ipv4.conf.all.bootp_relay = 0
+
+# net.ipv4.tcp_ecn=0 disabled 1 = To enable ECN for both incoming and outgoing connections 2=To enable ECN only when requested by incoming connections (the reasonably safe, kernel default):
+
+# Disable proxy ARP
+net.ipv4.conf.all.proxy_arp = 0
+net.ipv4.conf.all.arp_ignore = 1
+net.ipv4.conf.all.arp_announce = 2
+
+# Mitigate time-wait assassination hazards in TCP
+net.ipv4.tcp_rfc1337 = 1
+
+# Enable bad error message Protection
+net.ipv4.icmp_ignore_bogus_error_responses = 1
+
+# ipv4 Performance options, bit-torrent
+net.ipv4.tcp_fastopen=3
+net.ipv4.tcp_keepalive_time=60
+net.ipv4.tcp_keepalive_intvl=15
+net.ipv4.tcp_keepalive_probes=4
+net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr
+net.ipv4.tcp_window_scaling = 1
+# net.ipv4.tcp_notsent_lowat = 32768
+net.core.rmem_max = 8388608
+net.core.wmem_max = 8388608
+net.core.rmem_default = 8388608
+net.core.wmem_default = 8388608
+net.core.optmem_max = 40960
+net.ipv4.tcp_rmem = 4096 87380 8388608
+net.ipv4.tcp_wmem = 4096 65536 8388608
+net.ipv4.udp_rmem_min = 8192
+net.ipv4.udp_wmem_min = 8192
+net.ipv4.tcp_slow_start_after_idle = 0
+net.ipv4.tcp_mtu_probing = 1
+# net.ipv4.tcp_low_latency=1
+net.ipv4.tcp_adv_win_scale=1
 net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
 net.ipv6.conf.lo.disable_ipv6 = 1
-net.ipv4.ip_forward = 0
-net.ipv4.tcp_mtu_probing = 1
+net.unix.max_dgram_qlen = 50
+net.ipv4.tcp_no_metrics_save = 1
+net.ipv4.tcp_moderate_rcvbuf = 1
+net.ipv4.tcp_retries2 = 15
+net.ipv4.tcp_retries1 = 3
+## Reset network w/ new options
 net.ipv4.route.flush = 1
 net.ipv6.route.flush = 1
 ```
