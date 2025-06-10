@@ -480,7 +480,7 @@ Splash=/boot/bootSplash.bmp
 edit /etc/kernel/cmdline <br>
 Check /etc/default/grub for boot options of your system, add them here to cmdline
 ```
-root=UUID=xxxyyy ro quiet raid=noautodetect nowatchdog preempt=full threadirqs cpufreq.default_governor=performance mitigations=off loglevel=3 rd.udev.log-priority=3 udev.log_priority=3
+root=UUID=efc95b50-5747-4cae-999e-45c286ae0389 ro quiet cpufreq.default_governor=performance raid=noautodetect nowatchdog preempt=full threadirqs mitigations=off loglevel=3 rd.udev.log-priority=3 udev.log_priority=3 systemd.show_status=auto vt.global_cursor_default=0 i915.modeset=1 i915.enable_fbc=1 i915.enable_psr=0 i915.enable_guc=2 i915.mitigations=off ipv6.disable=1 8250.nr_uarts=0
 ```
 * preempt=full A fully-preemptible kernel is most suitable for low-latency workloads - such as gaming, live-streaming, multimedia, etc.
 * threadirqs - Improved interrupt handling, by distributing interrupts across multiple threads, the system can handle a higher volume of interrupts concurrently, potentially reducing latency and improving responsiveness.
