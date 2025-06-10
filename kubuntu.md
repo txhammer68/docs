@@ -194,7 +194,7 @@ net.ipv4.tcp_rfc1337 = 1
 # Enable bad error message Protection
 net.ipv4.icmp_ignore_bogus_error_responses = 1
 
-# ipv4 Performance options, bit-torrent
+# ipv4 Performance options
 net.ipv4.tcp_fastopen=3
 net.ipv4.tcp_keepalive_time=60
 net.ipv4.tcp_keepalive_intvl=15
