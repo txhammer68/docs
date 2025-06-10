@@ -126,7 +126,7 @@ vm.swappiness = 1
 # vm.dirty_background_ratio = 5
 vm.dirty_bytes = 536870912 # 512Mib
 vm.dirty_background_bytes = 67108864 # 64Mib
-# speed up usb transfers, can't have both ratio or bytes, this will sync usb transfers after ~ 128Mib transfers
+# speed up usb transfers, can't have both ratio or bytes, this will sync usb transfers after ~ 64Mib transfers
 vm.dirty_expire_centisecs = 1000
 vm.dirty_writeback_centisecs = 500
 vm.min_free_kbytes = 167772
