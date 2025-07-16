@@ -365,8 +365,11 @@ Edit /etc/systemd/resolved.conf <br>
 Add, change DNS to your preferred DNS server <br>
 ```
 DNS=1.1.1.1
+FallbackDNS=8.8.8.8
+Domains=~.
 DNSSEC=yes
 DNSOverTLS=yes
+Cache=yes
 ```
 Change Network Manager <br>
 /etc/NetworkManager/NetworkManager.conf<br>
