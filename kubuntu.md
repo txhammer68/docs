@@ -234,10 +234,6 @@ Audio Device - create /etc/modprobe.d/audio.conf
 ```
 options snd_hda_intel power_save=0 power_save_controller=N
 ```
-GPU - create /etc/modprobe.d/i915.conf
-```
-options i915 modeset=1 mitigations=off enable_fbc=1 enable_psr=0 enable_guc=2
-```
 After creating these files run <br>
 ```
 sudo update-initramfs -u -k all
@@ -378,7 +374,7 @@ Change Network Manager <br>
 [main]
 dns=systemd-resolved
 ```
-
+Change network manager dns in gui to ```127.0.0.53``` <br>
 if working just restart after changes to resolved.conf file<br>
 ```
 systemctl restart systemd-resolved.service
